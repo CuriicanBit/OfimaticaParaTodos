@@ -296,6 +296,23 @@ export default function App() {
         </div>
       </header>
 
+      {/* --- BANNER DE ESPECIFICACIÓN DE CONTRASTE ACCESIBLE --- */}
+      <section 
+        className={`border-b-4 border-black text-center py-4 px-6 font-extrabold text-sm sm:text-base transition-colors ${
+          isDarkMode 
+            ? 'bg-zinc-900 border-zinc-700 text-yellow-300' 
+            : 'bg-yellow-100 text-amber-950'
+        }`}
+        aria-label="Aviso sobre visualización y simulación de pantalla real"
+      >
+        <div className="max-w-4xl mx-auto flex items-center justify-center gap-3 flex-wrap">
+          <span>💡</span>
+          <span>
+            <strong>Pauta de Contraste:</strong> El contraste alto afecta fondos exteriores y textos de navegación. Los marcos prácticos de Word simulados en los ejercicios conservan el fondo blanco con letras negras para imitar el papel físico impreso real.
+          </span>
+        </div>
+      </section>
+
       {/* --- CONTENIDO PRINCIPAL --- */}
       <main id="contenido-principal" className="max-w-4xl mx-auto px-6 py-10 md:py-16 focus:outline-none" role="main" tabIndex={-1}>
         
@@ -525,11 +542,89 @@ export default function App() {
                 <span>Menú Principal</span>
               </button>
 
-              <div className="font-bold text-lg text-gray-700">
+              <div className={`font-bold text-lg ${isDarkMode ? 'text-zinc-200' : 'text-gray-700'}`}>
                 Módulo:{' '}
                 <span className="underline font-black">
                   {MODULOS.find(m => m.id === selectedModuloId)?.titulo}
                 </span>
+              </div>
+            </div>
+
+            {/* --- MAPA GENERAL DE LECCIONES DEL CURSO CON ATENCIÓN WCAG AAA --- */}
+            <div className={`border-4 rounded-3xl p-5 mb-8 shadow-lg transition-colors ${
+              isDarkMode ? 'border-zinc-700 bg-zinc-900 text-white' : 'border-black bg-white text-black'
+            }`}>
+              <div className="flex items-center justify-between border-b-2 border-dashed border-zinc-400 pb-3 mb-4 flex-wrap gap-2">
+                <h3 className="font-sans font-black text-xl sm:text-2xl flex items-center gap-2">
+                  <span>📋 Mapa del Curso: Lecciones Disponibles</span>
+                </h3>
+                <span className="text-sm font-extrabold uppercase bg-yellow-300 text-black px-2.5 py-1 rounded-lg border border-black">
+                  {leccionesFiltradas.length} Lecciones
+                </span>
+              </div>
+              <p className={`mb-4 font-semibold text-sm ${isDarkMode ? 'text-zinc-300' : 'text-zinc-700'}`}>
+                Haga click en cualquier lección de abajo para saltar directamente a ella, estudiarla o repetirla si desea practicar de nuevo.
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                {leccionesFiltradas.map((lec, idx) => {
+                  const estaraCompletada = progreso[lec.id]?.completado;
+                  const esLaActual = idx === currentLessonIndex;
+                  
+                  return (
+                    <button
+                      key={lec.id}
+                      onClick={() => {
+                        setCurrentLessonIndex(idx);
+                        reproducirVozGuia(`Cargando Lección número ${idx + 1}: ${lec.titulo}. ${lec.concepto_clave || ''}`);
+                      }}
+                      className={`p-4 rounded-2xl border-4 text-left transition-all duration-150 active:scale-[0.98] cursor-pointer min-h-[56px] flex flex-col justify-between ${
+                        esLaActual
+                          ? (isDarkMode ? 'border-yellow-400 bg-zinc-950 text-white shadow-md ring-4 ring-yellow-400' : 'border-yellow-400 bg-yellow-50 text-black shadow-md ring-4 ring-yellow-400')
+                          : estaraCompletada
+                            ? (isDarkMode ? 'border-green-700 bg-emerald-950/20 text-white hover:bg-emerald-950/30' : 'border-green-600 bg-emerald-50 text-black hover:bg-emerald-100')
+                            : (isDarkMode ? 'border-zinc-750 bg-zinc-850 text-white hover:bg-zinc-800' : 'border-zinc-300 bg-zinc-50 text-black hover:bg-zinc-150')
+                      }`}
+                      aria-label={`Lección ${idx + 1}: ${lec.titulo}. Status: ${estaraCompletada ? 'Terminada' : 'Pendiente'}`}
+                    >
+                      <div>
+                        {/* Indicador de posición habitual */}
+                        <div className="flex items-center justify-between mb-1.5 flex-wrap gap-1">
+                          <span className={`font-mono text-xs font-black px-2 py-0.5 rounded-md border ${
+                            esLaActual 
+                              ? 'bg-yellow-400 text-black border-yellow-500' 
+                              : isDarkMode ? 'bg-zinc-950 text-zinc-300 border-zinc-700' : 'bg-white text-zinc-700 border-zinc-300'
+                          }`}>
+                            Lección {idx + 1}
+                          </span>
+                          
+                          {/* Status Badge */}
+                          <span className={`font-sans text-[11px] font-black uppercase px-2 py-0.5 rounded-md border ${
+                            estaraCompletada 
+                              ? 'bg-green-400 text-black border-green-500' 
+                              : isDarkMode ? 'bg-zinc-900 border-zinc-700 text-zinc-400 shadow-xs' : 'bg-gray-100 text-gray-500 border-gray-300'
+                          }`}>
+                            {estaraCompletada ? '✅ Terminado' : '⏳ Pendiente'}
+                          </span>
+                        </div>
+                        
+                        <span className={`block font-black text-sm leading-tight ${
+                          esLaActual ? (isDarkMode ? 'text-yellow-300' : 'text-black') : isDarkMode ? 'text-white' : 'text-zinc-900'
+                        }`}>
+                          {lec.titulo}
+                        </span>
+                      </div>
+                      
+                      {esLaActual && (
+                        <div className={`mt-2 text-xs font-bold flex items-center gap-1 ${
+                          isDarkMode ? 'text-yellow-400' : 'text-yellow-800'
+                        }`}>
+                          <span>👉 Estudiando ahora</span>
+                        </div>
+                      )}
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
@@ -541,6 +636,7 @@ export default function App() {
               onAnterior={retrocederLeccion}
               progresoPrevio={progreso[leccionesFiltradas[currentLessonIndex].id]}
               fontSizeClass={getFontSizeClass()}
+              isDarkMode={isDarkMode}
             />
           </div>
         )}

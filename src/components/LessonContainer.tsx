@@ -171,6 +171,41 @@ export default function LessonContainer({
   const [textoVozActual, setTextoVozActual] = useState<string>('');
   const [velocidadVoz, setVelocidadVoz] = useState<number>(0.82); // Velocidad predeterminada (pausada y clara)
 
+  // --- CARGA SENSATA DE VOCES PARA EL ASISTENTE ---
+  const [voces, setVoces] = useState<SpeechSynthesisVoice[]>([]);
+  const [vozSeleccionadaURI, setVozSeleccionadaURI] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('voz_narratriz_preferida') || '';
+    }
+    return '';
+  });
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+
+    const actualizarVoces = () => {
+      const todasLasVoces = window.speechSynthesis.getVoices();
+      // Filtrar preferentemente voces en español ("es") de cualquier región
+      const vocesEspanyol = todasLasVoces.filter(v => v.lang.toLowerCase().startsWith('es'));
+      setVoces(vocesEspanyol.length > 0 ? vocesEspanyol : todasLasVoces);
+    };
+
+    actualizarVoces();
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+      window.speechSynthesis.onvoiceschanged = actualizarVoces;
+    }
+  }, []);
+
+  const aplicarVozAUtterance = (ut: SpeechSynthesisUtterance) => {
+    if (typeof window !== 'undefined' && window.speechSynthesis && vozSeleccionadaURI) {
+      const list = window.speechSynthesis.getVoices();
+      const match = list.find(v => v.voiceURI === vozSeleccionadaURI);
+      if (match) {
+        ut.voice = match;
+      }
+    }
+  };
+
   const synthRef = useRef<SpeechSynthesis | null>(null);
   const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
 
@@ -192,9 +227,16 @@ export default function LessonContainer({
     setCompletadoPC(progresoPrevio?.completado || false);
     detenerNarracion();
 
-    // Desplazar mágicamente al inicio de la página al cambiar de lección para comodidad de la alumna
+    // Desplazar mágicamente al inicio de la lección para comodidad de la alumna, no al tope absoluto del navegador
     if (typeof window !== 'undefined') {
-      window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
+      setTimeout(() => {
+        const elementoLeccion = document.getElementById(`leccion-container-${leccion.id}`);
+        if (elementoLeccion) {
+          elementoLeccion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }, 100);
     }
   }, [leccion.id, progresoPrevio?.completado, leccion.checklist_validacion?.length]);
 
@@ -213,6 +255,7 @@ export default function LessonContainer({
       const ut = new SpeechSynthesisUtterance(mensaje);
       ut.lang = 'es-ES';
       ut.rate = 0.95;
+      aplicarVozAUtterance(ut);
       synthRef.current.speak(ut);
     }
 
@@ -229,6 +272,7 @@ export default function LessonContainer({
           const ut = new SpeechSynthesisUtterance("¡Excelente! Has verificado todos los puntos clave del checklist de validación. La lección se ha marcado como completada con éxito. Ya puedes avanzar.");
           ut.lang = 'es-ES';
           ut.rate = 0.9;
+          aplicarVozAUtterance(ut);
           synthRef.current.speak(ut);
         }
       }, 500);
@@ -369,6 +413,7 @@ export default function LessonContainer({
     const ut = new SpeechSynthesisUtterance(seg.texto);
     ut.lang = 'es-ES';
     ut.rate = velocidadVoz;
+    aplicarVozAUtterance(ut);
 
     ut.onend = () => {
       // Evitar que continúe si ya saltamos a otro segmento por click manual
@@ -544,6 +589,7 @@ export default function LessonContainer({
         const ut = new SpeechSynthesisUtterance(`Velocidad cambiada a ${rapidezTexto}.`);
         ut.lang = 'es-ES';
         ut.rate = nuevaVelocidad;
+        aplicarVozAUtterance(ut);
         synthRef.current.speak(ut);
       }
     }
@@ -572,6 +618,7 @@ export default function LessonContainer({
         const ut = new SpeechSynthesisUtterance(mensaje);
         ut.lang = 'es-ES';
         ut.rate = velocidadVoz;
+        aplicarVozAUtterance(ut);
         
         ut.onend = () => {
           // Después de anunciar la alteración de teoría, reiniciar la lectura automática desde la nueva teoría
@@ -602,6 +649,7 @@ export default function LessonContainer({
       const ut = new SpeechSynthesisUtterance("¡Excelente! Has verificado y marcado todo este ejercicio práctico como completado con éxito. Ahora ya puede oprimir el gran botón de avanzar a la siguiente lección.");
       ut.lang = 'es-ES';
       ut.rate = 0.9;
+      aplicarVozAUtterance(ut);
       synthRef.current.speak(ut);
     }
   };
@@ -659,6 +707,7 @@ export default function LessonContainer({
                 synthRef.current.cancel();
                 const ut = new SpeechSynthesisUtterance("Modo recomendado de pantalla dividida guardado.");
                 ut.lang = 'es-ES';
+                aplicarVozAUtterance(ut);
                 synthRef.current.speak(ut);
               }
             }}
@@ -681,6 +730,7 @@ export default function LessonContainer({
                 synthRef.current.cancel();
                 const ut = new SpeechSynthesisUtterance("Modo celular guardado. Leeré las pantallas de su celular mientras presiona teclas en su computadora.");
                 ut.lang = 'es-ES';
+                aplicarVozAUtterance(ut);
                 synthRef.current.speak(ut);
               }
             }}
@@ -823,6 +873,48 @@ export default function LessonContainer({
                 Standard
               </button>
             </div>
+          </div>
+
+          {/* Selector de Tipo de Voz del Asistente */}
+          <div className="flex flex-col gap-1">
+            <label className={`text-xs font-black ${isDarkMode ? 'text-zinc-300' : 'text-zinc-700'}`} htmlFor={`voice-choice-${leccion.id}`}>
+              🔊 Tipo de Voz del Asistente:
+            </label>
+            <select
+              id={`voice-choice-${leccion.id}`}
+              value={vozSeleccionadaURI}
+              onChange={(e) => {
+                const uri = e.target.value;
+                setVozSeleccionadaURI(uri);
+                localStorage.setItem('voz_narratriz_preferida', uri);
+                
+                // Confirmación oral del cambio de voz
+                if (synthRef.current) {
+                  synthRef.current.cancel();
+                  const ut = new SpeechSynthesisUtterance("Voz de lectura seleccionada con éxito.");
+                  ut.lang = 'es-ES';
+                  // Buscar coincidencia en la voz
+                  const list = synthRef.current.getVoices();
+                  const match = list.find(v => v.voiceURI === uri);
+                  if (match) {
+                    ut.voice = match;
+                  }
+                  synthRef.current.speak(ut);
+                }
+              }}
+              className={`text-xs p-2.5 rounded-lg border-2 font-bold cursor-pointer transition-colors ${
+                isDarkMode 
+                  ? 'bg-zinc-900 border-zinc-700 text-zinc-100 focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400' 
+                  : 'bg-white border-black text-black focus:border-blue-600 focus:ring-1 focus:ring-blue-600'
+              }`}
+            >
+              <option value="">🗣️ Voz predeterminada del sistema</option>
+              {voces.map((v) => (
+                <option key={v.voiceURI} value={v.voiceURI}>
+                  {v.name} ({v.lang})
+                </option>
+              ))}
+            </select>
           </div>
         </div>
       </div>
