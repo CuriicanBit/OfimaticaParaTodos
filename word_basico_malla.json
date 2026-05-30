@@ -1,0 +1,213 @@
+[
+  {
+    "id_leccion": "word_b1_l1",
+    "titulo": "El Entorno de Trabajo (Perder el miedo a la pantalla)",
+    "concepto_clave": "Identificar las partes de la ventana (Cinta de opciones, la hoja en blanco y la barra de zoom) para comprender dónde está parado en el programa.",
+    "teoria_v1": "Imagine que entra por primera vez a un gran salón comunitario de la Junta de Vecinos. A primera vista, puede llamar la atención el gran tablero colgado al fondo con múltiples herramientas y avisos ordenados por temas; eso en la computadora se llama [IMAGEN_ICONO: Cinta de Opciones]. En el centro de la mesa hay una hoja en blanco lista para ser llenada con sus palabras de oficina, y abajo a la derecha de la mesa hay una lupa que le permite agrandar el tamaño de visual del papel sin alterar el tamaño de la letra real al imprimir: la barra de [IMAGEN_ICONO: Zoom]. En Word, perder el miedo consiste en entender que esta ventana digital simula exactamente su mesa de trabajo física, organizada y segura.",
+    "teoria_v2_alternativa": "Piense en Word como su mesa de comedor antes de empezar una manualidad. El cabezal alto lleno de botones organizados en cajones se llama [IMAGEN_ICONO: Cinta de Opciones] (como un cajón de hilos ordenados). El espacio central es su mesa limpia para el papel de oficio, y la regla de deslizar abajo a la derecha es la barra de la lupa [IMAGEN_ICONO: Zoom] para acercar o alejar el papel según lo cansada que sienta su vista. ¡Nada se va a romper por mirar o tocar!",
+    "elementos_visuales": [
+      {
+        "icono": "Cinta de opciones",
+        "etiqueta": "Cinta de Opciones",
+        "descripcion": "Franja horizontal con pestañas y botones arriba de la hoja."
+      },
+      {
+        "icono": "Zoom",
+        "etiqueta": "Control de Zoom",
+        "descripcion": "Barra reguladora con signos '-' y '+' en la esquina inferior derecha."
+      }
+    ],
+    "ejercicio_practico": "Abrir Word en su PC real, ubicar visualmente las 3 zonas clave descritas y utilizar la lupa de aumento para sentirse cómoda antes de teclear.",
+    "pasos_computador": [
+      "Deje su teléfono sobre la mesa para ir leyendo esta guía y sitúese ante su computadora real.",
+      "Encienda la computadora y abra el programa Microsoft Word real pulsando su ícono azul con una letra W blanca.",
+      "Fije su mirada en la parte superior de la pantalla de su PC: allí observará la [IMAGEN_ICONO: Cinta de Opciones] llena de palabras como Inicio, Insertar y Disposición.",
+      "Mire el centro de la pantalla de su PC: es la hoja de papel virtual en blanco, con una barrita negra parpadeando llamada cursor de escritura.",
+      "Dirija sus ojos a la esquina inferior derecha de la pantalla: allí se encuentra el regulador de [IMAGEN_ICONO: Zoom]. Haga click sobre el signo '+' para agrandar visualmente la hoja virtual cómodamente."
+    ],
+    "checklist_evaluacion": [
+      "He abierto Word en mi computadora real y encontré el papel virtual.",
+      "Logré distinguir la Cinta de Opciones en el borde superior de la pantalla.",
+      "Identifiqué la barra de Zoom en la esquina inferior derecha de la pantalla de mi PC.",
+      "Presioné el botón '+' de la lupa de Zoom para agrandar la hoja virtual cómodamente."
+    ]
+  },
+  {
+    "id_leccion": "word_b1_l2",
+    "titulo": "Escribir y Corregir en la Página",
+    "concepto_clave": "El uso correcto de la tecla Enter para separar párrafos (no para avanzar renglón por renglón) y cómo reaccionar a las advertencias de ortografía de Word.",
+    "teoria_v1": "En una máquina de escribir clásica de oficina, cada renglón requería que empujáramos manualmente la palanca lateral para retornar el papel. En Word de la computadora, las palabras caen solas en cascada y fluyen automáticamente hacia la siguiente línea al llegar al borde físico de su papel virtual. Solo debemos usar la tecla [IMAGEN_ICONO: Tecla Enter] cuando decidimos conscientemente terminar un párrafo completo para abrir uno nuevo o para separar secciones del documento. Además, si digitamos una palabra con mala ortografía, la computadora colocará un subrayado ondulado rojo de alerta; bastará con hacer un [IMAGEN_ICONO: Clic derecho sobre error] para que se despliegue un recuadro inteligente que ofrece la palabra correcta lista para ser insertada.",
+    "teoria_v2_alternativa": "Escribir en la computadora es más dócil que en papel físico. No se preocupe de estar presionando el pasador al final de cada línea; el texto se acomoda solo como el agua en un jarro. Solo pulse el botón [IMAGEN_ICONO: Tecla Enter] para dejar un espacio limpio entre diferentes asuntos o párrafos. Y si ve una línea roja ondulada abajo de un nombre, no se asuste: es Word avisándole que revise las letras haciendo un [IMAGEN_ICONO: Clic derecho sobre error] para corregir la falta en un segundo.",
+    "elementos_visuales": [
+      {
+        "icono": "Tecla Enter",
+        "etiqueta": "Tecla Enter",
+        "descripcion": "La tecla más gruesa en el costado derecho de su teclado, con una flecha que dobla a la izquierda."
+      },
+      {
+        "icono": "Clic derecho sobre error",
+        "etiqueta": "Clic Derecho en Error",
+        "descripcion": "Presionar el botón secundario del mouse sobre una palabra con subrayado rojo."
+      }
+    ],
+    "ejercicio_practico": "Redactar una justificación formal dirigida a la municipalidad cometiendo un error intencional para aprender a corregirlo con el mouse.",
+    "pasos_computador": [
+      "Deje su celular para consulta y coloque sus manos sobre su teclado de la PC.",
+      "Escriba despacio la frase: 'La asamblea comunal aprobo la pintura' escribiendo aprobo sin tilde para provocar la alerta.",
+      "Observe que Word marca la palabra con una línea ondulada roja por falta de ortografía de inmediato.",
+      "Coloque la punta del mouse justo sobre la palabra marcada y presione el botón derecho en un [IMAGEN_ICONO: Clic derecho sobre error].",
+      "En el menú del recuadro que se despliega en pantalla, haga un click de confirmación izquierdo sobre la sugerencia corregida: 'aprobó'.",
+      "Presione la tecla [IMAGEN_ICONO: Tecla Enter] una o dos veces al final para descender renglones de forma limpia e ingresar los firmantes."
+    ],
+    "checklist_evaluacion": [
+      "Logré escribir la frase completa en el teclado físico de mi PC.",
+      "Word detectó el error ortográfico y lo subrayó con ondulaciones rojas en pantalla.",
+      "Presioné de manera exitosa el botón secundario del mouse sobre la palabra con error.",
+      "Cambié con éxito el texto mal escrito por la sugerencia corregida en Word.",
+      "Oprimí Enter para saltar de forma limpia a un nuevo renglón."
+    ]
+  },
+  {
+    "id_leccion": "word_b1_l3",
+    "titulo": "Dar Formato Esencial (Resaltar acuerdos clave)",
+    "concepto_clave": "Ajustar las letras de los títulos clave de un documento oficial usando los botones Negrita, Cursiva, Subrayado y el Tamaño de Letra.",
+    "teoria_v1": "Un documento que tiene el mismo tamaño y grosor de letra en todas sus líneas cansa la vista de los vecinos y dificulta encontrar los datos críticos. En secretariado, se usa 'Negrita' [IMAGEN_ICONO: Botón Negrita N] para ensanchar los títulos claves con tinta electrónica gruesa, 'Cursiva' [IMAGEN_ICONO: Botón Cursiva K] para inclinar las letras en aclaraciones, y 'Subrayado' [IMAGEN_ICONO: Botón Subrayado S] para remarcar acuerdos formales abajo. Podemos además ajustar la escala de las letras usando el [IMAGEN_ICONO: Selector tamaño de letra] arriba en la pantalla para que los encabezados destaquen jerárquicamente como un letrero grande.",
+    "teoria_v2_alternativa": "Es como poner un cartel formal en la plaza comunal. Los títulos de los acuerdos van en letras enormes usando el [IMAGEN_ICONO: Selector tamaño de letra] y con tinta bien negra presionando la [IMAGEN_ICONO: Botón Negrita N]. Si quiere que una frase de una cita destaque, use el [IMAGEN_ICONO: Botón Subrayado S] para ponerle una línea clara abajo. Así todos los vecinos podrán ubicar lo importante al instante.",
+    "elementos_visuales": [
+      {
+        "icono": "Botón Negrita N",
+        "etiqueta": "Botón Negrita (N)",
+        "descripcion": "Estilo de letra gruesa y oscura para resaltar títulos."
+      },
+      {
+        "icono": "Botón Cursiva K",
+        "etiqueta": "Botón Cursiva (K)",
+        "descripcion": "Incline las letras sutilmente para anotaciones extra."
+      },
+      {
+        "icono": "Botón Subrayado S",
+        "etiqueta": "Botón Subrayado (S)",
+        "descripcion": "Dibuja una línea horizontal debajo del texto."
+      },
+      {
+        "icono": "Selector tamaño de letra",
+        "etiqueta": "Tamaño de Letra",
+        "descripcion": "Recuadro con números para agrandar o achicar las letras del papel."
+      }
+    ],
+    "ejercicio_practico": "Escribir un encabezado oficial vecinal, elevar su tamaño a 16 y aplicarle resaltado de Negrita y Subrayado en su computadora.",
+    "pasos_computador": [
+      "Abra Word y escriba la frase: 'ACTA DE ACUERDOS DE LA JUNTA DE VECINOS'.",
+      "Sombreé todo el texto manteniendo presionado el botón izquierdo del mouse y pasándolo encima de las palabras.",
+      "Localice en la parte de arriba el casillero numérico de [IMAGEN_ICONO: Selector tamaño de letra] y seleccione el número 16.",
+      "Vea cómo el título se agranda. Enseguida, haga click sobre el botón que tiene la [IMAGEN_ICONO: Botón Negrita N] y luego de la [IMAGEN_ICONO: Botón Subrayado S].",
+      "Haga click en una parte en blanco del documento para apreciar cómo se destaca su acuerdo vecinal de forma sumamente nítida."
+    ],
+    "checklist_evaluacion": [
+      "Logré sombrear por completo el texto del título usando el mouse de mi PC.",
+      "Establecí la altura del de texto en número 16 usando el selector de tamaño.",
+      "Apliqué Negrita con éxito para que las letras se vean oscuras e intensas.",
+      "Activé el Subrayado para delinear la parte inferior de mi título."
+    ]
+  },
+  {
+    "id_leccion": "word_b1_l4",
+    "titulo": "Organizar con Viñetas y Listas",
+    "concepto_clave": "Crear listas estructuradas con viñetas de puntos (para inventarios o asistencia) y listas numeradas para detallar acuerdos cronológicos o reglamentos.",
+    "teoria_v1": "Las listas extensas escritas todo de corrido son difíciles de leer para los ojos cansados o de baja visión. Word cuenta con los botones de [IMAGEN_ICONO: Botón Viñetas] o [IMAGEN_ICONO: Botón Numeración] para que la computadora ordene automáticamente cada renglón de forma vertical, agregando pequeños círculos o números consecutivos de soporte a la izquierda. Al usar estas herramientas, Word se encarga de dar sangría al texto, logrando un balance de lectura excelente conforme al manual de oficina.",
+    "teoria_v2_alternativa": "Es igual a organizar el reparto de tareas en una cartulina. Si escribe un vecino detrás de otro, el papel se ve enredado. Al presionar el botón [IMAGEN_ICONO: Botón Viñetas] colocará un puntito de apoyo a la izquierda de cada renglón. Y si usa [IMAGEN_ICONO: Botón Numeración], colocará de forma automática el 1, 2 y 3 sin que usted deba teclearlos uno por uno.",
+    "elementos_visuales": [
+      {
+        "icono": "Botón Viñetas",
+        "etiqueta": "Botón de Viñetas",
+        "descripcion": "Ordenador de listas con pequeños puntos negros laterales a cada elemento."
+      },
+      {
+        "icono": "Botón Numeración",
+        "etiqueta": "Botón de Numeración",
+        "descripcion": "Genera una secuencia numeral automática vertical."
+      }
+    ],
+    "ejercicio_practico": "Elaborar la agenda de la próxima reunión semanal usando listas numeradas automáticas para estructurar el orden del día.",
+    "pasos_computador": [
+      "Escriba las siguientes tres ideas una debajo de otra usando Enter en su Word real: 'Revisión de cuentas', 'Aprobación de la rifa' y 'Puntos varios'.",
+      "Deslice su mouse sosteniendo el click izquierdo para sombrear las tres líneas de corrido.",
+      "Dirija su vista a la Cinta de Opciones arriba en Inicio y pulse sobre el ícono de [IMAGEN_ICONO: Botón Numeración] que muestra los números 1, 2, 3.",
+      "Observe cómo la computadora los separa, aplicando un margen amplio y ordenado de forma rápida.",
+      "Sitúe el cursor al final de 'rifa', de un Enter y mire cómo aparece automáticamente el número correlativo siguiente."
+    ],
+    "checklist_evaluacion": [
+      "Ingresé los tres puntos del orden del día en renglones separados.",
+      "Sombreé la lista completa de forma fluida.",
+      "Oprimí el botón de Numeración y visualicé los números correlativos aplicados.",
+      "Oprimí Enter al final de la lista comprobando que Word genera el siguiente número de forma automática."
+    ]
+  },
+  {
+    "id_leccion": "word_b1_l5",
+    "titulo": "Guardar y No Perder el Trabajo",
+    "concepto_clave": "Comprender de forma definitiva la diferencia entre 'Guardar' y 'Guardar como...', seleccionando la carpeta destino (Escritorio o Documentos) y nombrando el archivo adecuadamente.",
+    "teoria_v1": "Mientras teclea en Word, todo lo redactado permanece en una memoria virtual temporal. Si la computadora se apaga de golpe, todo ese avance se perderá. Para archivar el texto de manera segura, debemos recurrir inicialmente al menú [IMAGEN_ICONO: Ventana Guardar Como], que nos permite elegir un destino con alto contraste y visibilidad (como el Escritorio) y asignarle un nombre descriptivo al archivo. De esta forma, el archivo quedará consolidado. Posteriormente, solo pulsamos el acceso rápido del [IMAGEN_ICONO: Disco de guardar] para registrar cada línea nueva con absoluta tranquilidad.",
+    "teoria_v2_alternativa": "Es igual a guardar sus actas en un cajón clasificado de oficina. La primera vez, use el botón [IMAGEN_ICONO: Ventana Guardar Como], que es como crear un portafolio de cartón nuevo, rotularlo con un marcador claro y decidir que lo guardará en el cajón de 'Escritorio' para tenerlo a mano. En adelante, conforme escriba más páginas, solo presione el botón de la imagen del [IMAGEN_ICONO: Disco de guardar] rápido arriba a la izquierda.",
+    "elementos_visuales": [
+      {
+        "icono": "Disco de guardar",
+        "etiqueta": "Botón Guardar",
+        "descripcion": "Icono pequeño que parece un disquete cuadrado arriba a la izquierda del programa."
+      },
+      {
+        "icono": "Ventana Guardar Como",
+        "etiqueta": "Menú Guardar Como",
+        "descripcion": "Menú especial que permite decidir el nombre y el destino del archivo en su PC."
+      }
+    ],
+    "ejercicio_practico": "Guardar su acta terminada dándole un nombre claro y ubicándola directo en la pantalla del Escritorio para verla fácil al encender la PC.",
+    "pasos_computador": [
+      "Haga click sobre la palabra azul 'Archivo' situada en la esquina y columna más izquierda arriba de la pantalla de su PC.",
+      "De las opciones del menú vertical, busque y pulse sobre [IMAGEN_ICONO: Ventana Guardar Como].",
+      "Haga un click sobre el botón 'Examinar' o 'Este equipo' para abrir la ventana de directorios.",
+      "Al lado izquierdo de esa ventana, busque la palabra que dice 'Escritorio' y púlsela (así el archivo se guardará directo en el fondo de su pantalla real).",
+      "Abajo, en el recuadro blanco 'Nombre de archivo:', borre con retroceso y escriba: 'Clases_Word_Comunitario'.",
+      "Pulse el botón de confirmación 'Guardar'. ¡Su trabajo se encuentra archivado en la memoria segura!"
+    ],
+    "checklist_evaluacion": [
+      "Accedí al menú archivo y seleccioné la opción Guardar Como en mi PC.",
+      "Configuré la ruta destino eligiendo con éxito la carpeta Escritorio.",
+      "Redacté un nombre descriptivo y sin espacios molestos en el cajón de textos.",
+      "Oprimí el botón de confirmación final de Windows salvaguardando mi documento."
+    ]
+  },
+  {
+    "id_leccion": "word_b1_l6",
+    "titulo": "El Formato de Párrafo e Interlineado",
+    "concepto_clave": "Controlar la alineación del texto (Izquierda, Centrado, Justificado) y regular el interlineado (espacio vertical entre líneas de caracteres) para asegurar legibilidad.",
+    "teoria_v1": "Un bloque de letras muy comprimido fatiga inmediatamente la visión reducida. El formato de párrafo le permite decidir cómo se ordena el texto en pantalla usando los [IMAGEN_ICONO: Botones de alineación]: usamos 'Centrado' para estilizar títulos de convocatorias, 'Izquierda' para correspondencia normal de notas y 'Justificado' para enmarcar rectángulos perfectos idénticos a los de una escritura notarial. De igual forma, modificamos el espacio vertical con el [IMAGEN_ICONO: Botón Interlineado] para dejar hileras blancas de descompresión entre renglones, logrando un descanso asombroso para la vista.",
+    "teoria_v2_alternativa": "Es igual a organizar hileras de maceteros en las repisas comunitarias. Podemos tirarlos a la izquierda, ponerlos al centro ordenados usando los [IMAGEN_ICONO: Botones de alineación] o extenderlos bien parejos de lado a lado. Además, si nota que las letras se amontonan de tal forma que le cuesta leer en su pantalla real, pulse el botón de la imagen [IMAGEN_ICONO: Botón Interlineado] que aleja los renglones permitiendo un respiro para ojos cansados.",
+    "elementos_visuales": [
+      {
+        "icono": "Botones de alineación",
+        "etiqueta": "Botones de Alineación",
+        "descripcion": "Botones con barras horizontales iguales que mueven el texto a la izquierda, centro o lo cuadran (Justificar)."
+      },
+      {
+        "icono": "Botón Interlineado",
+        "etiqueta": "Botón de Interlineado",
+        "descripcion": "Símbolo con dos flechas opuestas verticales y barras para separar renglones."
+      }
+    ],
+    "ejercicio_practico": "Ajustar el cuerpo de una circular vecinal para que quede alineada de forma Justificada con un espaciado interlineal ancho de calibre 1.5.",
+    "pasos_computador": [
+      "Sombreé el párrafo de redacción en pantalla arrastrando de corrido su mouse real sobre las letras.",
+      "Busque en la sección Inicio arriba el grupo 'Párrafo' y posicione el mouse sobre los [IMAGEN_ICONO: Botones de alineación]. Pulse el botón 'Justificar' (el que tiene renglones cuadraditos simétricos).",
+      "Vea cómo los bordes cobran simetría perfecta a la izquierda y derecha semejando un libro impreso.",
+      "Al lado de esos botones, pulse el [IMAGEN_ICONO: Botón Interlineado] (icono con flechitas celestes arriba y abajo junto a unas barras).",
+      "Haga click en la opción de calibre '1.5' de la lista desplegada. ¡Observe cómo su texto se estira de alto dejando aire cómodo para leerlo facilmente!"
+    ],
+    "checklist_evaluacion": [
+      "Sombreé el párrafo central de mi carta en Word.",
+      "Apliqué la alineación Justificado encuadrando de forma formal ambos extremos del párrafo.",
+      "Ubiqué el disparador de Interlineado en la barra superior de herramientas.",
+      "Configuré el interlineado a calibre 1.5 y verifiqué la óptima separación visual de las oraciones."
+    ]
+  }
+]

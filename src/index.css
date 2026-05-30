@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Lexend", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Accessibility Core Styles (AAA Level) */
+body {
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Skip-to-content focus styling */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: #facc15;
+  color: #000000;
+  padding: 1rem 1.5rem;
+  z-index: 9999;
+  font-weight: 900;
+  border: 4px solid #000000;
+}
+
+.skip-link:focus {
+  top: 10px;
+  left: 10px;
+}
+
+/* High Contrast Keyboard Focus Rings */
+*:focus-visible {
+  outline: 6px solid #eab308 !important; /* Thick gold outline */
+  outline-offset: 4px !important;
+  box-shadow: 0 0 0 8px #000000 !important;
+}
+
+/* High Contrast mode classes for readers */
+.contrast-high-dark {
+  background-color: #050505 !important;
+  color: #ffffff !important;
+}
+
+.contrast-high-dark * {
+  border-color: #ffffff !important;
+}
+
+/* Pulse animation for screen reader helper */
+@keyframes ring-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0px rgba(254, 240, 138, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(254, 240, 138, 0);
+  }
+}
+
+.pulse-accessibility {
+  animation: ring-pulse 2s infinite;
+}

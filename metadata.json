@@ -1,0 +1,6 @@
+{
+  "name": "Ofimática Accesible",
+  "description": "Aplicación de aprendizaje de ofimática diseñada especialmente para usuarios con visión reducida, optimizada para accesibilidad WCAG AAA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
