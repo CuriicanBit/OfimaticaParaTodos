@@ -191,6 +191,11 @@ export default function LessonContainer({
 
     setCompletadoPC(progresoPrevio?.completado || false);
     detenerNarracion();
+
+    // Desplazar mágicamente al inicio de la página al cambiar de lección para comodidad de la alumna
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
+    }
   }, [leccion.id, progresoPrevio?.completado, leccion.checklist_validacion?.length]);
 
   const toggleChecklistItem = (idx: number) => {
