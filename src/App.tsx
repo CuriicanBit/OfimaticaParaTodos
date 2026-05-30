@@ -43,6 +43,33 @@ export default function App() {
   // --- LOCAL DATABASE SIMULATION (Supabase client equivalent in localStorage) ---
   const [progreso, setProgreso] = useState<Record<string, Progreso>>({});
 
+  // --- VOICE SELECTION STATES ---
+  const [selectedVoiceURI, setSelectedVoiceURI] = useState<string>('');
+  const [availableVoices, setAvailableVoices] = useState<SpeechSynthesisVoice[]>([]);
+
+  // Cargar voces en español disponibles
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+
+    const actualizarVoces = () => {
+      const todasLasVoces = window.speechSynthesis.getVoices();
+      const vocesEspanyol = todasLasVoces.filter(v => v.lang.toLowerCase().startsWith('es'));
+      setAvailableVoices(vocesEspanyol);
+      
+      const savedVoiceURI = localStorage.getItem('voz_narratriz_preferida') || localStorage.getItem('ofimatica_voz_uri') || '';
+      if (savedVoiceURI && todasLasVoces.some(v => v.voiceURI === savedVoiceURI)) {
+        setSelectedVoiceURI(savedVoiceURI);
+      } else if (vocesEspanyol.length > 0) {
+        setSelectedVoiceURI(vocesEspanyol[0].voiceURI);
+      }
+    };
+
+    actualizarVoces();
+    if (window.speechSynthesis.onvoiceschanged !== undefined) {
+      window.speechSynthesis.onvoiceschanged = actualizarVoces;
+    }
+  }, []);
+
   // Cargar progreso del usuario guardado en el navegador al iniciar
   useEffect(() => {
     const savedNombre = localStorage.getItem('ofimatica_nombre') || '';
@@ -107,8 +134,15 @@ export default function App() {
     if (typeof window !== 'undefined' && window.speechSynthesis) {
       window.speechSynthesis.cancel(); // Detener lecturas previas
       const utterance = new SpeechSynthesisUtterance(texto);
-      utterance.lang = 'es-ES';
-      utterance.rate = 0.9; // Más pausado y comprensivo
+      
+      const voices = window.speechSynthesis.getVoices();
+      const voice = voices.find(v => v.voiceURI === selectedVoiceURI);
+      if (voice) {
+        utterance.voice = voice;
+      } else {
+        utterance.lang = 'es-ES';
+      }
+      utterance.rate = 0.92; // Más pausado y comprensivo
       window.speechSynthesis.speak(utterance);
     }
   };
@@ -151,9 +185,16 @@ export default function App() {
     }
   };
 
-  // Filtra lecciones según el módulo seleccionado
-  const leccionesFiltradas = LECCIONES.filter(l => l.modulo_id === selectedModuloId)
-    .sort((a, b) => a.orden - b.orden);
+  // Filtra lecciones según el módulo seleccionado y el nivel actual de dificultad activa
+  const targetNivel = nivel === 'Básico' 
+    ? 'Nivel 1: Funcional' 
+    : nivel === 'Intermedio' 
+      ? 'Nivel 2: Administrativo' 
+      : 'Nivel 3: Resolución de Problemas';
+
+  const leccionesFiltradas = LECCIONES.filter(l => 
+    l.modulo_id === selectedModuloId && l.nivel === targetNivel
+  ).sort((a, b) => a.orden - b.orden);
 
   const irAModulo = (moduloId: string) => {
     const modulo = MODULOS.find(m => m.id === moduloId);
@@ -161,12 +202,31 @@ export default function App() {
     setCurrentLessonIndex(0);
     setView('leccion');
     reproducirVozGuia(`Ha seleccionado el módulo de ${modulo?.titulo || moduloId}. A continuación, se muestra la primera lección.`);
+    
+    // Desplazar suavemente al inicio de la lección activa
+    setTimeout(() => {
+      const element = document.getElementById('inicio-leccion-foco');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        element.focus();
+      }
+    }, 150);
   };
 
   const avanzarSiguienteLeccion = () => {
     if (currentLessonIndex < leccionesFiltradas.length - 1) {
-      setCurrentLessonIndex(currentLessonIndex + 1);
-      reproducirVozGuia(`Avanzando a la lección número ${currentLessonIndex + 2}.`);
+      const proxIndex = currentLessonIndex + 1;
+      setCurrentLessonIndex(proxIndex);
+      reproducirVozGuia(`Avanzando a la lección número ${proxIndex + 1}.`);
+      
+      // Desplazar suavemente al inicio de la lección activa
+      setTimeout(() => {
+        const element = document.getElementById('inicio-leccion-foco');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          element.focus();
+        }
+      }, 100);
     } else {
       // ¡Completó todo el módulo!
       setView('felicitaciones');
@@ -176,23 +236,43 @@ export default function App() {
 
   const retrocederLeccion = () => {
     if (currentLessonIndex > 0) {
-      setCurrentLessonIndex(currentLessonIndex - 1);
-      reproducirVozGuia(`Retrocediendo a la lección número ${currentLessonIndex}.`);
+      const prevIndex = currentLessonIndex - 1;
+      setCurrentLessonIndex(prevIndex);
+      reproducirVozGuia(`Retrocediendo a la lección número ${prevIndex + 1}.`);
+      
+      // Desplazar suavemente al inicio de la lección activa
+      setTimeout(() => {
+        const element = document.getElementById('inicio-leccion-foco');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          element.focus();
+        }
+      }, 100);
     } else {
       setView('dashboard');
       reproducirVozGuia(`Regresando al catálogo de módulos educativos de oficina.`);
     }
   };
 
-  // Cuenta número de lecciones completadas por módulo para el progreso
+  // Cuenta número de lecciones completadas por módulo para el progreso en base al nivel activo
   const getCompletadasPorModulo = (moduloId: string) => {
-    const moduloLecciones = LECCIONES.filter(l => l.modulo_id === moduloId);
+    const targetN = nivel === 'Básico' 
+      ? 'Nivel 1: Funcional' 
+      : nivel === 'Intermedio' 
+        ? 'Nivel 2: Administrativo' 
+        : 'Nivel 3: Resolución de Problemas';
+    const moduloLecciones = LECCIONES.filter(l => l.modulo_id === moduloId && l.nivel === targetN);
     const completadas = moduloLecciones.filter(l => progreso[l.id]?.completado);
     return completadas.length;
   };
 
   const getModuloProgresoPorcentaje = (moduloId: string) => {
-    const total = LECCIONES.filter(l => l.modulo_id === moduloId).length;
+    const targetN = nivel === 'Básico' 
+      ? 'Nivel 1: Funcional' 
+      : nivel === 'Intermedio' 
+        ? 'Nivel 2: Administrativo' 
+        : 'Nivel 3: Resolución de Problemas';
+    const total = LECCIONES.filter(l => l.modulo_id === moduloId && l.nivel === targetN).length;
     if (total === 0) return 0;
     return Math.round((getCompletadasPorModulo(moduloId) / total) * 100);
   };
@@ -293,6 +373,40 @@ export default function App() {
             {audioFeedback ? <Volume2 className="w-6 h-6 text-black" /> : <VolumeX className="w-6 h-6 text-black" />}
             <span className="text-base text-black">{audioFeedback ? "Guía con Voz" : "Modo Silencio"}</span>
           </button>
+
+          {/* SELECCIÓN TIPO DE VOZ COMPAÑERA GLOBAL */}
+          {audioFeedback && availableVoices.length > 0 && (
+            <div className="flex items-center border-[4px] border-black rounded-lg overflow-hidden bg-white text-black min-h-[48px]">
+              <span className="px-3 py-1 font-sans text-xs font-black uppercase border-r-2 border-black bg-gray-100 flex items-center gap-1 text-black">
+                🗣️ Voz:
+              </span>
+              <select
+                id="select-voice-global-header"
+                value={selectedVoiceURI}
+                onChange={(e) => {
+                  const uri = e.target.value;
+                  setSelectedVoiceURI(uri);
+                  localStorage.setItem('ofimatica_voz_uri', uri);
+                  localStorage.setItem('voz_narratriz_preferida', uri);
+                  
+                  // Confirmación oral del cambio de voz
+                  setTimeout(() => {
+                    reproducirVozGuia("Nueva voz configurada con éxito.");
+                  }, 100);
+                }}
+                className="px-3.5 py-1 text-sm font-extrabold bg-white text-black outline-none cursor-pointer min-h-[40px] max-w-[190px] border-none"
+                aria-label="Elegir voz preferida para la narración"
+                title="Elegir voz preferida para la narración"
+              >
+                <option value="">⚙️ Predeterminada</option>
+                {availableVoices.map((v) => (
+                  <option key={v.voiceURI} value={v.voiceURI}>
+                    {v.name.replace("Microsoft", "").replace("Google", "").trim()}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
         </div>
       </header>
 
@@ -406,6 +520,41 @@ export default function App() {
                   ))}
                 </div>
               </div>
+
+              {/* Selector de Tipo de Voz que nos acompañará */}
+              {availableVoices.length > 0 && (
+                <div>
+                  <label 
+                    htmlFor="select-voz-perfil" 
+                    className={`block font-extrabold text-black mb-3 ${getSubFontSizeClass()}`}
+                  >
+                    🗣️ Elige el tipo de voz de tu asistente acompañante:
+                  </label>
+                  <select
+                    id="select-voz-perfil"
+                    value={selectedVoiceURI}
+                    onChange={(e) => {
+                      const uri = e.target.value;
+                      setSelectedVoiceURI(uri);
+                      localStorage.setItem('voz_narratriz_preferida', uri);
+                      localStorage.setItem('ofimatica_voz_uri', uri);
+                      
+                      // Confirmación oral del cambio de voz
+                      setTimeout(() => {
+                        reproducirVozGuia("Hola, he seleccionado esta voz para acompañarte en tu aprendizaje.");
+                      }, 100);
+                    }}
+                    className="w-full border-4 border-black rounded-xl p-4 font-sans text-xl text-black bg-white focus:ring-4 focus:ring-blue-300 outline-none font-extrabold cursor-pointer"
+                  >
+                    <option value="">⚙️ Voz predeterminada en Español</option>
+                    {availableVoices.map((v) => (
+                      <option key={v.voiceURI} value={v.voiceURI}>
+                        {v.name} ({v.lang})
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
 
               {/* Botón de Guardado */}
               <div className="pt-6">
@@ -577,6 +726,15 @@ export default function App() {
                       onClick={() => {
                         setCurrentLessonIndex(idx);
                         reproducirVozGuia(`Cargando Lección número ${idx + 1}: ${lec.titulo}. ${lec.concepto_clave || ''}`);
+                        
+                        // Desplazar suavemente al inicio del visualizador de la lección activa
+                        setTimeout(() => {
+                          const element = document.getElementById('inicio-leccion-foco');
+                          if (element) {
+                            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            element.focus();
+                          }
+                        }, 100);
                       }}
                       className={`p-4 rounded-2xl border-4 text-left transition-all duration-150 active:scale-[0.98] cursor-pointer min-h-[56px] flex flex-col justify-between ${
                         esLaActual
@@ -627,6 +785,9 @@ export default function App() {
                 })}
               </div>
             </div>
+
+            {/* Anclaje para desplazamiento suave al inicio del visualizador de la lección activa */}
+            <div id="inicio-leccion-foco" tabIndex={-1} className="scroll-mt-6 focus:outline-none" />
 
             {/* Impresión del Componente Reclamado */}
             <LessonContainer

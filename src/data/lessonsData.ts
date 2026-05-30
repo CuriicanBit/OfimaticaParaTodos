@@ -29,7 +29,7 @@ export const MODULOS: Modulo[] = [
 
 export const LECCIONES: Leccion[] = [
   // ==========================================
-  // WORD - NIVEL 1: FUNCIONAL
+  // WORD - NIVEL 1: FUNCIONAL (BÁSICO)
   // ==========================================
   {
     id: 'word_b1_l1',
@@ -37,46 +37,34 @@ export const LECCIONES: Leccion[] = [
     orden: 1,
     nivel: 'Nivel 1: Funcional',
     programa: 'Word',
-    titulo: 'El Entorno de Trabajo (Perder el miedo a la pantalla)',
-    descripcion_teorica: 'Imagine que entra por primera vez a un gran salón comunitario de la Junta de Vecinos. A primera vista, puede llamar la atención el gran tablero colgado al fondo con múltiples herramientas y avisos ordenados por temas; eso en la computadora se llama Cinta de Opciones. En el centro de la mesa hay una hoja en blanco lista para ser llenada con sus palabras de oficina, y abajo a la derecha de la mesa hay una lupa que le permite agrandar el tamaño de visual del papel sin alterar el tamaño de la letra real al imprimir: la barra de Zoom. En Word, perder el miedo consiste en entender que esta ventana digital simula exactamente su mesa de trabajo física, organizada y segura.',
-    explicacion_alternativa: 'Piense en Word como su mesa de comedor antes de empezar una manualidad. El cabezal alto lleno de botones organizados en cajones se llama Cinta de Opciones (como un cajón de hilos ordenados). El espacio central es su mesa limpia para el papel de oficio, y la regla de deslizar abajo a la derecha es la barra de la lupa Zoom para acercar o alejar el papel según lo cansada que sienta su vista. ¡Nada se va a romper por mirar o tocar!',
+    titulo: 'El Entorno de Trabajo (Perder el miedo a la hoja)',
+    descripcion_teorica: 'Al iniciar Word, observará una barra horizontal arriba llena de botones organizada en pestañas llamada Cinta de Opciones, y en el centro una hoja virtual en blanco. El regulador de Zoom en la esquina inferior derecha permite agrandar visualmente el papel sin alterar su tamaño real al imprimir.',
+    explicacion_alternativa: 'Word simula su mesa de comedor con una hoja de papel de oficio limpia al centro. El tablero de opciones superior guarda hilos y lápices en cajones rotulados. La lupa de la esquina inferior derecha le permite acercar o alejar el papel para descansar la vista.',
     pasos_a_seguir: [
-      'Deje su teléfono sobre la mesa para ir leyendo esta guía y sitúese ante su computadora real.',
-      'Encienda la computadora y abra el programa Microsoft Word real pulsando su ícono azul con una letra W blanca.',
-      'Fije su mirada en la parte superior de la pantalla de su PC: allí observará la Cinta de Opciones llena de palabras como Inicio, Insertar y Disposición.',
-      'Mire el centro de la pantalla de su PC: es la hoja de papel virtual en blanco, con una barrita negra parpadeando llamada cursor de escritura.',
-      'Dirija sus ojos a la esquina inferior derecha de la pantalla: allí se encuentra el regulador de Zoom. Haga click sobre el signo "+" para agrandar visualmente la hoja virtual cómodamente.'
+      'Abra Microsoft Word en su computadora real pulsando su ícono azul con una letra W blanca.',
+      'Identifique el papel virtual en blanco con la barra vertical parpadeando llamada cursor de escritura.',
+      'Localice la Cinta de Opciones en el borde superior llena de palabras (Inicio, Insertar, etc.).',
+      'Vaya a la esquina inferior derecha y presione el signo de suma (+) del Zoom para agrandar visualmente la hoja.'
     ],
     pasos_alternativos: [
-      'Tenga su teléfono a la mano con esta guía y diríjase a su pantalla física de la computadora.',
-      'Abra un documento en blanco en su programa Word real.',
-      'Busque en la hilera alta de botones la palabra "Disposición" o "Inicio" para convencerse de que no hay peligro. Púlsela.',
-      'Presione y revise que el botón de Zoom abajo a la derecha esté ajustado para que vea la hoja gigante y cómoda.'
+      'Si utiliza Word en el celular, explore el menú de edición rápida en la barra inferior.',
+      'Ajuste el Zoom pellizcando la pantalla táctil con los dedos para enfocar el renglón.'
     ],
-    tips_de_accesibilidad: 'Si le cuesta distinguir visualmente las pestañas superiores en la pantalla de su PC, presione una sola vez la tecla Alt en su teclado real. Aparecerán de inmediato letras de acceso directo grandes en color negro para que se guíe con facilidad sin forzar los ojos.',
+    tips_de_accesibilidad: 'Si le cuesta distinguir las pestañas superiores, presione la tecla Alt en su teclado real. Aparecerán letras de acceso rápido que le indican qué tocar.',
     checklist_validacion: [
-      'He abierto Word en mi computadora real y encontré el papel virtual y limpio en blanco.',
-      'Logré distinguir la Cinta de Opciones en el borde superior de la pantalla.',
-      'Identifiqué la barra de Zoom en la esquina inferior derecha de la pantalla de mi PC.',
-      'Presioné el botón de suma (+) de la lupa de Zoom para agrandar la hoja virtual cómodamente.'
+      'Abrí Word y visualicé mi papel digital.',
+      'Ubicé la Cinta de Opciones arriba.',
+      'Encontré el regulador de Zoom en la barra inferior.',
+      'Agrité el papel al 120% usando el signo "+".'
     ],
     sugerencias_descubrimiento: [
-      "¡Pruebe a cambiar el Zoom a lo más chiquito!: Presione el botón '-' del Zoom varias veces. Verá que la hoja se vuelve enana como una estampilla de correos. Esto sirve para ver toda la página a lo lejos, pero ¡regrese al signo '+' para tener plena visual ultra-cómoda!",
-      "Haga doble click sobre la pestaña 'Inicio': Verá que toda la barra de botones alta desaparece para darle más espacio a la hoja en blanco. No se asuste. Vuelva a hacer doble click sobre 'Inicio' y reaparecerá fija en su lugar. En oficina esto se llama colapsar la Cinta de Opciones."
+      "Haga doble click sobre 'Inicio' para replegar los botones y ganar más espacio visual; vuelva a dar doble click para fijarlos en pantalla."
     ],
-    concepto_clave: 'Identificar las partes de la ventana (Cinta de opciones, la hoja en blanco y la barra de zoom) para comprender dónde está parado en el programa.',
-    ejercicio_practico: 'Abrir Word en su PC real, ubicar visualmente las 3 zonas clave descritas y utilizar la lupa de aumento para sentirse cómoda antes de teclear.',
+    concepto_clave: 'Entender el espacio de trabajo básico antes de comenzar a pulsar botones.',
+    ejercicio_practico: 'Entrar a Word en el computador físico, ubicar el zoom e inflar la página al 130%.',
     elementos_visuales: [
-      {
-        icono: 'Cinta de opciones',
-        etiqueta: 'Cinta de Opciones',
-        descripcion: 'Franja horizontal con pestañas y botones arriba de la hoja.'
-      },
-      {
-        icono: 'Zoom',
-        etiqueta: 'Control de Zoom',
-        descripcion: 'Barra reguladora con signos "-" y "+" en la esquina inferior derecha.'
-      }
+      { icono: 'cinta', etiqueta: 'Cinta de Opciones', descripcion: 'Soporte de botones superior.' },
+      { icono: 'zoom', etiqueta: 'Lupa Zoom', descripcion: 'Esquina de ampliación visual.' }
     ]
   },
   {
@@ -85,48 +73,33 @@ export const LECCIONES: Leccion[] = [
     orden: 2,
     nivel: 'Nivel 1: Funcional',
     programa: 'Word',
-    titulo: 'Escribir y Corregir en la Página',
-    descripcion_teorica: 'En una máquina de escribir clásica de oficina, cada renglón requería que empujáramos manualmente la palanca lateral para retornar el papel. En Word de la computadora, las palabras caen solas en cascada y fluyen automáticamente hacia la siguiente línea al llegar al borde físico de su papel virtual. Solo debemos usar la tecla Enter cuando decidimos conscientemente terminar un párrafo completo para abrir uno nuevo o para separar secciones del documento. Además, si digitamos una palabra con mala ortografía, la computadora colocará un subrayado ondulado rojo de alerta; bastará con hacer un Clic derecho sobre error para que se despliegue un recuadro inteligente que ofrece la palabra correcta lista para ser insertada.',
-    explicacion_alternativa: 'Escribir en la computadora es más dócil que en papel físico. No se preocupe de estar presionando el pasador al final de cada línea; el texto se acomoda solo como el agua en un jarro. Solo pulse el botón Enter para dejar un espacio limpio entre diferentes asuntos o párrafos. Y si ve una línea roja ondulada abajo de un nombre, no se asuste: es Word avisándole que revise las letras haciendo un Clic derecho sobre error para corregir la falta en un segundo.',
+    titulo: 'Escribir y Autocorregir Ortografía',
+    descripcion_teorica: 'Word acomoda el texto automáticamente en cascada al llegar al margen derecho. La tecla Enter solo debe pulsarse para cerrar párrafos. Cuando se tipea algo con faltas ortográficas, el programa lo subraya con una ondulación roja. Un clic secundario (derecho) sobre la palabra abrirá sugerencias de reemplazo.',
+    explicacion_alternativa: 'Olvídese del pasador de carro de las viejas máquinas de escribir: el texto fluye solo. Si comete un traspié en las letras, Word colocará un cordón rojo abajo; es como un corrector que le avisa con amor para que haga clic derecho en la palabra y elija la opción bien escrita.',
     pasos_a_seguir: [
-      'Deje su celular para consulta y coloque sus manos sobre su teclado de la PC.',
-      'Escriba despacio la frase: "La asamblea comunal aprobo la pintura" escribiendo aprobo sin tilde para provocar la alerta.',
-      'Observe que Word marca la palabra con una línea ondulada roja por falta de ortografía de inmediato.',
-      'Coloque la punta del mouse justo sobre la palabra marcada y presione el botón derecho en un Clic derecho sobre error.',
-      'En el menú del recuadro que se despliega en pantalla, haga un click de confirmación izquierdo sobre la sugerencia corregida: "aprobó".',
-      'Presione la tecla Enter una o dos veces al final para descender renglones de forma limpia e ingresar los firmantes.'
+      'Sitúese en su documento real y teclee despacio: "La asamblea aprobo la cuenta" omitiendo la tilde.',
+      'Vea el subrayado ondulado rojo debajo de "aprobo".',
+      'Mueva el puntero del mouse justo sobre la palabra roja y presione el botón derecho.',
+      'Haga un click izquierdo sobre la palabra correcta "aprobó" en la ventana emergente.',
+      'Pulse la tecla Enter al final para saltar de renglón limpiamente.'
     ],
     pasos_alternativos: [
-      'Deje este teléfono a la vista y trabaje en Word.',
-      'Redacte un saludo como "Estimada Alcaldesa" y presione la tecla Enter física.',
-      'Escriba la palabra "telephono" mal escrita adrede.',
-      'Haga un Clic derecho sobre error en Word y corríjala a "teléfono" pulsando la sugerencia.'
+      'Utilice las flechas del teclado para ubicar el cursor en la palabra incorrecta.',
+      'Presione la tecla de menú alternativo en su teclado real para invocar la corrección ortográfica de Word.'
     ],
-    tips_de_accesibilidad: 'Para borrar letras completas de forma veloz si cometió un error tipográfico, localice la tecla Retroceso (ubicada arriba del Enter, con una flecha que apunta a la izquierda o la palabra Bksp). No necesita usar el mouse para borrar.',
+    tips_de_accesibilidad: 'La tecla retroceso (arriba del Enter, con flecha a la izquierda) sirve para deshacer letras erróneas rápidamente sin tocar el mouse.',
     checklist_validacion: [
-      'Logré escribir la frase completa en el teclado físico de mi PC.',
-      'Word detectó el error ortográfico y lo subrayó con ondulaciones rojas en pantalla.',
-      'Presioné de manera exitosa el botón secundario del mouse sobre la palabra con error.',
-      'Cambié con éxito el texto mal escrito por la sugerencia corregida en Word.',
-      'Oprimí Enter para saltar de forma limpia a un nuevo renglón.'
+      'Redacté la frase de prueba en el papel.',
+      'Ubiqué la señalización ondulada roja.',
+      'Oprimí el botón derecho sobre la palabra.',
+      'Actualicé el término usando la sugerencia corregida.',
+      'Usé la tecla Enter para descender un renglón.'
     ],
-    sugerencias_descubrimiento: [
-      "¡Conozca la diferencia con la Barra Espaciadora!: Escriba algo y hunda la barra inferior ancha repetidamente. Verá cómo se crean espacios horizontales. Recuerde: ¡Nunca use la barra para bajar de renglón! Solo hunda el botón Enter.",
-      "Pruebe con la tecla de Mayús o Shift: Manténgala hundida mientras presiona una vocal. ¿Observa cómo se pinta en mayúscula temporal? Es maravillosa para nombres propios."
-    ],
-    concepto_clave: 'El uso correcto de la tecla Enter para separar párrafos (no para avanzar renglones) y cómo reaccionar a las advertencias de ortografía de Word.',
-    ejercicio_practico: 'Redactar una justificación formal dirigida a la municipalidad cometiendo un error intencional para aprender a corregirlo con el mouse.',
+    concepto_clave: 'Aprovechar la revisión ortográfica básica y usar adecuadamente la tecla Enter para separar párrafos.',
+    ejercicio_practico: 'Escribir la frase mal tipeada de forma deliberada y sanarla mediante el menú secundario del mouse.',
     elementos_visuales: [
-      {
-        icono: 'Tecla Enter',
-        etiqueta: 'Tecla Enter',
-        descripcion: 'La tecla más gruesa en el costado derecho de su teclado, con una flecha que dobla a la izquierda.'
-      },
-      {
-        icono: 'Clic derecho sobre error',
-        etiqueta: 'Clic Derecho en Error',
-        descripcion: 'Presionar el botón secundario del mouse sobre una palabra con subrayado rojo.'
-      }
+      { icono: 'teclado', etiqueta: 'Tecla Enter y Retroceso', descripcion: 'Foco de separación y borrado.' },
+      { icono: 'mouse', etiqueta: 'Clic Derecho', descripcion: 'Acción para invocar soluciones rápidas.' }
     ]
   },
   {
@@ -135,408 +108,256 @@ export const LECCIONES: Leccion[] = [
     orden: 3,
     nivel: 'Nivel 1: Funcional',
     programa: 'Word',
-    titulo: 'Dar Formato Esencial (Resaltar acuerdos clave)',
-    descripcion_teorica: 'Un documento que tiene el mismo tamaño y grosor de letra en todas sus líneas cansa la vista de los vecinos y dificulta encontrar los datos críticos. En secretariado, se usa Negrita para ensanchar los títulos claves con tinta electrónica gruesa, Cursiva para inclinar las letras en aclaraciones, y Subrayado para remarcar acuerdos formales abajo. Podemos además ajustar la escala de las letras usando el Selector tamaño de letra arriba en la pantalla para que los encabezados destaquen de manera jerárquica.',
-    explicacion_alternativa: 'Es como poner un cartel formal en la plaza comunal. Los títulos de los acuerdos van en letras enormes usando el Selector tamaño de letra y con tinta bien negra presionando la Negrita. Si quiere que una frase destaque, use el Subrayado para ponerle una línea clara abajo de modo que cualquier vecino lo entienda.',
+    titulo: 'Destacar Acuerdos: Formato Esencial',
+    descripcion_teorica: 'Para evitar documentos monótonos, alteramos la apariencia del texto. Negrita (N) engrosa el trazo para los títulos, Cursiva (K o I) inclina las letras en pasajes secundarios, y Subrayado (S) añade una línea inferior a los compromisos institucionales. El Selector de Fuente regula el tamaño numérico de las letras.',
+    explicacion_alternativa: 'Es como remarcar un cartel comunitario de madera. Los títulos principales se visten de tinta negra gruesa (Negrita) y se agrandan numéricamente con el Selector de Letra para que el transeúnte los visualice desde lejos.',
     pasos_a_seguir: [
-      'Abra Word y escriba la frase: "ACTA DE ACUERDOS DE LA JUNTA DE VECINOS".',
-      'Sombreé todo el texto manteniendo presionado el botón izquierdo del mouse y pasándolo encima de las palabras.',
-      'Localice en la parte de arriba el casillero numérico de Selector tamaño de letra y seleccione el número 16.',
-      'Vea cómo el título se agranda. Enseguida, haga click sobre el botón que tiene la Negrita y luego la del Subrayado.',
-      'Haga click en una parte en blanco del documento para apreciar cómo se destaca su acuerdo vecinal de forma sumamente nítida.'
+      'Teclee en su Word: "ACUERDO COMUNAL 2026: PINTURA DE SEDE".',
+      'Sombreé el texto completo manteniendo el click izquierdo apretado y deslizando el cursor encima.',
+      'Vaya a la pestaña "Inicio", localice la casilla de número de tamaño de letra y escoja "16".',
+      'Haga click en los botones "N" (Negrita) y "S" (Subrayado) del cabezal superior.',
+      'Quite el sombreado cliqueando en una zona vacía para contemplar los acuerdos perfectamente legibles.'
     ],
     pasos_alternativos: [
-      'Escriba "CARTA COMUNITARIA" y sombréelo manteniendo Shift y usando las flechas.',
-      'Mantenga presionado el botón Control en el teclado de su PC e hunda la letra N para aplicar Negrita.',
-      'Mantenga Control y hunda la S para aplicar Subrayado sin usar el mouse.'
+      'Para sombrear sin mouse, pulse Shift y desplácese con las flechas direccionales del teclado real.',
+      'Aplique formato veloz usando atajos: Control + N activa la Negrita y Control + S activa el Subrayado.'
     ],
-    tips_de_accesibilidad: 'Usar los atajos del teclado real Control + N y Control + S le evita buscar los diminutos íconos con el mouse, lo cual mejora el rendimiento y descansa los músculos del cuello.',
+    tips_de_accesibilidad: 'La alineación se ajusta en el bloque Párrafo. El botón "Centrar" (o Control + T) es maravilloso para equilibrar portadas de reglamentos vecinales.',
     checklist_validacion: [
-      'Logré sombrear por completo el texto del título usando el mouse de mi PC.',
-      'Establecí la altura del texto en número 16 usando el selector de tamaño.',
-      'Apliqué Negrita con éxito para que las letras se vean oscuras e intensas.',
-      'Activé el Subrayado para delinear la parte inferior de mi título.'
+      'Sombreado correcto del título en la hoja virtual.',
+      'Modificación del calibre numérico a tamaño 16.',
+      'Activación del trazo en Negrita.',
+      'Incorporación de la línea de Subrayado inferior.',
+      'Acentuación correcta de la legibilidad de la cabecera.'
     ],
-    sugerencias_descubrimiento: [
-      "¡Pruebe usar la Cursiva!: Busque arriba el botón que lleva una 'K' algo inclinada. Al presionarlo con un título sombreado, este se ladea con gracia. Se usa para comentarios menores.",
-      "Explore la paleta de colores: Al lado de la Negrita y Cursiva, busque la letra 'A' con una línea roja abajo. Presione la pequeña flecha a su lado para teñir sus letras de un color Azul o Verde Oficial."
-    ],
-    concepto_clave: 'Ajustar las letras de los títulos clave de un documento oficial usando los botones Negrita, Cursiva, Subrayado y el Tamaño de Letra.',
-    ejercicio_practico: 'Escribir un encabezado oficial vecinal, elevar su tamaño a 16 y aplicarle resaltado de Negrita y Subrayado en su computadora.',
+    concepto_clave: 'La jerarquía visual aplicada a través de estilos de fuente para comunicar con orden institucional.',
+    ejercicio_practico: 'En su Word real, digite el título del acta y aplíquele Negrita, tamaño 16 y alineación centrada.',
     elementos_visuales: [
-      {
-        icono: 'Botón Negrita N',
-        etiqueta: 'Botón Negrita (N)',
-        descripcion: 'Estilo de letra gruesa y oscura para resaltar títulos.'
-      },
-      {
-        icono: 'Botón Cursiva K',
-        etiqueta: 'Botón Cursiva (K)',
-        descripcion: 'Incline las letras sutilmente para anotaciones extra.'
-      },
-      {
-        icono: 'Botón Subrayado S',
-        etiqueta: 'Botón Subrayado (S)',
-        descripcion: 'Dibuja una línea horizontal debajo del texto.'
-      },
-      {
-        icono: 'Selector tamaño de letra',
-        etiqueta: 'Tamaño de Letra',
-        descripcion: 'Recuadro con números para agrandar o achicar las letras del papel.'
-      }
-    ]
-  },
-  {
-    id: 'word_b1_l4',
-    modulo_id: 'word',
-    orden: 4,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Word',
-    titulo: 'Organizar con Viñetas y Listas',
-    descripcion_teorica: 'Las listas extensas escritas todo de corrido son difíciles de leer para los ojos cansados o de baja visión. Word cuenta con los botones de Viñetas o Numeración para que la computadora ordene automáticamente cada renglón de forma vertical, agregando pequeños círculos o números consecutivos de soporte a la izquierda. Al usar estas herramientas, Word se encarga de dar sangría al texto, logrando un balance de lectura excelente conforme al manual de oficina.',
-    explicacion_alternativa: 'Es igual a organizar el reparto de tareas en una cartulina. Si escribe un vecino detrás de otro, el papel se ve enredado. Al presionar el botón Viñetas colocará un puntito de apoyo a la izquierda de cada renglón. Y si usa Numeración, colocará de forma automática el 1, 2 y 3 sin que usted deba teclearlos uno por uno.',
-    pasos_a_seguir: [
-      'Escriba las siguientes tres ideas una debajo de otra usando Enter en su Word real: "Revisión de cuentas", "Aprobación de la rifa" y "Puntos varios".',
-      'Deslice su mouse sosteniendo el click izquierdo para sombrear las tres líneas de corrido.',
-      'Dirija su vista a la Cinta de Opciones arriba en Inicio y pulse sobre el ícono de Numeración que muestra los números 1, 2, 3.',
-      'Observe cómo la computadora los separa, aplicando un margen amplio y ordenado de forma rápida.',
-      'Sitúe el cursor al final de "rifa", de un Enter y mire cómo aparece automáticamente el número correlativo siguiente.'
-    ],
-    pasos_alternativos: [
-      'Agregue dos renglones con nombres de su comunidad de vecinos.',
-      'Sombréelos y pulse el botón de Viñetas que está arriba con tres puntitos verticales.',
-      'Compruebe cómo se dibuja el círculo de manera automática separando los registros.'
-    ],
-    tips_de_accesibilidad: 'Si tiene dificultades para apuntar a los botones pequeños de numeración, puede escribir simplemente el número "1." seguido de un espacio antes de su texto. Word entenderá la acción e iniciará la lista automática por su cuenta.',
-    checklist_validacion: [
-      'Ingresé los tres puntos del orden del día en renglones separados.',
-      'Sombreé la lista completa de forma fluida.',
-      'Oprimí el botón de Numeración y visualicé los números correlativos aplicados.',
-      'Oprimí Enter al final de la lista comprobando que Word genera el siguiente número de forma automática.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe a cambiar de punto a estrella: Al oprimir la flecha pegada a Viñetas se abrirá una vitrina de símbolos. Puede elegir cuadrados, estrellas o flechas para personalizar el listado a su conveniencia.",
-      "Cancele la lista automática: Si presiona Enter dos veces seguidas de forma firme en un renglón vacío, comprobará cómo el siguiente número desaparece devolviéndole el cursor normal de oficina."
-    ],
-    concepto_clave: 'Crear listas estructuradas con viñetas de puntos (para inventarios o asistencia) y listas numeradas para detallar acuerdos cronológicos o reglamentos.',
-    ejercicio_practico: 'Elaborar la agenda de la próxima reunión semanal usando listas numeradas automáticas para estructurar el orden del día.',
-    elementos_visuales: [
-      {
-        icono: 'Botón Viñetas',
-        etiqueta: 'Botón de Viñetas',
-        descripcion: 'Ordenador de listas con pequeños puntos negros laterales a cada elemento.'
-      },
-      {
-        icono: 'Botón Numeración',
-        etiqueta: 'Botón de Numeración',
-        descripcion: 'Genera una secuencia numeral automática vertical.'
-      }
-    ]
-  },
-  {
-    id: 'word_b1_l5',
-    modulo_id: 'word',
-    orden: 5,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Word',
-    titulo: 'Guardar y No Perder el Trabajo',
-    descripcion_teorica: 'Mientras teclea en Word, todo lo redactado permanece en una memoria virtual temporal. Si la computadora se apaga de golpe, todo ese avance se perderá. Para archivar el texto de manera segura, debemos recurrir inicialmente al menú Ventana Guardar Como, que nos permite elegir un destino con alto contraste y visibilidad (como el Escritorio) y asignarle un nombre descriptivo al archivo. Posteriormente, solo pulsamos el acceso rápido del Disco de guardar para registrar cada línea nueva con absoluta tranquilidad.',
-    explicacion_alternativa: 'Es igual a guardar sus actas en un cajón clasificado de oficina. La primera vez, use el botón Ventana Guardar Como, que es como crear un portafolio de cartón nuevo, rotularlo con un marcador claro y decidir que lo guardará en el cajón de "Escritorio" para tenerlo a mano. En adelante, conforme escriba más páginas, solo presione el botón de la imagen del Disco de guardar rápido arriba a la izquierda.',
-    pasos_a_seguir: [
-      'Haga click sobre la palabra azul "Archivo" situada en la esquina y columna más izquierda arriba de la pantalla de su PC.',
-      'De las opciones del menú vertical, busque y pulse sobre Ventana Guardar Como.',
-      'Haga un click sobre el botón "Examinar" o "Este equipo" para abrir la ventana de directorios.',
-      'Al lado izquierdo de esa ventana, busque la palabra que dice "Escritorio" y púlsela (así el archivo se guardará directo en el fondo de su pantalla real).',
-      'Abajo, en el recuadro blanco "Nombre de archivo:", borre con retroceso y escriba: "Clases_Word_Comunitario".',
-      'Pulse el botón de confirmación "Guardar". ¡Su trabajo se encuentra archivado en la memoria segura!'
-    ],
-    pasos_alternativos: [
-      'Sostenga fija la tecla de Control y presione el botón G de su teclado físico en Word.',
-      'Saldrá de inmediato la ventana de guardar si el documento es nuevo.',
-      'Seleccione "Escritorio" con el mouse, escriba un título para el acta y dé clic en Guardar.'
-    ],
-    tips_de_accesibilidad: 'La combinación de teclas Control + G es un salvavidas rápido en secretariado. Presiónela al final de cada párrafo escrito para resguardar su esfuerzo sin tener que mover el mouse hasta la Cinta de Opciones.',
-    checklist_validacion: [
-      'Accedí al menú archivo y seleccioné la opción Guardar Como en mi PC.',
-      'Configuré la ruta destino eligiendo con éxito la carpeta Escritorio.',
-      'Redacté un nombre descriptivo y sin espacios molestos en el cajón de textos.',
-      'Oprimí el botón de confirmación final de Windows salvaguardando mi documento.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe a cambiar el tipo de guardado a PDF: Al guardar un acuerdo, debajo del nombre de archivo, hay un menú que reza 'Tipo: Documento de Word'. Selecciónelo, use la flecha abajo para elegir 'PDF'. Al oprimir guardar, se generará una copa oficial fija apta para enviarse por whastapp sin que nadie la modifique.",
-      "Busque su archivo: Cierre Word por completo de la pantalla, busque el ícono con el título 'Clases_Word_Comunitario' directo en el fondo de pantalla de su PC e ingrese haciéndole doble click para reabrirlo."
-    ],
-    concepto_clave: 'Comprender de forma definitiva la diferencia entre "Guardar" y "Guardar como...", seleccionando la carpeta destino (Escritorio o Documentos) y nombrando el archivo adecuadamente.',
-    ejercicio_practico: 'Guardar su acta terminada dándolo un nombre claro y ubicándola directo en la pantalla del Escritorio para verla fácil al encender la PC.',
-    elementos_visuales: [
-      {
-        icono: 'Disco de guardar',
-        etiqueta: 'Botón Guardar',
-        descripcion: 'Icono pequeño que parece un disquete cuadrado arriba a la izquierda del programa.'
-      },
-      {
-        icono: 'Ventana Guardar Como',
-        etiqueta: 'Menú Guardar Como',
-        descripcion: 'Menú especial que permite decidir el nombre y el destino del archivo en su PC.'
-      }
-    ]
-  },
-  {
-    id: 'word_b1_l6',
-    modulo_id: 'word',
-    orden: 6,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Word',
-    titulo: 'El Formato de Párrafo e Interlineado',
-    descripcion_teorica: 'Un bloque de letras muy comprimido fatiga inmediatamente la visión reducida. El formato de párrafo le permite decidir cómo se ordena el texto en pantalla usando los Botones de alineación: usamos "Centrado" para estilizar títulos de convocatorias, "Izquierda" para correspondencia normal de notas y "Justificado" para enmarcar rectángulos perfectos idénticos a los de una escritura notarial. De igual forma, modificamos el espacio vertical con el Botón Interlineado para dejar hileras blancas de descompresión entre renglones, logrando un descanso asombroso para la vista.',
-    explicacion_alternativa: 'Es como organizar hileras de maceteros en las repisas comunitarias. Podemos tirarlos a la izquierda, ponerlos al centro ordenados usando los Botones de alineación o extenderlos bien parejos de lado a lado. Además, si nota que las letras se amontonan de tal forma que le cuesta leer en su pantalla real, pulse el botón de la imagen Botón Interlineado que aleja los renglones permitiendo un respiro para ojos cansados.',
-    pasos_a_seguir: [
-      'Sombreé el párrafo de redacción en pantalla arrastrando de corrido su mouse real sobre las letras.',
-      'Busque en la sección Inicio arriba el grupo "Párrafo" y posicione el mouse sobre los Botones de alineación. Pulse el botón "Justificar" (el que tiene renglones cuadraditos simétricos).',
-      'Vea cómo los bordes cobran simetría perfecta a la izquierda y derecha semejando un libro impreso.',
-      'Al lado de esos botones, pulse el Botón Interlineado (icono con flechitas celestes arriba y abajo junto a unas barras).',
-      'Haga click en la opción de calibre "1.5" de la lista desplegada. ¡Observe cómo su texto se estira de alto dejando aire cómodo para leerlo fácilmente!'
-    ],
-    pasos_alternativos: [
-      'Escriba tres líneas de un acta vecinal.',
-      'Sombréelas y recurra al menú Inicio superior en el sector de alineamiento.',
-      'Pulse el botón de centrar para ver cómo todo salta al medio de la pantalla dándole porte de poema o encabezado.'
-    ],
-    tips_de_accesibilidad: 'Manejar un interlineado de "1.5" o "2.0" (Doble) es la medida recomendada por los manuales internacionales de accesibilidad para personas con presbicia o visión parcial, ya que evita que el ojo se pierda de línea al saltar de renglón.',
-    checklist_validacion: [
-      'Sombreé el párrafo central de mi carta en Word.',
-      'Apliqué la alineación Justificado encuadrando de forma formal ambos extremos del párrafo.',
-      'Ubiqué el disparador de Interlineado en la barra superior de herramientas.',
-      'Configuré el interlineado a calibre 1.5 y verifiqué la óptima separación visual de las oraciones.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe un interlineado doble (2.0): Aplíquelo a un texto extenso. ¿Observa el inmenso espaciado en blanco que queda entre palabras? Es fantástico para imprimir borradores donde se quiere escribir correcciones a lápiz entre medio.",
-      "Explore la alineación a la derecha: Sombreé la fecha y firma solamente, y pulse el botón de 'Alinear a la derecha'. Mire cómo salta al costado extremo, que es la colocación protocolar idónea para iniciar cartas dirigidas al municipio."
-    ],
-    concepto_clave: 'Controlar la alineación del texto (Izquierda, Centrado, Justificado) y regular el interlineado (espacio vertical entre líneas de caracteres) para asegurar legibilidad.',
-    ejercicio_practico: 'Ajustar el cuerpo de una circular vecinal para que quede alineada de forma Justificada con un espaciado interlineal ancho de calibre 1.5.',
-    elementos_visuales: [
-      {
-        icono: 'Botones de alineación',
-        etiqueta: 'Botones de Alineación',
-        descripcion: 'Botones con barras horizontales iguales que mueven el texto a la izquierda, centro o lo cuadran (Justificar).'
-      },
-      {
-        icono: 'Botón Interlineado',
-        etiqueta: 'Botón de Interlineado',
-        descripcion: 'Símbolo con dos flechas opuestas verticales y barras para separar renglones.'
-      }
-    ]
-  },
-  {
-    id: 'word_b1_l7',
-    modulo_id: 'word',
-    orden: 7,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Word',
-    titulo: 'Ajustar Papel Carta y Oficio con Márgenes',
-    descripcion_teorica: 'En Word podemos decidir el tamaño exacto del papel antes de imprimir, evitando que el texto quede fuera de la hoja física. Las dos dimensiones más empleadas en administración comunal son Carta (más corto y ancho, idóneo para notas sencillas) y Oficio (más largo, ideal para contratos oficiales y actas largas). De igual manera, podemos ajustar los márgenes de los bordes para dejar el espacio en blanco necesario para que la impresora real no corte las letras en el papel.',
-    explicacion_alternativa: 'Es igual que elegir entre papel de block corto o block de oficio de secretariado antes de sentarse a escribir. Si escribe una carta larga en una hoja corta sin ajustar el tamaño en Word, sus palabras se saldrán del papel impreso. Cambiamos el tamaño a "Carta" o "Oficio" en la barra de herramientas para garantizar una copia impecable y económica.',
-    pasos_a_seguir: [
-      'Dirija su mirada a la Cinta de Opciones en el borde superior de la pantalla.',
-      'Haga un click izquierdo en la pestaña "Disposición" (en algunas computadoras se llama "Formato" o "Diseño de Página").',
-      'Localice el botón con la etiqueta "Tamaño" y haga un click izquierdo sobre él.',
-      'Seleccione "Carta" en el listado para correspondencia normal, o "Oficio" (o Legal) si el acta es extremadamente larga u oficial.',
-      'Haga click en la opción de "Márgenes" al lado del botón de Tamaño, y pulse sobre el formato "Normal" para asegurar un margen amplio y cómodo para su lectura.'
-    ],
-    pasos_alternativos: [
-      'Pulse la pestaña "Disposición" en el menú horizontal de arriba de su Word.',
-      'Haga click en "Tamaño" y luego pulse sobre el formato de papel que corresponda a sus hojas físicas en la bandeja.',
-      'Haga click en "Márgenes" y escoja la opción "Estrecho" si quiere exprimir al máximo el espacio de la hoja.'
-    ],
-    tips_de_accesibilidad: 'Si le resulta confuso elegir la opción correcta, deje activado el tamaño Carta con margen Normal. Es el estándar de oficina que no forzará los sensores de ninguna impresora ni recortará renglones.',
-    checklist_validacion: [
-      'Accedí a la pestaña Disposición o Formato superior en mi PC de escritorio.',
-      'Seleccioné el botón Tamaño de papel virtual.',
-      'Concluí el cambio de dimensiones eligiendo Carta u Oficio según el caso.',
-      'Configuré los márgenes en Normal para asegurar aire de lectura.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe la Orientación Horizontal: Al lado del botón Tamaño, busque el botón 'Orientación' y cámbielo de vertical a 'Horizontal'. Verá que el papel virtual gira por completo como un afiche. ¡Pruébelo y regréselo a Vertical al terminar!",
-      "Explore el Margen Personalizado: Al final del listado de márgenes, pulse en 'Márgenes personalizados...'. Podrá digitar a mano cuántos centímetros exactos quiere dejar arriba, abajo y a los lados."
-    ],
-    concepto_clave: 'Configurar las dimensiones físicas y los bordes limpios de la hoja virtual ("Carta" u "Oficio") para garantizar una correcta correspondencia de impresión.',
-    ejercicio_practico: 'Cambiar el tamaño de la hoja en Word real a formato Oficio y ajustar los márgenes a tipo Normal, visualizando cómo se extiende el lienzo de trabajo.',
-    elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Pestaña Disposición',
-        descripcion: 'Menú superior donde se agrupan las herramientas de estructura de página.'
-      },
-      {
-        icono: 'alineación',
-        etiqueta: 'Botón de Tamaño',
-        descripcion: 'Menú que permite elegir entre hojas Carta, Oficio o formatos especiales.'
-      },
-      {
-        icono: 'interlineado',
-        etiqueta: 'Botón de Márgenes',
-        descripcion: 'Permite achicar o ensanchar el marco blanco del contorno del papel.'
-      }
-    ]
-  },
-  {
-    id: 'word_b1_l8',
-    modulo_id: 'word',
-    orden: 8,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Word',
-    titulo: 'Insertar el Logo o Firma Digital en el Acta',
-    descripcion_teorica: 'Una nota formal dirigida al alcalde gana credibilidad institucional instantánea al lucir el logo de nuestra Junta de Vecinos o el timbre redondo digitalizado del Centro Social en el encabezado. Word nos permite colocar cualquier fotografía o archivo de imagen guardado en el disco duro mediante la pestaña Insertar. Así, reemplazamos el engorroso proceso de timbrar con tinta física de almohadilla hoja por hoja por un elegante membrete digital en segundos.',
-    explicacion_alternativa: 'Piense en este paso como pegar un escudo adhesivo o estampar el timbre de goma comunal en la parte superior de un sobre de correspondencia. En vez de recurrir al sello físico manchando sus dedos, le ordena a Word que traiga una foto de su firma o timbre directo desde las carpetas de su computadora y la pegue con suavidad en la posición que desee.',
-    pasos_a_seguir: [
-      'Haga un click izquierdo al inicio del documento, antes de la primera letra, para situar allí el cursor de escritura.',
-      'Vaya a la Cinta de Opciones en la sección superior y presione la pestaña "Insertar" (al lado de Inicio).',
-      'Haga un click en el botón con la etiqueta "Imágenes" y escoja la opción "Este dispositivo..." (o "Desde un archivo...").',
-      'En el panel de búsqueda que se abre, localice la carpeta "Imágenes" y seleccione la imagen de prueba haciendo doble click sobre ella.',
-      'Sostenga con el mouse cualquiera de las esquinas de la imagen insertada (los puntos redondos blancos de los bordes) y arrástrelos hacia el centro para reducir su tamaño.'
-    ],
-    pasos_alternativos: [
-      'Haga click en la pestaña "Insertar" en la hilera superior.',
-      'Busque el botón "Formas" en vez de imágenes, seleccione un rectángulo o círculo presionándolo, y arrastre el mouse sobre la hoja en blanco para dibujar un recuadro. Esto simula el logo de manera provisoria.'
-    ],
-    tips_de_accesibilidad: 'Siempre agregue "Texto Alternativo" a las imágenes para que los lectores de pantalla puedan describirle la imagen en voz alta a personas con ceguera o baja visión. Haga click derecho en la foto dentro de Word y elija "Editar texto alternativo".',
-    checklist_validacion: [
-      'Accedí a la pestaña Insertar en mi computadora real.',
-      'Abrí la galería de imágenes del computador mediante el comando correspondiente.',
-      'Pegué una imagen o un logo en el encabezado de mi carta vecinal.',
-      'Ajusté la escala de la imagen tirando de las esquinas con cuidado de no descuadrar su proporción.'
-    ],
-    sugerencias_descubrimiento: [
-      "Ajustar Texto: Haga click en la imagen, presione el ícono flotante lateral de un arco negro (Ajustar Texto) y elija 'Estrecho' o 'Delante del texto'. ¡Podrá moverla libremente con el mouse por todo el papel!",
-      "Efectos de Imagen: Con la imagen seleccionada, mueva la vista a la pestaña 'Formato de Imagen' arriba y aplíquele una sombra ligera u bordes suaves de alto contraste."
-    ],
-    concepto_clave: 'Colocar elementos gráficos digitalizados (timbre institucional, firmas manuscritas, escudos vecinales) dentro de documentos de oficina para dotarlos de formalidad.',
-    ejercicio_practico: 'Insertar un logo o una imagen decorativa en el encabezado de su correspondencia ordinaria vecinal y redimensionarla armónicamente.',
-    elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Pestaña Insertar',
-        descripcion: 'Sección para incorporar elementos externos como imágenes, formas o tablas.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Botón de Imágenes',
-        descripcion: 'Desplegable que examina las carpetas de su computadora para importar archivos gráficos.'
-      },
-      {
-        icono: 'clic',
-        etiqueta: 'Puntos de Selección',
-        descripcion: 'Pequeños círculos en los extremos de la imagen que regulan su escala y proporción.'
-      }
-    ]
-  },
-  {
-    id: 'word_b1_l9',
-    modulo_id: 'word',
-    orden: 9,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Word',
-    titulo: 'Tablas de Asistencia y Planificación',
-    descripcion_teorica: 'Una tabla es una cuadrícula de filas y columnas integrada para tabular información de forma compacta y legible. En el quehacer vecinal, las tablas de Word son ideales para desglosar la directiva (Presidente, Tesorera, Secretaria) o registrar listas de asistencia con nombres y firmas en el acta comicial, logrando una presentación institucional óptima.',
-    explicacion_alternativa: 'Es igual que dibujar una grilla con regla y marcador en una pizarra blanca de la sede. Divide el espacio útil de la hoja en casillas donde a la izquierda ponemos "Nombre" y a la derecha colocamos el "Cargo" o la "Firma". En Word no necesitamos reglas; la computadora dibuja todas las divisiones de forma mágica indicándole cuántos casilleros queremos.',
-    pasos_a_seguir: [
-      'Haga click en la parte baja de su acta cargada en Word real para situar allí la nueva tabla comicial.',
-      'Haga un click izquierdo en la pestaña "Insertar" del menú superior.',
-      'Presione sobre el botón "Tabla". Al hacerlo, verá deslizarse un menú interactivo lleno de cuadritos blancos.',
-      'Desplace su mouse sobre los cuadritos para pintar una cuadrícula de 3 columnas (hacia el lado) y 4 filas (hacia abajo). Haga un click izquierdo para confirmar.',
-      'Escriba en la primera casilla de arriba: "Nombre", use la tecla de tabulación (Tab) al lado de la letra Q para saltar de casillero y escriba "Cargo", y en la siguiente "Firma".',
-      'Rellene las hileras de abajo con los nombres de sus compañeros de mesa.'
-    ],
-    pasos_alternativos: [
-      'Pulse "Insertar", para mayor firmeza haga click en "Tabla" y escoja la opción manual "Insertar tabla...".',
-      'Escriba en el recuadro que sale el número "3" en número de columnas y "4" en número de filas, y pulse Aceptar.'
-    ],
-    tips_de_accesibilidad: 'Procure rellenar siempre los encabezados de la primera fila en Negrita de modo que cualquier vecino que necesite leer el documento con tecnologías de apoyo pueda ubicarse con total facilidad.',
-    checklist_validacion: [
-      'Presioné el botón Tabla en la pestaña Insertar de Word.',
-      'Diseñé una matriz de 3 columnas por 4 filas seleccionando las celdas con el ratón.',
-      'Asigné encabezados lógicos en la primera línea de la tabla.',
-      'Inserté información en cada casilla utilizando la tecla Tabulación para saltar de manera ágil.'
-    ],
-    sugerencias_descubrimiento: [
-      "Estilos de Tabla: Haga un click sobre su tabla y vaya a la pestaña 'Diseño de tabla' arriba. Elija una plantilla de color de alto contraste con hileras sombreadas alternas, queda sumamente profesional.",
-      "Insertar Filas Rápidas: Sitúe el cursor en la última casilla abajo a la derecha de la tabla y pulse la tecla Tab. ¡Vea cómo Word le regala un renglón nuevo idéntico!"
-    ],
-    concepto_clave: 'Crear e introducir cuadrículas organizativas de filas y columnas para resumir cargos, horarios y asambleas de forma solemne.',
-    ejercicio_practico: 'Insertar una tabla de 3 columnas por 4 filas en Word para catalogar la directiva vecinal de su Centro Social.',
-    elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Pestaña Insertar',
-        descripcion: 'Ubicación superior de las alternativas de objetos.'
-      },
-      {
-        icono: 'viñeta',
-        etiqueta: 'Selector de Filas y Columnas',
-        descripcion: 'Panel desplegable de cuadritos para dibujar visualmente las tablas.'
-      },
-      {
-        icono: 'enter',
-        etiqueta: 'Tecla Tabulación',
-        descripcion: 'Tecla con dos flechas encontradas a la izquierda del teclado para saltar de celda velozmente.'
-      }
-    ]
-  },
-  {
-    id: 'word_b1_l10',
-    modulo_id: 'word',
-    orden: 10,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Word',
-    titulo: 'Revisar e Imprimir la Carta en Papel Físico',
-    descripcion_teorica: 'El proceso final en todo trabajo de secretariado es transferir nuestra carta oficial desde la pantalla virtual de Word hacia una hoja de papel física real mediante la impresora. Word incorpora una sección de "Vista Previa" sumamente útil de alto contraste donde podemos constatar exactamente cómo lucirá la carta impresa y cuántas hojas ocupará antes de gastar tinta innecesariamente, lo que protege el presupuesto comunal.',
-    explicacion_alternativa: 'Es el momento en que abrimos la bandeja y retiramos nuestra correspondencia recién impresa. Al presionar "Imprimir", la computadora le envía las instrucciones a su impresora y esta plasma con tinta real cada letra. La Vista Previa le ayuda a evitar los borradores fallidos y las hojas arrugadas.',
-    pasos_a_seguir: [
-      'En la esquina superior izquierda de su pantalla de Word, busque y presione el botón azul "Archivo".',
-      'Desplace su mouse a lo largo del menú vertical y seleccione haciendo un click izquierdo en "Imprimir".',
-      'Observe la enorme "Vista Previa" en el costado derecho de la pantalla: es una simulación perfecta de su hoja con su redacción tal como saldrá impresa.',
-      'Confirme en el casillero numérico "Copias:" cuántas hojas físicas de esta carta requiere (por ejemplo: "2" para dejar una de respaldo en el archivador).',
-      'Encienda su impresora comunal real, asegúrese de que tenga papel Carta, y haga un click izquierdo en el gran botón "Imprimir".'
-    ],
-    pasos_alternativos: [
-      'Haga uso del atajo veloz de teclado: mantenga presionado el botón "Control" e hunda la letra "P" en su teclado real para saltar directo a la pantalla de impresión.',
-      'Revise la composición general en la vista preliminar y active el botón principal Imprimir.'
-    ],
-    tips_de_accesibilidad: 'Si la tipografía de su carta final se ve excesivamente pequeña para los vecinos mayores en la Vista Previa, regrese, sombreé el texto con Control+E y eleve el tamaño de letra utilizando el selector numérico antes de enviar la orden física.',
-    checklist_validacion: [
-      'Ingresé al panel administrativo Archivo de Word.',
-      'Activé el panel de impresión visual en pantalla.',
-      'Inspeccioné la conformación del texto en la Vista Previa resguardando los márgenes.',
-      'Verifiqué que los parámetros de copia concuerden antes de mandar a rodar el papel.'
-    ],
-    sugerencias_descubrimiento: [
-      "Imprimir a Doble Cara: Debajo de la impresora seleccionada, busque el menú 'Imprimir a una sola cara' y cámbielo por 'Imprimir a doble cara'. Esto reducirá a la mitad el gasto de papel.",
-      "Elegir Páginas Específicas: En el recuadro 'Páginas' puede escribir por ejemplo '1-2' para imprimir solo las primeras oraciones y evitar gastar hojas anexas de firmas."
-    ],
-    concepto_clave: 'Inspeccionar visualmente las plantillas terminadas utilizando la Vista Previa y accionar el envío físico o conversión digital a papel.',
-    ejercicio_practico: 'Lanzar el comando de impresión en su PC real utilizando Vista Previa para revisar la composición de la correspondencia.',
-    elementos_visuales: [
-      {
-        icono: 'disco',
-        etiqueta: 'Pestaña Archivo',
-        descripcion: 'Punto de partida de la configuración de guardado e impresión.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Vista Previa de Impresión',
-        descripcion: 'Panel que simula el resultado estético final sobre papel real.'
-      },
-      {
-        icono: 'enter',
-        etiqueta: 'Botón Imprimir',
-        descripcion: 'El disparador redondo superior que envía los comandos a la impresora de oficina.'
-      }
+      { icono: 'fuente', etiqueta: 'Casillero Numérico', descripcion: 'Amplía o reduce el tamaño del carácter.' },
+      { icono: 'cinta', etiqueta: 'Botones N, K, S', descripcion: 'Controles superiores de estilo tipográfico.' }
     ]
   },
 
   // ==========================================
-  // EXCEL - NIVEL 1: FUNCIONAL
+  // WORD - NIVEL 2: ADMINISTRATIVO (INTERMEDIO)
+  // ==========================================
+  {
+    id: 'word_n2_l1',
+    modulo_id: 'word',
+    orden: 4,
+    nivel: 'Nivel 2: Administrativo',
+    programa: 'Word',
+    titulo: 'Estructurar Índices y Tablas de Contenido Automáticas',
+    descripcion_teorica: 'En reglamentos vecinales extensos, teclear índices con puntos y páginas a mano es propenso a desconfigurarse. Word automatiza esto: si rotula los capítulos usando Estilos de Título ("Título 1" o "Título 2") en Inicio, el programa entenderá la jerarquía interna y compilará una Tabla de Contenido en un solo clic, la cual se actualiza sola al desplazar texto.',
+    explicacion_alternativa: 'Coloque letreros de madera claros a cada habitación de la sede ("Cocina", "Salón"). Al final, una pizarra matriz en la entrada lee esas señales y lista automáticamente dónde está cada aula. Si traslada una sección, el listado se reajusta pulsando el botón Actualizar.',
+    pasos_a_seguir: [
+      'En su computadora, escriba: "TÍTULO I: DE LOS SOCIOS" en el primer renglón.',
+      'Vaya a la pestaña "Inicio", busque el panel de "Estilos" y haga click en "Título 1" (el formato cambiará a azul y grande).',
+      'Baje unas líneas con Enter, declare "TÍTULO II: DE LAS CUOTAS" y asígnele también el estilo "Título 1".',
+      'Muévase al principio absoluto del documento, vaya a la pestaña "Referencias" arriba a la izquierda.',
+      'Haga click en el botón "Tabla de contenido" y seleccione el primer formato automático disponible de la oferta.'
+    ],
+    pasos_alternativos: [
+      'Si redacta subcapítulos (como "Sección 1.1"), sombréelos y colóqueles "Título 2" para que aniden hacia la derecha.',
+      'Haga un clic derecho en medio del índice y presione "Actualizar campos" -> "Actualizar toda la tabla" para recalcular páginas.'
+    ],
+    tips_de_accesibilidad: 'La jerarquía estructural por estilos es vital para que las personas ciegas que usan lectores de pantalla salten directamente de capítulo en capítulo sin leer cada línea.',
+    checklist_validacion: [
+      'Redacté diversos enunciados de capítulo en páginas distintas.',
+      'Apliqué la marca formal de Estilo "Título 1" a cada título.',
+      'Posicioné el cursor en la cabecera o portada del acta.',
+      'Fui al menú Referencias e instalé el índice automatizado.',
+      'Verifiqué la distribución simétrica de números de página.'
+    ],
+    concepto_clave: 'Usar estilos para sembrar dependencias jerárquicas y activar tablas de contenido dinámicas.',
+    ejercicio_practico: 'Consolidar una maqueta de reglamento doméstico con dos títulos y su índice de referencia formal.',
+    elementos_visuales: [
+      { icono: 'estilos', etiqueta: 'Vitrina de Estilos', descripcion: 'Panel superior con formatos prediseñados.' },
+      { icono: 'indice', etiqueta: 'Tabla de Contenido', descripcion: 'Generador de índices en Referencias.' }
+    ]
+  },
+  {
+    id: 'word_n2_l2',
+    modulo_id: 'word',
+    orden: 5,
+    nivel: 'Nivel 2: Administrativo',
+    programa: 'Word',
+    titulo: 'Diseño de Página: Saltos de Sección y Hojas Horizontales',
+    descripcion_teorica: 'El error común al querer que una hoja sea horizontal (para una tabla ancha) es voltear todo el documento. Word lo impide usando "Saltos de Sección". Al separar el documento en secciones independientes, podemos ordenar que solo una hoja central rote horizontalmente, manteniendo las actas verticales.',
+    explicacion_alternativa: 'Es como separar los cuadernillos de la junta en carpetas independientes. De esta manera, el reglamento se escribe parado (vertical) en la primera carpeta, pero el plano de obras se dibuja echado (horizontal) en la segunda carpeta sin desordenar la encuadernación.',
+    pasos_a_seguir: [
+      'En Word real, párese al final del texto de su primera hoja.',
+      'Vaya a la pestaña "Disposición" (o "Diseño de página" dependiendo de su versión de Word).',
+      'Haga clic en el botón "Saltos" y elija la alternativa "Página siguiente" en el bloque de Saltos de sección.',
+      'Con el cursor situado en la nueva página naciente, pulse sobre el botón "Orientación" (al lado de Saltos).',
+      'Elija la opción "Horizontal". ¡Observe cómo solo la segunda hoja se voltea, ideal para vaciar censos o tablas anchas!'
+    ],
+    pasos_alternativos: [
+      'Haga clic en "Márgenes" -> "Márgenes personalizados" abajo.',
+      'Seleccione "Horizontal" en orientación y escoja "De aquí en adelante" en el menú desplegable inferior para dividir la dirección.'
+    ],
+    tips_de_accesibilidad: 'La página acostada da un respiro a usuarios que analizan presupuestos complejos, ya que asimila mejor letras de gran calibre y grillas detalladas.',
+    checklist_validacion: [
+      'Establecí texto regular en mi primera página.',
+      'Generé un Salto de Sección con destino "Página Siguiente".',
+      'Ubiqué el cursor sobre la sección del Salto creado.',
+      'Oprimí Orientación cambiando la dirección de fisonomía a Horizontal.',
+      'Verifiqué la alternancia vertical/horizontal en la miniatura.'
+    ],
+    concepto_clave: 'Dividir documentos extensos en secciones estancas para aplicar geometrías independientes.',
+    ejercicio_practico: 'Maquetar un dossier formal que alterne una hoja vertical de carta y una central horizontal para inventario.',
+    elementos_visuales: [
+      { icono: 'saltos', etiqueta: 'Saltos de Sección', descripcion: 'Divisores en el menú Disposición.' },
+      { icono: 'orientar', etiqueta: 'Orientación de Hoja', descripcion: 'Interruptor de sentido vertical u horizontal.' }
+    ]
+  },
+  {
+    id: 'word_n2_l3',
+    modulo_id: 'word',
+    orden: 6,
+    nivel: 'Nivel 2: Administrativo',
+    programa: 'Word',
+    titulo: 'Encabezados y Números de Página Profesional',
+    descripcion_teorica: 'Tener membretes oficiales con el logo y números folios continuos al pie de página es clave en la formalidad institucional. Se insertan desde la pestaña Insertar. Al hacer doble clic en el extremo de cualquier borde de hoja, se ingresa al editor flotante de Encabezado/Pie, el cual distribuye el contenido a lo largo de todo el documento.',
+    explicacion_alternativa: 'Imagínese estampar la marca legal de la sede social arriba y un folio correlativo abajo en cada una de sus hojas. En vez de tipear "Pág 1" y "Pág 2" a pulso exponiéndose a roturas, la computadora se encarga de estampar las correlaciones de manera precisa.',
+    pasos_a_seguir: [
+      'Vaya a la barra alta en la pestaña de herramientas de "Insertar".',
+      'Pulse el botón "Encabezado" del bloque central y escoja un diseño sencillo para tipear "Junta de Vecinos El Progreso".',
+      'Vuelva a "Insertar", haga click en el disparador "Número de página" y elija "Final de la página" -> "Formato simple".',
+      'Observe la inserción dinámica del número correspondiente a la hoja.',
+      'Cierre el editor oprimiendo la cruz roja "Cerrar encabezado y pie" ubicada en el cabezal superior derecho.'
+    ],
+    pasos_alternativos: [
+      'Abra el área secreta simplemente haciendo un doble click rápido con el mouse en el filo superior de su hoja.',
+      'Active la casilla "Primera página diferente" en la barra superior si desea ocultar folios en la portada principal.'
+    ],
+    tips_de_accesibilidad: 'Use números de página alineados a la derecha u ocultos al interior para amparar el arrastre de los dedos en lecturas físicas sobre escritorios vecinales.',
+    checklist_validacion: [
+      'Navegué al panel correspondiente superior a través de Insertar.',
+      'Registré el membrete vecinal oficial en la cabecera alta.',
+      'Inserté el formato correlativo numérico automático por pie de página.',
+      'Utilicé la opción de clausura para restablecer la fisonomía de la hoja.',
+      'Comprobé que al añadir hojas, los folios se elevan automáticamente.'
+    ],
+    concepto_clave: 'Implantar información constante y números folios correlativos en los márgenes de resguardo espacial del papel virtual.',
+    ejercicio_practico: 'Sellar un membrete con su nombre vecinal en el encabezado alto y encargar el número secuencial automático abajo.',
+    elementos_visuales: [
+      { icono: 'encabezado', etiqueta: 'Encabezado y Pie', descripcion: 'Bordes grises superiores e inferiores.' },
+      { icono: 'numeros', etiqueta: 'Número de Página', descripcion: 'Asignador de cifras secuenciales en Insertar.' }
+    ]
+  },
+
+  // ==========================================
+  // WORD - NIVEL 3: RESOLUCIÓN DE PROBLEMAS (AVANZADO)
+  // ==========================================
+  {
+    id: 'word_n3_l1',
+    modulo_id: 'word',
+    orden: 7,
+    nivel: 'Nivel 3: Resolución de Problemas',
+    programa: 'Word',
+    titulo: 'Auxilio: Sanar Copias ante Cortes de Luz',
+    descripcion_teorica: 'Si ocurre un corte de luz o cerramos un documento accidentalmente sin guardar, no todo está perdido. Word dispone de Auto-recuperación interna: borra el pánico almacenando borradores sigilosos en segundo plano cada 10 minutos. Se rescatan desde el panel de resguardo maestro de Información.',
+    explicacion_alternativa: 'Es idéntico a que un golpe de viento sople los registros de asamblea por la ventana. No todo está destruido; Word tiene un baúl de reserva donde conserva borradores transitorios con la hora exacta para restaurarlos.',
+    pasos_a_seguir: [
+      'Inicie su Word real en blanco para actuar de urgencias.',
+      'Haga clic en la pestaña azul del menú general de "Archivo" en la esquina de arriba.',
+      'Tilde la pestaña de estado denominada "Información".',
+      'Active el botón "Administrar documento" (identificado con el dibujo de una hoja y engranaje).',
+      'Haga clic izquierdo en "Recuperar documentos sin guardar". Elija el archivo reciente con extensión .asd y púlselo.'
+    ],
+    pasos_alternativos: [
+      'Al iniciar Word tras un apagón, busque el panel "Recuperación de documentos" que asoma en el margen izquierdo.',
+      'Escoja la versión temporal resguardada haciendo click y presione el comando Control + G de inmediato para guardarlo formalmente.'
+    ],
+    tips_de_accesibilidad: 'Configure Word para resguardar copias seguras más rápido: vaya a Archivo -> Opciones -> Guardar, y baje la frecuencia del temporizador de Auto-recuperación de 10 a 5 minutos.',
+    checklist_validacion: [
+      'Entré a Word con un archivo vacío tras el corte accidental.',
+      'Activé el menú Archivo y navegué a Información.',
+      'Oprimí el comando de la pestaña Administración de Documentos.',
+      'Elegí la opción de restauración de borradores temporales.',
+      'Recuperé y guardé firmemente el escrito en una carpeta segura.'
+    ],
+    concepto_clave: 'Localizar los directorios huérfanos de autorrecuperación para mitigar mermas de actas importantes.',
+    ejercicio_practico: 'Rastrear el baúl secreto de documentos transitorios utilizando las Palancas del menú Archivo para consolidar seguridad.',
+    elementos_visuales: [
+      { icono: 'engranaje', etiqueta: 'Administrar Documento', descripcion: 'Consola de resguardo dentro de Información.' },
+      { icono: 'archivo', etiqueta: 'Borrador Temporal (.asd)', descripcion: 'Extensión oculta de recuperación.' }
+    ]
+  },
+  {
+    id: 'word_n3_l2',
+    modulo_id: 'word',
+    orden: 8,
+    nivel: 'Nivel 3: Resolución de Problemas',
+    programa: 'Word',
+    titulo: 'Rescatar Pegados Sucios de Textos de Internet',
+    descripcion_teorica: 'Al copiar extractos de boletines o noticias municipales desde el navegador web y pegarlos en Word directly, es usual que el texto venga arrastrando fondos negros, letras deformadas, hipervínculos extraños y desajustes rebeldes. Para normalizar estos descalabros de inmediato, Word cuenta con las "Opciones de Pegado" o el botón limpiador de formato.',
+    explicacion_alternativa: 'Es igual que entrar a la sede con los zapatos llenos de barro tras una lluvia copiosa. Pegar el texto directamente llena su pulcro salón de manchas de formato. Usar "Pegar solo texto" es como sacudirse los pies en el felpudo para que las letras entren limpias.',
+    pasos_a_seguir: [
+      'Abra Word y simule copiar texto desde internet o un documento externo.',
+      'Al presionar pegar (hacer Control + V), localice la pestañita flotante pequeña de "Pegar" (Ctrl) que asoma abajo del texto.',
+      'Haga un click izquierdo en ella y elija el ícono de la tabla con una letra "A" llamado "Mantener solo texto".',
+      'Observe el milagro: el texto elimina toda suciedad visual y adopta armoniosamente el calibre limpio de su hoja.',
+      'Si ya pegó desastrosamente, tilde el texto sucio y presione la mini-goma de borrar "Borrar todo el formato" arriba en Inicio.'
+    ],
+    pasos_alternativos: [
+      'En lugar de Control + V, haga clic derecho firme en el papel de Word vacío.',
+      'En las opciones visuales de pegado que se despliegan en el menú emergente, pulse de inmediato el botón de la "A" grande.'
+    ],
+    tips_de_accesibilidad: 'La limpieza de formatos remueve los enlaces azules parpadeantes invisibles que vuelven locos a los lectores auditivos de audífono.',
+    checklist_validacion: [
+      'Incrusté texto copiado de fuente externa.',
+      'Identifiqué la burbuja de resguardo flotante de pegado.',
+      'Tildé la opción "Mantener solo texto" representada por la letra A.',
+      'Removí descalabros de interlineados y fondos negros.',
+      'Utilicé la goma de borrar formato en Inicio ante rezagos rebeldes.'
+    ],
+    concepto_clave: 'Intervenir el portapapeles del computador para amoldar la información de origen a la tipografía de destino.',
+    ejercicio_practico: 'Importar un texto sucio y someterlo al tratamiento pulcro de la letra A libre de formatos molestos.',
+    elementos_visuales: [
+      { icono: 'pegado', etiqueta: 'Burbuja Flotante Ctrl', descripcion: 'Tratamiento dinámico para amoldar textos.' },
+      { icono: 'borrador', etiqueta: 'Goma de Borrar Formato', descripcion: 'Herramienta de reseteo en el grupo Fuente.' }
+    ]
+  },
+  {
+    id: 'word_n3_l3',
+    modulo_id: 'word',
+    orden: 9,
+    nivel: 'Nivel 3: Resolución de Problemas',
+    programa: 'Word',
+    titulo: 'Despachos Masivos: Combinar Correspondencia',
+    descripcion_teorica: 'Cuando la junta directiva necesita enviar citaciones personalizadas con nombre, dirección y deudas a 50 socios diferentes, redactar 50 cartas a mano es agotador. Word soluciona esta molestia con "Combinar correspondencia", vinculando una plantilla fija de carta a una base de datos de Excel para emitir las copias en un solo segundo.',
+    explicacion_alternativa: 'Construya una única plantilla con casilleros en blanco ("Estimado/a [Nombre]"). Luego, deje que el robot de Word lea el libro de registros de Excel, pegue cada nombre en los casilleros vacíos y fabrique las 50 cartas personalizadas de manera instantánea y ordenada.',
+    pasos_a_seguir: [
+      'Abra su Word real y redacte: "CITACIÓN DE ASAMBLEA: Estimado [Socio], se le invita a la cita del viernes".',
+      'Vaya a la pestaña "Correspondencia" arriba en la Cinta de Opciones.',
+      'Oprima el botón "Seleccionar destinatarios" y elija "Usar una lista existente...".',
+      'Examine su archivo Excel real que contiene el registro de sus vecinos y haga click en Abrir.',
+      'Sombréelo de descarte en el texto de Word, pulse "Insertar campo combinado" arriba y escoja "Socio". Oprima "Finalizar y combinar" -> "Editar documentos individuales" para ver sus cartas generadas automáticamente.'
+    ],
+    pasos_alternativos: [
+      'Siga la pauta paso a paso con el "Asistente para combinar correspondencia" en el lateral derecho.',
+      'Revise los borradores en pantalla con la pestaña "Vista previa de resultados" para confirmar que los nombres se cruzan impecablemente.'
+    ],
+    tips_de_accesibilidad: 'La alineación de campos combinados debe resguardar holguras espaciales marcadas para que las cartas no se sobrepongan al albergar apellidos excesivamente extensos.',
+    checklist_validacion: [
+      'Redacté la plantilla o armazón fijo de la correspondencia.',
+      'Vinculé con éxito una planilla de Excel externa mediante correspondencia.',
+      'Asigné marcadores de campos combinados en las posiciones deseadas.',
+      'Efectué la inspección inicial con la vista interactiva previa.',
+      'Resolví la combinación de corrido generando el bloque unificado de cartas.'
+    ],
+    concepto_clave: 'Vincular bases relacionales u hojas calculadas a manuscritos base para compilar lotes personalizados.',
+    ejercicio_practico: 'Configurar una plantilla de cobro vecinal cruzada con marcas dinámicas de nombres por correspondencia.',
+    elementos_visuales: [
+      { icono: 'correo', etiqueta: 'Pestaña Correspondencia', descripcion: 'Ubicación de comandos masivos.' },
+      { icono: 'datos', etiqueta: 'Campo Combinado', descripcion: 'Inyecciones dinámicas de la planilla de Excel.' }
+    ]
+  },
+
+  // ==========================================
+  // EXCEL - NIVEL 1: FUNCIONAL (BÁSICO)
   // ==========================================
   {
     id: 'excel_n1_l1',
@@ -544,31 +365,32 @@ export const LECCIONES: Leccion[] = [
     orden: 1,
     nivel: 'Nivel 1: Funcional',
     programa: 'Excel',
-    titulo: 'La Sede Social en Cuadrícula',
-    descripcion_teorica: 'Excel no es una hoja de papel en blanco, es una cuadrícula compuesta por miles de cajoncitos llamados "Celdas". Imagínela como el casillero organizador de madera que tenemos en la junta vecinal para guardar cartas por orden alfabético. Las columnas verticales se identifican por letras (A, B, C...) y las filas horizontales por números (1, 2, 3...). La esquina superior izquierda donde se cruza la columna A y la fila 1 se llama de manera única celda "A1".',
-    explicacion_alternativa: 'Piense en Excel como el plano ordenado de calles de un vecindario municipal. Si busca la dirección "Calle B con número de casa 2", sabe exactamente a dónde caminar. En Excel, la celda "B2" es la combinación perfecta entre la columna B y la fila de altura número 2.',
+    titulo: 'La Sede Social en Cuadrícula (Perder el miedo a Excel)',
+    descripcion_teorica: 'Excel no es un procesador de cartas, sino una planilla cuadriculada. Las columnas se identifican con letras (A, B, C...) de manera vertical, y las filas con números horizontales (1, 2, 3...). Al cruce de una columna y una fila se le llama Celda, representada por su coordenadas, por ejemplo, "A1".',
+    explicacion_alternativa: 'Mire a Excel como el estillero o casillero de orden de la Sede. Las hileras de vasos van marcadas con letras en vertical, y los estantes de abajo con números. Si le digo que busque los clavos en "B2", usted va derechito al estante 2 de la hilera B sin titubear. ¡Es un mapa impecable!',
     pasos_a_seguir: [
-      'Abra esta instrucción en su teléfono móvil y encienda Excel real en su computadora.',
-      'Haga un click izquierdo en el primer recuadro arriba a la izquierda. Verá que se demarca con un borde verde grueso. Esa es la celda A1.',
-      'Use la flecha derecha de su teclado real para moverse al cuadro del lado. Ahora está situado en la celda "B1".',
-      'Use la flecha abajo para descender un espacio. Acaba de estacionarse en la celda "B2".'
+      'Abra su programa Microsoft Excel real (ícono verde con una letra X blanca en su escritorio).',
+      'Haga click en "Libro en blanco" y mire el mosaico interminable de casilleros rectangulares.',
+      'Haga click en una casilla al azar y fije su mirada arriba a la izquierda: el "Cuadro de nombres" le dirá en qué coordenadas está parado (ej. C3).',
+      'Escriba una frase sencilla y presione Enter. El cursor saltará a la celda de abajo inmediatamente.'
     ],
     pasos_alternativos: [
-      'Lea los pasos desde su celular y practique directamente en el programa Excel de su PC.',
-      'Haga click en cualquier parte del centro de la cuadrícula.',
-      'Mire la esquina superior izquierda de Excel (arriba de las letras). Ahí hay un recuadro blanco que le dice exactamente el nombre del cajón en el que está parado (ej: C5 o D10).'
+      'Desplácese usando las flechas de dirección de su teclado físico para saltar entre bloques de celdas.',
+      'Si se asoma al Excel web, note que las planillas cuadriculadas se manejan idéntico a las de computadora.'
     ],
-    tips_de_accesibilidad: 'Para personas con baja visión, se puede activar una cuadrícula más gruesa. Seleccione toda la hoja con "Control + E", vaya a bordes y aplique "Todos los bordes" para demarcar con tinta negra gruesa cada separación.',
+    tips_de_accesibilidad: 'La celda seleccionada se delinea con un trazo negro firme. Si la vista se le cansa, use el regulador de Zoom en la esquina lateral derecha alta para inflar el tamaño de la cuadrícula.',
     checklist_validacion: [
-      'He abierto un libro o documento de Excel nuevo en mi PC real.',
-      'Logré posicionarme en la celda A1 haciendo un click arriba a la izquierda.',
-      'Utilicé las flechas de dirección del teclado físico para moverme entre casillas.',
-      'Identifiqué con éxito el cambio de nombre de celda en la parte superior.'
+      'Abrí un libro vacío de Excel.',
+      'Identifiqué las Columnas por letra superior.',
+      'Identifiqué las Filas por número de contrafuerte.',
+      'Hice clic seleccionando la celda B3.',
+      'Comprendí la visualización de coordenadas del programa.'
     ],
-    sugerencias_descubrimiento: [
-      "¡Sombree un conjunto de celdas (un Rango) para experimentar!: Presione el botón izquierdo del mouse en 'A1' y, sin soltarlo, muévalo hacia abajo y la derecha hasta llegar a 'C3'. Verá cómo se tiñen de celeste claro varios cajones juntos. Esto se llama un 'Rango' en Excel, y sirve para colorear o borrar muchas cosas de un solo golpe.",
-      "Pruebe a agrandar el ancho de la columna A: Coloque su puntero del mouse justo en la línea divisoria vertical que separa el encabezado de la letra 'A' y el de la 'B' (arriba del todo). Verá que su mouse cambia para ser una cruz con dos flechas horizontales. Haga click izquierdo y arrástrelo hacia la derecha. ¡Qué divertido! ¡Vea cómo la columna A se ensancha tanto como una calle real! Esto le servirá para poner nombres muy largos sin que se encimen.",
-      "Escriba un texto muy largo en 'A1': Escriba por ejemplo 'Lista de Vecinos Presentes de la Junta'. Notará que el texto pasa por encima de la columna B. Ahora haga click en 'B1' y escriba el número '1'. ¡Mire cómo se corta el texto largo anterior! Esto demuestra que la celda tiene límites virtuales, y por eso ensanchar la columna en el paso anterior le ayuda tanto a organizar el inventario."
+    concepto_clave: 'Identificar las coordenadas básicas (Celdas) para orientar el ingreso en la planilla de cálculo.',
+    ejercicio_practico: 'Moverse a la celda D4 en su Excel real, tipear la palabra "TESORERÍA" y presionar Enter.',
+    elementos_visuales: [
+      { icono: 'cuadrícula', etiqueta: 'Coordenadas Celda', descripcion: 'Fusión de letra de columna y número de fila.' },
+      { icono: 'zoom', etiqueta: 'Zoom Inferior', descripcion: 'Regulador de aumento espacial de grilla.' }
     ]
   },
   {
@@ -577,31 +399,32 @@ export const LECCIONES: Leccion[] = [
     orden: 2,
     nivel: 'Nivel 1: Funcional',
     programa: 'Excel',
-    titulo: 'El Inventario de Recursos Vecinales',
-    descripcion_teorica: 'Para organizar un inventario claro de los bienes de nuestra sede social (como sillas, mesas, tazas y parlantes), debemos ordenar los datos en columnas separadas. Al hacer esto, cada fila representa un recurso individual en orden alfabético o de valor. Escribimos la categoría arriba del todo en la celda para estructurar el reporte de forma administrativa impecable.',
-    explicacion_alternativa: 'Es igual que armar una lista de compras en una libreta de papel cuadriculado: en la primera columna escribe los nombres de los productos ("Sillas", "Té") y al lado, en la columna derecha, escribe cuántas unidades hay disponibles ("50", "200"). El papel digital almacena todo de forma permanente sin borrones.',
+    titulo: 'El Inventario de la Sede y Columnas Cortadas',
+    descripcion_teorica: 'Al redactar listas largas de inventario en Excel, es usual que las frases largas se asomen a la celda del vecino o se corten de forma desprolija. Esto sucede porque el ancho original viene estandarizado. Para sanar esto de forma impecable, basta con amoldar el ancho de columna haciendo un doble clic rápido en la frontera divisoria superior.',
+    explicacion_alternativa: 'Es igual que apilar cajas de cartón en los estantes de la junta. Si pone un cajón muy ancho en una gaveta angosta, este sobresale estorbando el paso de las vecinas. Debemos ensanchar la gaveta lateralmente para que todo el cajón calce de manera segura y holgada.',
     pasos_a_seguir: [
-      'Consulte la guía en su teléfono móvil y trabaje en el programa Excel real de su computadora.',
-      'En la celda A1 escriba el título de la columna: "RECURSO" y pulse Enter.',
-      'Abajo, en las celdas A2, A3 y A4, escriba hacia abajo: "Sillas", "Mesas" y "Tazas" (presionando Enter después de escribir cada una).',
-      'Haga click en la celda B1 y escriba el título de la columna: "CANTIDAD".',
-      'Abajo, en las celdas B2, B3 y B4 escriba respectivamente los números: "50", "12" y "80".'
+      'En la columna A, escriba en A2: "Mesas de Madera Grandes" y en B2 escriba el número "15".',
+      'Observe cómo el texto parece cortado o asomado en la columna de los números.',
+      'Dirija su mouse arriba a la franja gris de letras divisoria, justo en la línea frontera entre la letra "A" y la "B". Es cursor se volverá una cruz con dos flechas.',
+      'Haga un doble click izquierdo veloz.'
     ],
     pasos_alternativos: [
-      'Mantenga esta guía en su celular y complete la práctica en el Excel real de su PC.',
-      'Coloque en la fila de arriba los encabezados "ARTÍCULO" en la casilla A1 y "CANTIDAD" en la casilla B1.',
-      'Escriba hacia abajo los materiales comunales de su oficina y al lado sus respectivos valores numéricos.'
+      'Si prefiere ajustar las medidas sin ratón, arrastre la línea divisoria a pulso hacia la derecha hasta tapizar la frase.',
+      'Tilde la celda, vaya a la pestaña Inicio superior y pulse sobre la herramienta "Ajustar texto" si desea que la frase quepa dividiéndose en dos renglones.'
     ],
-    tips_de_accesibilidad: 'Para que el texto de su inventario sea plenamente visible para ojos cansados, puede presionar el botón "Zoom" de aumento (abajo a la derecha en la ventana de Excel) o mantener presionada la tecla "Control" y mover la rueda del mouse hacia adelante para ampliar la cuadrícula gigante.',
+    tips_de_accesibilidad: 'Cuidar que los enunciados quepan de corrido previene la superposición de datos confidenciales y resguarda la legibilidad para coordinadores vecinales mayores.',
     checklist_validacion: [
-      'Creé los encabezados Claros "RECURSO" y "CANTIDAD" en la fila superior.',
-      'Completé una lista vertical con tres o más bienes reales de la junta de vecinos.',
-      'Coloqué las cantidades correspondientes alineadas al lado de cada producto.',
-      'Utilicé la ampliación visual (Zoom) para revisar los datos con confort.'
+      'Completé un escrito extenso descriptivo en la celda A2.',
+      'Ubicé la cabecera divisoria gris entre columnas.',
+      'Avisté la fisonomía especial de cruz táctil de frontera.',
+      'Efectué el doble click para redimensionar automáticamente la fila.',
+      'Confirmé que no hay textos recortados o incompletos.'
     ],
-    sugerencias_descubrimiento: [
-      "¡Experimente con las opciones de 'Alineación' de celdas!: Por defecto, Excel coloca los textos al lado izquierdo y los números al lado derecho de cada cajonera virtual. Seleccione las celdas B2, B3 y B4 de sus cantidades, vaya a la pestaña Inicio en la parte superior y pulse el botón de 'Centrar'. ¡Admire el orden! Ahora los números están exactamente en el centro del casillero.",
-      "Pruebe a pintar el casillero (Relleno de celda): Resalte la celda A1 de sus encabezados con un click de mouse. Busque arriba en la barra de herramientas el ícono que parece un 'Tarrito de Pintura' cayendo. Pulse la flechita lateral y seleccione un color Celeste Claro o de Alto Contraste Amarillo. ¿Se da cuenta cómo de inmediato nuestra base de datos parece un cuadro oficial?"
+    concepto_clave: 'Adecuar la fisonomía bidimensional de la grilla para asegurar la correcta lectura integral de inventarios.',
+    ejercicio_practico: 'Crear una lista piloto de 3 insumos de sede y rectificar los cortes aplicando el doble click de frontera.',
+    elementos_visuales: [
+      { icono: 'ancho', etiqueta: 'Frontera de Columnas', descripcion: 'Lugar divisorio gris de cabecera alta.' },
+      { icono: 'ajustar', etiqueta: 'Ajustar Texto', descripcion: 'Opción superior que fragmenta renglones en celdas.' }
     ]
   },
   {
@@ -610,225 +433,255 @@ export const LECCIONES: Leccion[] = [
     orden: 3,
     nivel: 'Nivel 1: Funcional',
     programa: 'Excel',
-    titulo: 'Suma y Presupuesto de Actividades',
-    descripcion_teorica: 'El momento clave en administración vecinal es sumar el presupuesto total de un bingo de beneficencia o de los gastos mensuales. En lugar de usar una calculadora de mano exponiéndose a errores de digitación, le enseñamos a Excel a sumar de forma mágica. Toda operación matemática requiere colocar el signo igual "=" al principio para activar el procesador numérico automático.',
-    explicacion_alternativa: 'Imagine que el signo igual es un cartero especial al que le encarga una tarea en la municipalidad. Si solo grita los números por la ventana, el cartero se va de largo. Al poner el "=" primero en la celda, el cartero se detiene, toma su orden ("50 + 25") y le entrega la respuesta de forma instantánea.',
+    titulo: 'Fórmulas de Caja: Sumas y Autosumas Rápidas',
+    descripcion_teorica: 'El poder absoluto de Excel radica en calcular solo. Para lograr que una celda resuelva operaciones matemáticas, debemos teclear obligatoriamente su gran llave de arranque: el signo igual (=) al inicio de todo renglón. Sin el igual, Excel considerará su texto como un párrafo común de lectura.',
+    explicacion_alternativa: 'Imagínese sentar a la tesorera a resolver el libro de egresos. Si usted solo le escribe la lista "200 + 300", ella la leerá de corrido como lectura. Pero si le da la orden formal: "Suma lo siguiente, es decir =", ella sacará el lápiz en un santiamén dándole el resultado en un segundo.',
     pasos_a_seguir: [
-      'Siga estas explicaciones desde su teléfono y acomódese frente a su computadora.',
-      'Haga click en la casilla vacía B5 de su hoja de cálculo actual.',
-      'Busque en su teclado físico la tecla para poner el signo igual "=" (normalmente requiere sostener la tecla Shift y presionar el número 0 de arriba).',
-      'Escriba de recorrido: "= 50 + 12 + 80" para sumar el inventario vecinal anterior.',
-      'Presione la tecla "Enter" en su teclado real y vea cómo aparece de forma mágica la cifra de la suma final: "142".'
+      'En su hoja de Excel real, escriba en A2 el valor "1500" y en A3 el valor "2500" (recaudaciones de cuotas).',
+      'Haga click en la celda A4 (donde verá nacer el resultado total).',
+      'Digite en su teclado: `=A2+A3` y pulse la tecla Enter.',
+      'Contemple el fantástico nacimiento del número "4000".',
+      'Si tiene una hilera larga, sombréela completa, vaya a la pestaña Inicio en la esquina derecha alta y pulse el gran botón "Autosuma" (con la letra griega Sigma Σ).'
     ],
     pasos_alternativos: [
-      'Use su teléfono para la lectura de la guía y el Excel real de su PC para trabajar.',
-      'Seleccione la casilla donde quiere ver el total presupuestado.',
-      'Escriba el signo "=" seguido de los números a calcular sumando con el símbolo más (+) de su teclado.',
-      'Pulse Enter con decisión para que la computadora resuelva la operación matemática.'
+      'Pulse la tecla abreviada Alt + Shift + = (o Alt + =) para activar la Autosuma de corrido en su teclado real.',
+      'Modifique el valor original de A2 cambiando 1500 por 2000. ¡Sienta el placer de ver cómo el resultado en A4 se recalcula solo!'
     ],
-    tips_de_accesibilidad: 'Si tiene problemas para localizar el símbolo "+" o "=" en su teclado real, puede solicitarle al narrador integrado de Windows que lea los caracteres por pantalla o utilizar un teclado con letras de alto contraste negro sobre blanco.',
+    tips_de_accesibilidad: 'La función Autosuma automatizada reduce a cero la fatiga tipográfica al suprimir tener que tipear coordenadas una a una en actas de contabilidad vecinal.',
     checklist_validacion: [
-      'Me ubiqué en una casilla vacía de la hoja de cálculo en mi computadora.',
-      'Puse obligatoriamente el signo "=" al inicio para preparar el cálculo inteligente.',
-      'Escribí los números correctos separados por el símbolo "+".',
-      'Presioné la tecla Enter y validé que la suma es resuelta por la computadora.'
+      'Cargué dos cifras numéricas en celdas consecutivas.',
+      'Inicie la declaración en la celda de salida con el signo igual (=).',
+      'Acoplé las coordenadas de manera aditiva (=A2+A3).',
+      'Oprimí Enter observando el cálculo en vivo.',
+      'Sometí a prueba el botón institucional Autosuma.'
     ],
-    sugerencias_descubrimiento: [
-      "¡Experimente la fórmula inteligente de Excel sumando las celdas directamente!: En la celda B5, pulse dos veces para borrar y escriba en su lugar: `=B2+B3+B4`. Al presionar Enter, el resultado vuelve a dar 142 de forma mágica. ¿La ventaja? Si cambia el inventario real en B2 de de Sillas escribiendo '60' en vez de '50' en su PC, oiga cómo el total en B5 ¡se recalcula automáticamente a 152 sin que usted meta mano!.",
-      "Pruebe con la fórmula más avanzada de todas: `=SUMA(B2:B4)`. Póngala en B5 y pulse Enter. Los dos puntos ':' le indican a la computadora: 'Suma desde el cajón B2 hasta el cajón B4, pasándole por encima a todo lo que esté en medio'. Es la clave que emplean los contadores para calcular listas de más de cien vecinos en un segundo."
-    ]
-  },
-  {
-    id: 'excel_n1_l4',
-    modulo_id: 'excel',
-    orden: 4,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Excel',
-    titulo: 'Filtros Rápidos en Listas de Vecinos',
-    descripcion_teorica: 'Cuando la lista de vecinos de la sede social supera las cincuenta personas, buscar manualmente quiénes pertenecen a un comité específico o quiénes tienen sus cuotas al día se vuelve sumamente tedioso. Excel nos ofrece los "Filtros Rápidos". Estos actúan como un colador de cocina inteligente: ocultan temporalmente las filas que no cumplen el criterio buscado (por ejemplo, los vecinos de otra calle) y nos muestran únicamente lo solicitado, sin borrar ningún dato del disco duro.',
-    explicacion_alternativa: 'Es igual que buscar las fichas de los vecinos que viven en la calle "O\'Higgins" en una caja archivadora real. En vez de mirar papel por papel, le pide a Excel que agrupe y le muestre de golpe solo las personas de esa calle. Al terminar, quita el "colador" y la lista completa vuelve a aparecer intacta en su pantalla de forma idéntica.',
-    pasos_a_seguir: [
-      'Posicione su mirada en la primera fila de Excel real donde escribió "NOMBRE", "CALLE" y "ESTADO" en la parte superior.',
-      'Haga un click izquierdo en el encabezado de la columna "CALLE" para seleccionarla.',
-      'Diríjase a la pestaña "Datos" en la Cinta de Opciones alta.',
-      'Siga de largo y haga click en el gran botón que simula un "Embudo de Filtro". Verá aparecer pequeñas flechas grises apuntando hacia abajo en cada encabezado.',
-      'Haga click en la flechita gris al lado de "CALLE", desmarque la opción "(Seleccionar todo)" de la lista, marque únicamente su calle ("O\'Higgins") y pulse el botón Aceptar.'
-    ],
-    pasos_alternativos: [
-      'Sitúese en la pestaña "Inicio" de Excel real en su computadora.',
-      'Busque en el extremo derecho de las herramientas el botón que reza "Ordenar y filtrar" (con una lupa y un embudo).',
-      'Haga click en "Filtro". Aparecerán flechas de selección en la primera fila de la planilla para colará la lista fácilmente.'
-    ],
-    tips_de_accesibilidad: 'La combinación de teclas "Control + Shift + L" activa o desactiva los filtros en Excel instantáneamente, evitándole esforzar el mouse en la barra alta. Es un atajo de alta eficiencia para directores con cansancio visual.',
-    checklist_validacion: [
-      'Puse un encabezado ordenado sobre cada columna de datos en Excel.',
-      'Activé los menús flotantes presionando el botón "Filtro" (ícono del embudo).',
-      'Desplegué el listado de opciones de una columna haciendo click en su flecha.',
-      'Filtré los registros seleccionando un solo valor específico con éxito.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe a limpiar el filtro: Cuando termine de examinar la calle seleccionada, vuelva a oprimir la flechita con forma de embudo y elija 'Borrar filtro de CALLE'. Verá que los demás vecinos reaparecen en fila al instante.",
-      "Ordene de la A a la Z: Presione la misma flechita en la columna de nombres y seleccione 'Ordenar de A a Z'. Excel acomodará los vecinos por orden alfabético de manera impecable y automática."
-    ],
-    concepto_clave: 'Usar filtros en las cabeceras de columnas para aislar, agrupar y visualizar conjuntos de datos de forma temporal.',
-    ejercicio_practico: 'Establecer filtros en una lista de asistencia comunal de Excel para agrupar únicamente a los socios activos en una asamblea real.',
+    concepto_clave: 'Activar el motor de cálculo relacional de celdas utilizando el signo igual como interruptor.',
+    ejercicio_practico: 'Montar un flujo rudimentario de gastos (agua, luz) y totalizar de forma automatizada usando Autosuma.',
     elementos_visuales: [
-      {
-        icono: 'embudo',
-        etiqueta: 'Botón de Filtro',
-        descripcion: 'Forma de embudo arriba en la barra de herramientas que enciende las opciones de colado.'
-      },
-      {
-        icono: 'interlineado',
-        etiqueta: 'Flechas de Despliegue',
-        descripcion: 'Menús que aparecen en las celdas de encabezado para elegir qué registros exhibir.'
-      }
-    ]
-  },
-  {
-    id: 'excel_n1_l5',
-    modulo_id: 'excel',
-    orden: 5,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Excel',
-    titulo: 'Gráficos de Contabilidad Sencillos',
-    descripcion_teorica: 'Un reporte financiero de la sede lleno de números puede ser difícil de explicar en una reunión vecinal ruidosa. Los ojos humanos perciben mucho mejor las proporciones visuales. Excel nos permite transformar una pequeña tabla de ingresos y egresos de caja en un "Gráfico de Barras" o un "Gráfico Circular" de alto contraste en un segundo. Así, mostramos a toda la asamblea de forma solemne qué actividades aportaron más fondos al centro social.',
-    explicacion_alternativa: 'Es como dibujar una torta de cumpleaños en la pizarra de la junta de vecinos: la porción de chocolate más grande representa el dinero recaudado en el bingo comicial, y la porción pequeña es lo que costaron las bebidas. En la computadora la torta se dibuja perfecta y con colores luminosos pulsando el botón de Gráfico, lo que evita que tenga que usar escuadras.',
-    pasos_a_seguir: [
-      'En un libro de Excel real, escriba en la columna A: "Bingo" (celda A2), "Rifa" (A3) y "Cuotas" (A4).',
-      'Al lado, en la columna B, escriba el valor recaudado de cada uno: "400" (B2), "150" (B3) y "200" (B4).',
-      'Sombreé todo el rango arrastrando el mouse desde la celda A1 hasta la casilla B4.',
-      'Vaya a la pestaña "Insertar" en la Cinta de Opciones superior de Excel.',
-      'Localice el sector "Gráficos" y haga un click izquierdo sobre el botón con forma de "Gráfico Circular" o "Gráfico de Columnas". Seleccione la primera ilustración sencilla que se le ofrezca.'
-    ],
-    pasos_alternativos: [
-      'Sombreé su pequeña tabla de cuentas con el mouse de forma fluida.',
-      'Presione el botón "Gráficos recomendados" que está en la pestaña Insertar de Excel.',
-      'La computadora le mostrará plantillas completas listas; elija una de barras simples con fondo claro y pulse Aceptar.'
-    ],
-    tips_de_accesibilidad: 'Use gráficos con etiquetas de datos numéricas escritas directamente en cada barra para que las personas con problemas de daltonismo o poca percepción del color entiendan la proporción exacta sin perderse por las gamas de colores.',
-    checklist_validacion: [
-      'Registré dos columnas claras: una para los nombres y otra para los valores numéricos.',
-      'Sombreé por completo la base de datos excluyendo celdas vacías innecesarias.',
-      'Fui a la sección de Insertar superior de Excel real.',
-      'Creé el gráfico ajustando su despliegue y comprobando que sea claro para todas las edades.'
-    ],
-    sugerencias_descubrimiento: [
-      "Cambie el título del gráfico: Haga un doble click en las letras que dicen 'Título del gráfico' arriba de las barras. Borre y tipee 'Ingresos del Semestre 1'. Quedará listo para pegarlo en su acta municipal.",
-      "Pruebe el Gráfico de Torta o Queso: Borre el gráfico seleccionado presionando Suprimir, vuelva a sombrear las celdas e intente insertar un 'Gráfico Circular'. Es el más entretenido de mirar."
-    ],
-    concepto_clave: 'Convertir matrices de datos estructurados de Excel en gráficos circulares o de barras que representen visualmente las proporciones financieras.',
-    ejercicio_practico: 'Crear un reporte en Excel y graficar los gastos de reparación de la techumbre de la sede para que los vecinos vean con claridad el desembolso real.',
-    elementos_visuales: [
-      {
-        icono: 'gráfico',
-        etiqueta: 'Sector Gráficos',
-        descripcion: 'Colección de botones arriba que grafican valores numéricos de forma colorida.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Barras Resultantes',
-        descripcion: 'Formas geométricas de colores que escalan de altura de acuerdo a lo que digitó.'
-      }
-    ]
-  },
-  {
-    id: 'excel_n1_l6',
-    modulo_id: 'excel',
-    orden: 6,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Excel',
-    titulo: 'Formatear Celdas y Bordes de Alto Contraste',
-    descripcion_teorica: 'Por defecto, la fina cuadrícula gris de Excel en pantalla es solo una guía virtual visual y no se imprime en papel físico, dejando que el reporte luzca flotante y desordenado al salir de la máquina. El formato de celdas nos permite trazar "Bordes" de tinta gruesa negra alrededor de los números para encuadrarlos administrativamente, ensanchar el tamaño de letra de los totales y teñir con rellenos suaves de alto contraste los renglones de encabezado.',
-    explicacion_alternativa: 'Es igual que tomar un plumón marcador negro y una regla de madera clásica sobre la cartulina de su sede para delinear los casilleros del bingo de modo que sea legible desde el fondo de la asamblea. En Excel, seleccionamos las casillas del inventario y le ordenamos poner bordes gruesos para que el listado no parezca flotar.',
-    pasos_a_seguir: [
-      'Sombreé su tabla de inventario completa en Excel real arrastrando el mouse sobre ella.',
-      'En la Cinta de Opciones, pestaña "Inicio", busque el botón "Bordes" (pequeño recuadro dividido en cuatro que está al lado de la letra Negrita).',
-      'Haga click en su flechita, recorra la lista de opciones y elija "Todos los bordes". ¡Vea cómo toda la cuadrícula cobra una línea negra sólida de inmediato!',
-      'Haga click en la fila 1 de sus títulos para sombrearlos únicamente, y presione el ícono "Relleno" (el bote de pintura volcando color).',
-      'Elija un color con alto contraste cómodo para su vista (como amarillo claro o verde pálido) para resaltar la cabecera.'
-    ],
-    pasos_alternativos: [
-      'Seleccione las celdas de totales presupuestarios de la directiva comicial.',
-      'Haga click derecho en medio del sombreado y escoja la opción "Formato de celdas...".',
-      'Haga click en la pestaña "Borde", presione el estilo de línea doble que usan habitualmente los auditores para contabilidad y pulse Aceptar.'
-    ],
-    tips_de_accesibilidad: 'Pauta de Contraste: Para resguardar las normas de accesibilidad inclusive con cambios de contraste de claro a oscuro del navegador exterior, recuerde que las cuadrículas internas del área de trabajo virtual de Excel mantendrán fondo blanco y letras oscuras simulando hojas físicas impresas. El cambio de contraste oscuro afecta a las márgenes exteriores de navegación del programa.',
-    checklist_validacion: [
-      'Presioné el botón "Bordes" en la pestaña Inicio de Excel real.',
-      'Escogí "Todos los bordes" para blindar el dibujo de líneas negras al imprimir.',
-      'Pinté los encabezados superiores usando un tono de relleno suave y formal.',
-      'Apliqué Negrita a las sumas finales dándoles relevancia en el balance.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe el Estilo Moneda ($): Seleccione las casillas que tienen números. En la misma pestaña Inicio, busque el ícono de un signo Peso '$' al centro y púlselo. ¡Verá que Excel agrega el signo '$' y puntos de miles automáticamente como en los bancos!",
-      "Aumentar decimales: Al lado de ese signo de dinero, localice los íconos con flechas azules apuntando a ceros; púlselo para quitar o agregar centavos virtuales al balance."
-    ],
-    concepto_clave: 'Aplicar bordes físicos, fuentes de alto contraste y rellenos de color para dotar a la cuadrícula de una jerarquía de lectura legible de uso administrativo.',
-    ejercicio_practico: 'Establecer bordes dobles y fondo amarillo de cabecera a una planilla real de egresos comunales en su PC de escritorio.',
-    elementos_visuales: [
-      {
-        icono: 'viñeta',
-        etiqueta: 'Selector Bordes',
-        descripcion: 'Cajoncito con líneas que dibuja las grillas virtuales en color negro sólido.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Bote de Relleno',
-        descripcion: 'Pinta el fondo de los casilleros seleccionados para agrupar visualmente datos.'
-      }
-    ]
-  },
-  {
-    id: 'excel_n1_l7',
-    modulo_id: 'excel',
-    orden: 7,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Excel',
-    titulo: 'Imprimir la Planilla y Organizar Márgenes',
-    descripcion_teorica: 'Las planillas de Excel son infinitamente anchas hacia el costado derecho de la pantalla, lo que provoca que, al enviarlas a imprimir sin configurar nada, un cuadro de inventario completo salga cortado a la mitad en dos hojas físicas arruinando la presentación vecinal. Para corregirlo, aprendemos a orientar el papel físico virtual en posición "Horizontal" y regular los márgenes visuales desde la Vista Previa de impresión antes de gastar valioso papel de la sede.',
-    explicacion_alternativa: 'Es igual que colocar una regla y girar la hoja de su cuaderno a lo ancho antes de dibujar un croquis costoso. Al cambiar la orientación a Horizontal en Excel virtual, le ordena al programa que aproveche al máximo el espacio de la impresora real reduciendo drásticamente el número de hojas impresas de un solo golpe.',
-    pasos_a_seguir: [
-      'Vaya a la Cinta de Opciones de Excel real en su computadora.',
-      'Haga un click izquierdo en la pestaña "Disposición de página" (también llamada "Formato" o "Diseño" en algunas versiones).',
-      'Haga click en "Orientación" y seleccione la opción "Horizontal" (la hoja virtual girará recostada de lado).',
-      'En la esquina superior izquierda, pulse el botón "Archivo" y luego seleccione haciendo click en la opción "Imprimir".',
-      'Observe el panel derecho con la gran Vista Previa de Impresión: es una simulación exacta en blanco y negro de cómo se acomodan sus inventarios vecinales sobre la hoja física.'
-    ],
-    pasos_alternativos: [
-      'Utilice el atajo físico abreviador de Excel: pulse juntas las teclas "Control + P" en su teclado real.',
-      'Mire a ver si todo el inventario de gastos cabe en una sola hoja virtual en la Vista Previa.',
-      'Si se corta alguna columna al final, encienda la escala de ajuste rápido seleccionando "Ajustar todas las columnas en una página".'
-    ],
-    tips_de_accesibilidad: 'La función "Ajustar todas las columnas en una página" disminuye levemente la letra, por lo que es idónea para evitar saltos. Si la tipografía le resulta muy pequeña, retome el zoom regular virtual de la pantalla de su PC y elimine columnas vacías duplicando su espacio útil.',
-    checklist_validacion: [
-      'Accedí a la pestaña "Disposición de página" en Excel de escritorio.',
-      'Giré el lienzo virtual a Horizontal aprovechando el ancho disponible.',
-      'Puse en marcha la ventana de impresión (Control + P) para examinar la distribución general.',
-      'Verifiqué que no queden columnas cortadas o remanentes huérfanos al borde.'
-    ],
-    sugerencias_descubrimiento: [
-      "Imprimir en PDF: En el listado de impresoras del panel, seleccione la que dice 'Microsoft Print to PDF' y pulse Imprimir. Excel no expulsará papel, sino que generará un plano digital impecable para enviar por correo.",
-      "Reduzca los márgenes físicos: En el menú de impresión lateral, localice 'Márgenes normales' y cámbielo por 'Márgenes estrechos'. ¡Mire cómo la superficie imprimible se amplía de golpe!"
-    ],
-    concepto_clave: 'Girar la orientación del lienzo virtual a modo Horizontal y utilizar el escalado rápido de página de Excel para garantizar impresiones íntegras libres de cortes.',
-    ejercicio_practico: 'Convertir una hoja de gastos extendidos de su Centro Social a horizontal en Excel, comprobando su integridad estética en la Vista Previa preliminar.',
-    elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Pestaña Disposición',
-        descripcion: 'Menú superior de diseño donde reside el control de giro de la hoja.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Ajuste de Escala',
-        descripcion: 'Control que escala toda la información para asegurar que quepa dentro de la hoja física.'
-      }
+      { icono: 'autosuma', etiqueta: 'Botón Autosuma Σ', descripcion: 'Comando de totalización veloz en Inicio.' },
+      { icono: 'igual', etiqueta: 'Signo Igual', descripcion: 'La gran llave rítmica que desata los cómputos.' }
     ]
   },
 
   // ==========================================
-  // POWERPOINT - NIVEL 1: FUNCIONAL
+  // EXCEL - NIVEL 2: ADMINISTRATIVO (INTERMEDIO)
+  // ==========================================
+  {
+    id: 'excel_n2_l1',
+    modulo_id: 'excel',
+    orden: 4,
+    nivel: 'Nivel 2: Administrativo',
+    programa: 'Excel',
+    titulo: 'Enlazar Datos con la Fórmula BUSCARV',
+    descripcion_teorica: 'Cuando la lista de socios del centro del barrio supera las 200 almas, buscar el teléfono de un vecino de corrido deslizando los ojos hilera por hilera es agotador. Excel posee el ayudante "BUSCARV" (búsqueda vertical). Con esta celda inteligente, al escribir el nombre del socio en una celda base, el programa viaja de inmediato hacia abajo, toma su teléfono correlativo y lo entrega en pantalla.',
+    explicacion_alternativa: 'Piense en BUSCARV como un mandadero veloz e incansable de la sede. Usted se sienta cómodamente y le ordena: "Busca a doña María Martínez en el archivador principal, mira qué teléfono tiene asignado en su hilera y dímelo de inmediato". El mandadero tardará una milésima de segundo en darle el dato.',
+    pasos_a_seguir: [
+      'Monte una tabla simple: Nombres en la Columna A (A2 a A4) y Teléfonos en la Columna B (B2 a B4).',
+      'Haga click en una casilla en blanco para consulta (ej. D2) donde ingresará el nombre de la persona que desea buscar.',
+      'Haga click en la celda de al lado (E2) y digite: `=BUSCARV(D2; A2:B4; 2; FALSO)` (reemplace puntos y comas por comas si su Excel es en inglés).',
+      'Pulse Enter. Visualizará el código transitorio `#N/D` (o `#N/A`), el cual le avisa que la celda de consulta D2 está vacía.',
+      'Digite en D2 el nombre exacto de uno de sus vecinos registrados y mire el milagro del número telefónico.'
+    ],
+    pasos_alternativos: [
+      'Si su Excel es moderno o de Office 365, use la fórmula evolucionada `=BUSCARX(D2; A2:A4; B2:B4)`, que no requiere indicar el número de columna.',
+      'Utilice el asistente de fórmulas "Insertar Función" (fx) de la barra superior para rellenar los parámetros con ayuda guiada paso a paso.'
+    ],
+    tips_de_accesibilidad: 'La palabra "FALSO" al final de la fórmula le ordena a Excel que busque solo coincidencias exactas del nombre, evitando cruces con vecinos de nombres homónimos.',
+    checklist_validacion: [
+      'Establecí una base limpia con nombres a la izquierda y datos a la derecha.',
+      'Elegí una coordenada en blanco para teclear la consulta vecinal.',
+      'Formulé la sintaxis BUSCARV apuntando a mi base de celdas.',
+      'Ingresé la palabra clave FALSO para resguardar la precisión de emparejamiento.',
+      'Validé que al ingresar el nombre del socio, Excel devuelva su teléfono exacto.'
+    ],
+    concepto_clave: 'Emparejar bases dispersas de forma relacional y estructurada usando índices coincidentes y precisos.',
+    ejercicio_practico: 'Crear un buscador vecinal de cuotas vencidas aplicando de corrido el algoritmo de búsqueda BUSCARV.',
+    elementos_visuales: [
+      { icono: 'cros', etiqueta: 'Coordenada de Entrada', descripcion: 'Casillero destinado a digitar el nombre del vecino.' },
+      { icono: 'formula', etiqueta: 'Sintaxis BUSCARV', descripcion: 'La fórmula relacional digitada en la barra alta.' }
+    ]
+  },
+  {
+    id: 'excel_n2_l2',
+    modulo_id: 'excel',
+    orden: 5,
+    nivel: 'Nivel 2: Administrativo',
+    programa: 'Excel',
+    titulo: 'Pintar de Forma Inteligente: Formato Condicional',
+    descripcion_teorica: 'En un censo masivo de deudas vecinales, analizar cifra por cifra para ver quién está al día y quién debe cuotas desgasta la vista de la directiva de la junta de vecinos. La herramienta "Formato Condicional" soluciona esto de raíz: le ordena a Excel monitorear las cifras y teñir de rojo brillante a los morosos y de verde a los al día, de manera 100% automática.',
+    explicacion_alternativa: 'Es como mandar al alguacil de la junta con un marcador fluorescente rojo y verde, indicándole: "Recorre el padrón y raya de inmediato con color rojo a cualquiera que deba más de $5,000 mil pesos". El marcador es digital y se pinta solo en pantalla.',
+    pasos_a_seguir: [
+      'Seleccione la hilera de celdas que contienen sus montos económicos de deudas.',
+      'Vaya a la pestaña "Inicio" del cabezal superior y localice el botón "Formato Condicional" (suele tener una cuadrícula con colores).',
+      'Tilde en "Reglas para resaltar celdas" -> "Es mayor que...".',
+      'Escriba "0" en la casilla técnica del valor y cambie el relleno preestablecido a "Relleno rojo claro con texto rojo oscuro".',
+      'Pulse en Aceptar y mire cómo las deudas se encienden solitas en rojo de alerta.'
+    ],
+    pasos_alternativos: [
+      'Puede aplicar condiciones para textos: elija "Texto que contiene" y tipee "PAGADO" para encintar registros con color verde de aprobación.',
+      'Pulse en "Borrar reglas" en el mismo listado maestro para reiniciar a color blanco original de resguardo.'
+    ],
+    tips_de_accesibilidad: 'Asigne rellenos suaves con textos oscuros para amoldarse a los lineamientos WCAG de contraste visual nítido y de alto relieve que eviten la fatiga.',
+    checklist_validacion: [
+      'Sometí a selección las cifras de cobros en pantalla.',
+      'Ubicé la consola interactiva de Formato Condicional de Inicio.',
+      'Definí el umbral aritmético (>0) para desatar la alerta de color.',
+      'Configure la apariencia a rojo satinado con textos oscuros.',
+      'Comprobé que al variar un saldo, el color se actualice al instante.'
+    ],
+    concepto_clave: 'Asociar rasgos visuales de realce (colores, fuentes) al valor dinámico del casillero para agilizar auditorías rápidas.',
+    ejercicio_practico: 'Diseñar un semáforo vecinal de control de cuotas coloreado íntegramente por condiciones automáticas.',
+    elementos_visuales: [
+      { icono: 'celda', etiqueta: 'Formato Condicional', descripcion: 'Control interactivo cromático de Inicio.' },
+      { icono: 'colores', etiqueta: 'Semáforo de Cuentas', descripcion: 'Tratamiento de verde y rojo para la grilla.' }
+    ]
+  },
+  {
+    id: 'excel_n2_l3',
+    modulo_id: 'excel',
+    orden: 6,
+    nivel: 'Nivel 2: Administrativo',
+    programa: 'Excel',
+    titulo: 'Consolidar balances con Tablas Dinámicas Sencillas',
+    descripcion_teorica: 'Al finalizar un proyecto de mejoras, el libro diario de gastos puede poseer cientos de líneas entrelazadas (pan, pintura, herramientas). Sumar una por una en calculadora es ineficiente. Las "Tablas Dinámicas" permiten agrupar miles de líneas archivadas por tipo de gasto, entregando totales acumulados en 3 clics rápidos sin digitar fórmulas.',
+    explicacion_alternativa: 'Es idéntico a volcar una bolsa llena de facturas vecinales sueltas en la mesa y que una secretaria robótica de la junta las apile por su tipo y le entregue los totales sumados organizadamente en un santiamén.',
+    pasos_a_seguir: [
+      'Fije su vista en una tabla con registros simples: Categoría en Columna A y Gasto en Columna B.',
+      'Seleccione todo el rango cuadriculado incluyendo los encabezados superiores.',
+      'Vaya a la pestaña "Insertar" arriba a la izquierda.',
+      'Haga clic en el primer botón de la izquierda llamado "Tabla dinámica" (o PivotTable) y pulse "Aceptar". Se creará una hoja nueva.',
+      'En el panel de la derecha, arrastre la casilla "Categoría" al bloque "Filas" y la casilla "Gasto" al bloque "Valores". ¡Habrá agrupado y calculado su balance comunal al instante!'
+    ],
+    pasos_alternativos: [
+      'Haga clic en "Tablas dinámicas recomendadas" en la pestaña Insertar para dejar que Excel diseñe la sintetización de manera automática.',
+      'Arrastre campos dentro y fuera del panel interactivo para reconfigurar el balance vecinal visualmente sin arruinar los datos.'
+    ],
+    tips_de_accesibilidad: 'La tabla dinámica mantiene los contrastes de cuadrícula bien delimitados y permite estructurar balances limpios para presentar en asambleas del barrio de forma legible.',
+    checklist_validacion: [
+      'Identifiqué las columnas de mi base con títulos claros en el cabezal.',
+      'Navegué al panel de Insertar seleccionando la Tabla Dinámica.',
+      'Generé el bastidor o esqueleto dinámico en una nueva solapa.',
+      'Arrastré la Categoría clasificatoria hacia las Filas.',
+      'Instalé la facturada monetaria hacia el sector de Valores.'
+    ],
+    concepto_clave: 'Girar y estructurar datos dispersos para compilar totales acumulados por criterios de manera ágil.',
+    ejercicio_practico: 'Montar un balance básico en su Excel y agrupar los gastos de Sede por departamento usando Tablas Dinámicas.',
+    elementos_visuales: [
+      { icono: 'dinamica', etiqueta: 'Panel de Campos', descripcion: 'Consola interactiva a la derecha de la grilla.' },
+      { icono: 'tabla', etiqueta: 'Agrupamiento de Valores', descripcion: 'Resultado concentrado sumado de corrido.' }
+    ]
+  },
+
+  // ==========================================
+  // EXCEL - NIVEL 3: RESOLUCIÓN DE PROBLEMAS (AVANZADO)
+  // ==========================================
+  {
+    id: 'excel_n3_l1',
+    modulo_id: 'excel',
+    orden: 7,
+    nivel: 'Nivel 3: Resolución de Problemas',
+    programa: 'Excel',
+    titulo: 'Auxilio: Diagnosticar Errores de Códigos Extraños',
+    descripcion_teorica: 'Al teclear cuentas en el balance de la junta, ver nacer códigos incomprensibles como `#¡VALOR!`, `#¿NOMBRE?` o una hilera de barritas `# # # # #` suele alarmar a la tesorería. No son daños permanentes ni virus: son gritos de auxilio lógicos que asoman cuando intentamos resolver operaciones imposibles, digitamos mal una fórmula o ensanchamos de menos una columna.',
+    explicacion_alternativa: 'Piense en un sobre devuelto por la oficina postal con un sello que raya "Falta de Código Comunal". No significa que el acta de la asamblea esté maldita; solo le avisa que corrija el dígito para despacharla con agilidad. Se arregla editando la información.',
+    pasos_a_seguir: [
+      'Si ve nacer la hilera de barritas "###", no se asuste. Encoja los hombros, vaya a la frontera de columnas arriba y haga doble click: Excel expandirá el ancho mostrando la gran cifra de inmediato.',
+      'Si observa el código `#¡VALOR!`, haga doble click en su celda y revise si entre los sumandos se metió una celda de texto escrita (como colocar "1500 + Cuotas"). Bórrelo y tipee solo el número.',
+      'Si visualiza el código `#¿NOMBRE?`, verifique arriba de todo en la barra de fórmulas si escribió mal la función (ej. teclear `=SUMEE` en vez de `=SUMA`).',
+      'Corrija las letras desfasadas, pulse Enter y recobre sus balances financieros limpios de inmediato.'
+    ],
+    pasos_alternativos: [
+      'Al tildar la celda dañada, observe el pequeño rombo amarillo flotante que asoma al lateral.',
+      'Haga clic sobre él y lea el dictamen de ayuda vecinal del software ("Fórmula con referencia vacía" o "Divisibilidad imposible") para corregir guiado.'
+    ],
+    tips_de_accesibilidad: 'La corrección analítica sistemática previene el desvío fraudulento de decimales en contabilidades vecinales y resta estrés de gestión a tesoreros mayores.',
+    checklist_validacion: [
+      'Ubiqué la presencia del código extraño en mi monitor real.',
+      'Enquicié la grilla destrabando las leyendas numéricas ###.',
+      'Eliminé textos de los rangos aritméticos mitigando el error de Valor.',
+      'Alineé la ortografía ortodoxa de las funciones subsanando el error de Nombre.',
+      'Recobré los totales de las asambleas con éxito.'
+    ],
+    concepto_clave: 'Decodificar la taxonomía de los reportes lógicos del software para amparar flujos aritméticos saludables.',
+    ejercicio_practico: 'Forzar voluntariamente el error NAME tipeando `=SUMMMA(10;20)` en su PC y enmendarlo con presteza.',
+    elementos_visuales: [
+      { icono: 'alerta', etiqueta: 'Rombo de Advertencia', descripcion: 'Guía complementaria emergente útil de Excel.' },
+      { icono: 'interroga', etiqueta: 'Error Arrojado', descripcion: 'Texto descriptivo precedido por el hashtag de resguardo.' }
+    ]
+  },
+  {
+    id: 'excel_n3_l2',
+    modulo_id: 'excel',
+    orden: 8,
+    nivel: 'Nivel 3: Resolución de Problemas',
+    programa: 'Excel',
+    titulo: 'Sumas y Conteos Condicionales: SUMAR.SI',
+    descripcion_teorica: 'A veces no queremos sumar todo el pozo de aportes de la planilla de corrido, sino que requerimos asilar partidas específicas (por ejemplo, sumar únicamente el dinero acumulado correspondientes a la calle "O\'Higgins" o contar cuántos socios están al día). Excel lo asimila de corrido usando las funciones lógicas `=SUMAR.SI` y `=CONTAR.SI` respectivamente.',
+    explicacion_alternativa: 'Es igual que pasar lista en la junta y ordenarle al auditor vecinal: "Recorre y suma solo el dinero de los aportes de las familias de la calle O\'Higgins, y salta a las demás porque no corresponden a este cobro". El robot hace la discriminación por usted.',
+    pasos_a_seguir: [
+      'Ordene sus datos en Excel: Calle del Socio en la Columna A, y Aporte en la Columna B.',
+      'Haga click en una celda libre para el reporte de caja.',
+      'Digite en su teclado: `=SUMAR.SI(A2:A10; "O\'Higgins"; B2:B10)` y pulse Enter.',
+      'Observe cómo Excel se encarga de discriminar: sólo suma los montos de la columna B si al lado dice "O\'Higgins".',
+      'Si requiere contar cuántos vecinos de esa calle asistieron, use la fórmula `=CONTAR.SI(A2:A10; "O\'Higgins").`'
+    ],
+    pasos_alternativos: [
+      'Tipee las llamadas de criterio apuntando a una celda de empalme en blanco (ej. `=SUMAR.SI(A2:A10; D2; B2:B10)`), para que al cambiar el escrito en D2 se recalculen los totales de calles alternas automáticamente.',
+      'Use barras de función fx si prefiere arrastrar rangos asistidos visualmente.'
+    ],
+    tips_de_accesibilidad: 'La discriminación de condiciones automatizada minimiza la fatiga mental de analistas al filtrar padrones municipales de alta densidad de manera digital y segura.',
+    checklist_validacion: [
+      'Estructuré registros con atributos de pertenencia espacial (Calles).',
+      'Cargué aportes asignados correlativos.',
+      'Initié la función con el gatillo `=SUMAR.SI`.',
+      'Encapsulé el criterio diferenciador usando comillas dobles.',
+      'Verifiqué la consistencia aritmética de la cuenta resultante.'
+    ],
+    concepto_clave: 'Filtrar lógicamente rangos de celdas según criterios para computar consolidados parciales sobre balances.',
+    ejercicio_practico: 'Delinear una planilla que cuente de corrido los deudores activos aplicando el algoritmo CONTAR.SI.',
+    elementos_visuales: [
+      { icono: 'cros', etiqueta: 'Rango de Criterio', descripcion: 'Sector donde el programa rastrea los nombres de calles.' },
+      { icono: 'suma', etiqueta: 'Suma de Resultados', descripcion: 'Valor que amasa las cuotas correctas.' }
+    ]
+  },
+  {
+    id: 'excel_n3_l3',
+    modulo_id: 'excel',
+    orden: 9,
+    nivel: 'Nivel 3: Resolución de Problemas',
+    programa: 'Excel',
+    titulo: 'Seguridad: Proteger Celdas para evitar Borrados',
+    descripcion_teorica: 'El desvelo constante de los encargados financieros es pasar el Excel de balances a otros directores y que, por un desliz táctil, estos borren o alteren las complejas fórmulas que tanto costó programar. Excel soluciona esto bloqueando parcialmente el tablero: permite definir qué celdas pueden escribir los invitados y blinda con contraseña las casillas clave.',
+    explicacion_alternativa: 'Es idéntico a guardar el gran libro físico de actas de la junta bajo candado dentro de una vitrina de vidrio. Todos los vecinos pueden acercarse a leer las cifras a través del cristal, pero solo usted de manera personal abre la vitrina para actualizar los registros.',
+    pasos_a_seguir: [
+      'En Excel, por defecto todas las celdas se bloquean al proteger la hoja. Primero, seleccione las celdas de entrada libres donde los vecinos sí pueden escribir datos.',
+      'Haga un click derecho e ingrese a "Formato de celdas", vaya a la solapa de "Proteger" en el costado y desmarque la casilla "Bloqueada" (para que estas queden libres).',
+      'Vaya a la pestaña "Revisar" de la Cinta superior.',
+      'Pulse sobre el botón "Proteger hoja" (identificado con un candado amarillo).',
+      'Deje las alternativas por defecto, asigne una clave sencilla si desea y ruede en Aceptar. ¡Fórmulas resguardadas de imprevistos de corrido!'
+    ],
+    pasos_alternativos: [
+      'Si desea remover candados, navegue al mismo sector de Revisar y pulse sobre "Desproteger hoja" para volver a editar libremente.',
+      'Use la opción de resguardo "Proteger libro" para evitar que vecinos traviesos borren solapas completas de la contabilidad.'
+    ],
+    tips_de_accesibilidad: 'Asigne claves fáciles (ej. "sede2026") de modo que si hay rotaciones de directivas vecinales sigan teniendo el mando de manera cómoda y sin bloqueos.',
+    checklist_validacion: [
+      'Desmarqué el candado de las celdas de variables de socios.',
+      'Navegué al menú alto localizando la pestaña de Revisar.',
+      'Oprimí el comando de Proteger Hoja.',
+      'Encargué una contraseña piloto de resguardo.',
+      'Intenté borrar una celda con fórmula vecinal confirmando el rechazo seguro.'
+    ],
+    concepto_clave: 'Reglar permisos de acceso analítico sobre celdas para resguardar la consistencia estructural de reportes financieros.',
+    ejercicio_practico: 'Proteger un balance de sede, cerciorándose de que los casilleros de totales corporativos se bloqueen perfectamente contra borrados.',
+    elementos_visuales: [
+      { icono: 'candado', etiqueta: 'Cierre de Hoja', descripcion: 'Tratamiento de protección en la solapa Revisar.' },
+      { icono: 'vitrina', etiqueta: 'Celdas de Entrada', descripcion: 'Casilleros descuajerados exentos del bloqueo.' }
+    ]
+  },
+
+  // ==========================================
+  // POWERPOINT - NIVEL 1: FUNCIONAL (BÁSICO)
   // ==========================================
   {
     id: 'powerpoint_n1_l1',
@@ -836,45 +689,33 @@ export const LECCIONES: Leccion[] = [
     orden: 1,
     nivel: 'Nivel 1: Funcional',
     programa: 'PowerPoint',
-    titulo: 'El Entorno de las Láminas (Perder el miedo a PowerPoint)',
-    descripcion_teorica: 'PowerPoint no es para escribir cartas kilométricas en hileras apretadas. El alma del programa son las "Diapositivas" o "Láminas", que actúan de idéntica manera que los carteles gigantes que sostienen los manifestantes en la plaza o las cartulinas de exposición de la antigua escuela. Al encender el software, vemos una Cinta de Opciones alta muy simple, una columna izquierda con un listado miniatura de nuestras láminas en secuencia, y un gran lienzo central con recuadros punteados listos para que pinchemos y digitemos títulos gigantes.',
-    explicacion_alternativa: 'Imagine que tiene un fardo de cartulinas de colores guardado bajo llave en el armario de la sede social. Cada lámina gigante que saque representará una hoja de PowerPoint. Si escribe demasiadas cosas con letra chiquita, los vecinos del fondo de la asamblea no leerán nada. Mantenga la lámina limpia, con pocas palabras y letras inmensas para hablarle de frente a su comunidad.',
+    titulo: 'El Entorno de PowerPoint (Perder el miedo al lienzo)',
+    descripcion_teorica: 'PowerPoint no es para escribir textos largos, sino de láminas visuales llamadas "Diapositivas". A la izquierda verá las láminas ordenadas en miniatura; en el centro está el gran lienzo de diseño, y abajo a la derecha, el botón que simula una copa pequeña o pantalla, que sirve para Proyectar en pantalla gigante.',
+    explicacion_alternativa: 'Piense en PowerPoint como un cuaderno de bitácora vecinal. Cada lámina es un cartón blanco limpio para dibujar afiches. Para exponer en una asamblea masiva, encendemos el cañón de luz pulsando el botón de Proyectar virtual.',
     pasos_a_seguir: [
-      'Sitúese con tranquilidad frente a su computador de mesa real y mantenga este celular al lado suyo.',
-      'Abra el programa Microsoft PowerPoint real (el ícono representativo de color naranja rojizo con una letra "P" blanca).',
-      'Seleccione "Presentación en blanco" haciendo un click izquierdo de ratón en la plantilla de bienvenida.',
-      'Contemple la fisonomía de la pantalla física de su PC: en el centro hay un enorme lienzo blanco con el rótulo "Haga clic para agregar título".',
-      'Haga un click con su dedo guiando el mouse en medio de ese recuadro de título y observe el nacimiento del cursor parpadeante listo para teclear.'
+      'Abra su programa PowerPoint real en su computador (ícono naranja con la letra P blanca).',
+      'Haga clic en la miniatura blanca de "Presentación en blanco".',
+      'Descubra a la izquierda la columna de miniaturas de sus láminas.',
+      'Identifique en el centro los cajones de texto punteados para escribir.',
+      'Para ver el resultado en pantalla completa, oprima la tecla F5 en su teclado físico o el botón de la pequeña copa de presentación abajo a la derecha.'
     ],
     pasos_alternativos: [
-      'Use su teléfono para entender la secuencia y active el programa PowerPoint en su máquina física.',
-      'Cree un archivo en blanco y presione en Inicio.',
-      'Observe a la izquierda de su monitor una miniatura numerada con el entero "1". Eso prueba que cuenta con su primera lámina lista en la secuencia.'
+      'Si se asoma en su teléfono móvil, use la fisonomía horizontal de juego para diseñar cómodamente.',
+      'Pulse Esc en su teclado real para cancelar la proyección a pantalla completa y regresar al taller.'
     ],
-    tips_de_accesibilidad: 'Si le cuesta guiar el cursor por los marcos flotantes de título, oprima la tecla "Tabulación" o "Enter" en su teclado real: el foco seleccionará de forma automática el casillero principal agrandando el contorno para que escriba sin forzar los dedos.',
+    tips_de_accesibilidad: 'La fisonomía de los cuadros prediseñados de PowerPoint viene estandarizada con contrastes seguros. No remueva las márgenes iniciales si está dando los primeros pasos.',
     checklist_validacion: [
-      'Inicié la herramienta oficial de PowerPoint en mi computador real.',
-      'Accedí a un borrador o plantilla limpio de presentación en blanco.',
-      'Distinguí la columna lateral izquierda de secuencias y el lienzo central.',
-      'Hice un click izquierdo en el recuadro punteado activando las letras de título.'
+      'Cargué el programa virtual de PowerPoint en mi monitor.',
+      'Inicié la tarea sobre una carátula limpia.',
+      'Vislumbré el panel de diapositivas mini del margen izquierdo.',
+      'Reconocí las cajitas de texto centrales para ingresar títulos.',
+      'Oprimí F5 desatando la pantalla gigante vecinal.'
     ],
-    sugerencias_descubrimiento: [
-      "Pruebe crear una hoja nueva: En la pestaña de Inicio en la barra superior, busque un botón grande con una estrella que reza 'Nueva diapositiva'. Púlselo. Verá nacer la número '2' en la hilera izquierda al instante. ¡Dibuja tantas láminas como la asamblea necesite!",
-      "Cambie el Zoom cómodo: Al igual que en Word y Excel, use la lupa con '-' y '+' abajo a la derecha de la pantalla de su PC para acomodar la visual de su cartel."
-    ],
-    concepto_clave: 'Identificar la estructura básica de PowerPoint que consta de miniaturas secuenciales a la izquierda y el área interactiva de la lámina activa en el centro.',
-    ejercicio_practico: 'Entrar a PowerPoint en su PC real, ubicar las zonas clave e iniciar un título comunitario para perder el miedo al programa.',
+    concepto_clave: 'Concebir el diseño por láminas secuenciales y la proyección en pantalla completa sobre apoyos didácticos.',
+    ejercicio_practico: 'Entrar a PowerPoint en su PC física, tipear "REUNIÓN DE JUNTA" en la portada y correr la copa protectora.',
     elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Cinta de Herramientas',
-        descripcion: 'Fila superior donde se controlan las láminas, letras y efectos visuales.'
-      },
-      {
-        icono: 'viñeta',
-        etiqueta: 'Miniaturas de Diapositivas',
-        descripcion: 'Esquema tipo rollo fotográfico a la izquierda para ver el orden de la presentación de la junta.'
-      }
+      { icono: 'minia', etiqueta: 'Tira de Miniaturas', descripcion: 'Columna con el índice de páginas del lateral izquierdo.' },
+      { icono: 'copa', etiqueta: 'Modo Presentación', descripcion: 'Ícono de la copita inferior derecha para proyectar.' }
     ]
   },
   {
@@ -883,46 +724,33 @@ export const LECCIONES: Leccion[] = [
     orden: 2,
     nivel: 'Nivel 1: Funcional',
     programa: 'PowerPoint',
-    titulo: 'Letras Gigantes para Asambleas Vecinales',
-    descripcion_teorica: 'El error más habitual en las directivas comunitarias es llenar las diapositivas de textos interminables comprimidos en letra tamaño 12. Las personas adultas mayores sentadas en las últimas bancas de la asamblea no verán absolutamente nada creadas las diapositivas bajo ese formato. PowerPoint está concebido para usar fuentes de "Tamaño 40" o superior. El texto debe resumirse en títulos contundentes de pocas palabras de alto contraste (fondo claro con letras negras sólidas), lo que garantiza que todo el salón capte el mensaje.',
-    explicacion_alternativa: 'Es igual que armar carteles de señalética de las calles municipales. Si los hace con letras microscópicas, ningún auto se enterará del cruce del camino. Utilice letras inmensas como titulares de periódicos: ponga el nombre del proyecto o asamblea grande, y guarde los detalles de redacción para decirlos de viva voz con el micrófono real.',
+    titulo: 'Letras Gigantes para Asambleas del Barrio',
+    descripcion_teorica: 'En las reuniones de vecinos, usar letras pequeñas es el error más recurrente: los asistentes de las filas de atrás no pueden leer el balance de gastos. PowerPoint soluciona esto con "Cuadros de texto". Al seleccionarlos, podemos agrandar la tipografía sobre calibres audaces (>36 puntos) para resguardar la lectura de todos.',
+    explicacion_alternativa: 'Es idéntico a pintar carteles camineros vecinales. Si dibuja las letras de la rendición con bolígrafo común fino, nadie de los vecinos de atrás verá las cuentas claras. Use tiza gorda y rotuladores gigantes para que el fondo del salón asimile los detalles de corrido.',
     pasos_a_seguir: [
-      'Tome su mouse con el computador de mesa real encendido frente al PowerPoint activo.',
-      'Haga un click izquierdo en el recuadro de título central de su primera diapositiva.',
-      'Escriba la convocatoria formal en letras mayúsculas: "BALANCE GRAL. DE CUENTAS SOCIOVEDI".',
-      'Sombreé todo lo escrito arrastrando el mouse de manera firme encima de la frase.',
-      'Vaya a la pestaña "Inicio" arriba, busque el casillero numérico selector y cámbielo al tamaño gigante "44" o "48".',
-      'Presione el botón "N" de Negrita para espesar la tipografía y hacerla ultra-legible para todos.'
+      'Haga un click izquierdo en el cajón de texto del lienzo de Excel que reza "Haga clic para agregar título".',
+      'Digite en mayúsculas: "BALANCE VECINAL: EXCELENTES NOTICIAS".',
+      'Sombréelo pasando el mouse presionado por encima del texto.',
+      'Vaya a Inicio, y en el casillero numérico de letra, aumente el número a 40 o 44 puntos.',
+      'Haga click en "Centrar" y mueva el cajón sujetándolo del borde si desea reposicionarlo.'
     ],
     pasos_alternativos: [
-      'Haga click dentro del cajón pre-rotulado de su lámina activa.',
-      'Escriba un concepto breve como: "Bingo Junta Vecinal 2026".',
-      'Sombréelo de corrido usando su teclado con Control + E en su PC física y eleve la altura del texto a tamaño gran escala con los botones de aumento rápido.'
+      'Si el espacio se agota, agrande el cajón estirándolo de los pequeños círculos blancos de los rincones del recuadro.',
+      'Para agregar más bloques sueltos del acta, vaya a Insertar -> Cuadro de texto y dibuje un rectángulo sobre el lienzo.'
     ],
-    tips_de_accesibilidad: 'Pauta de Contraste: Al diseñar las diapositivas, mantenga un alto contraste impecable. Use fondos blancos con textos negros o azul oscuro intenso. Jamás coloree diapositivas con letras amarillas sobre fondos blancos, ya que anula la legibilidad para personas de baja visión.',
+    tips_de_accesibilidad: 'Contraste estricto: use fondo blanco liso con letras negras carbón. Evite pintar fondos floreados o movedizos que agiten la concentración de vecinos con visión reducida.',
     checklist_validacion: [
-      'Redacté un concepto directo y descriptivo en la primera diapositiva de mi PC.',
-      'Sombreé con fluidez las letras de mi titular comicial.',
-      'Establecí el tamaño del texto en calibre 44 o superior para asambleas.',
-      'Apliqué el formato Negrita engrosando la letra contra el fondo claro.'
+      'Activé el cajón de texto de la lámina.',
+      'Redacté las cuotas de la sede social en formato claro.',
+      'Aumenté el calibre a un número gigante mayor a 36.',
+      'Centré la visualización tipográfica.',
+      'Confirmé que no queden oraciones recortadas ni encimadas.'
     ],
-    sugerencias_descubrimiento: [
-      "Pruebe con la fuente 'Inter' o 'Arial Black': Con las letras sombreadas, vaya a la caja de fuentes superior (al lado del tamaño). Elija una tipografía gruesa sin adornos en los bordes como 'Arial Black' o 'Impact'. ¡Se leerá espléndida desde lejos!",
-      "Achique el cuadro de texto: Haga click sobre una de las líneas del contorno del cuadro y arrástrelo hacia adentro de la pantalla. Verá que puede acomodar dónde flota su titular en el lienzo blanco virtual."
-    ],
-    concepto_clave: 'Utilizar fuentes de alta escala, tipografías sans-serif de alto contraste y formatos de negrita sólidos para garantizar la máxima accesibilidad en recintos amplios.',
-    ejercicio_practico: 'Establecer la primera lámina de presentación de su junta recreacional con letras pretenciosas de calibre 48 y alto contraste en PowerPoint.',
+    concepto_clave: 'Maximizar el tamaño del cuerpo tipográfico para garantizar la igualdad de lectura de los vecinos.',
+    ejercicio_practico: 'Sellar un cartel de bienvenida en PowerPoint real con un calibre de letra mayor a 40 para una asamblea.',
     elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Caja de Fuentes',
-        descripcion: 'Desplegable de estilo de letras que ayuda a escoger formas sans-serif legibles.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Tamaño del Texto',
-        descripcion: 'Contador numérico de escala para agrandar o achicar las letras del proyecto vecinal.'
-      }
+      { icono: 'cuadro', etiqueta: 'Cajón de Texto', descripcion: 'Caja punteada que deforma y hospeda letras.' },
+      { icono: 'fuente', etiqueta: 'Cuerpo 44', descripcion: 'Altura gigante de letra legible en el cabezal.' }
     ]
   },
   {
@@ -931,144 +759,186 @@ export const LECCIONES: Leccion[] = [
     orden: 3,
     nivel: 'Nivel 1: Funcional',
     programa: 'PowerPoint',
-    titulo: 'Insertar Fotos del Centro Social y Organigramas',
-    descripcion_teorica: 'Una imagen real de los vecinos pintando la fachada de la sede comunal transmite mucha más fuerza y convicción que mil cifras escritas. PowerPoint nos da la facilidad de acomodar y pegar archivos de imágenes en segundos. Podemos usar la sección superior Insertar e incorporar imágenes o formas organizativas llamadas Organigramas (SmartArt) para detallar quién es el Presidente, Tesorera y Secretaria de forma gráfica y solemne.',
-    explicacion_alternativa: 'Piense en este paso como recortar una foto de la asamblea comicial vecinal impresa y pegarla ordenadamente con pegamento blanco en la mitad de su papel de cartulina para que la miren los vecinos. En PowerPoint no ensucia la mesa; le ordena al programa buscar la foto del álbum y la pega de forma impecable dándole contornos estéticos.',
+    titulo: 'Insertar Fotos de la Sede y Ajustes de Imagen',
+    descripcion_teorica: 'Una lámina colmada exclusivamente de textos aburre a los vecinos. En PowerPoint, complementamos los discursos insertando fotos reales del avance de obras. Se ingresan desde la pestaña Insertar. Al cargarse, podemos amoldar su tamaño tomándolas de los nodos laterales para que encajen estéticamente.',
+    explicacion_alternativa: 'Es idéntico a pegar fotos de las baldosas reparadas de la sede con cinta adhesiva sobre una cartulina grande de la junta. No las encime sobre los balances de cuentas: use una tijera virtual para adaptarlas de forma prolija al espacio disponible.',
     pasos_a_seguir: [
-      'Abra su PowerPoint real en el computador de mesa y vaya a una diapositiva nueva y en blanco.',
-      'Haga un click izquierdo en la pestaña "Insertar" arriba en la Cinta de Opciones.',
-      'Oprima el botón etiquetado como "Imágenes" y presione la opción "Este dispositivo..." (o "Desde un archivo...").',
-      'Inspeccione la carpeta "Imágenes" de su PC real, elija cualquier archivo fotográfico de prueba y pulse "Insertar".',
-      'Haga click derecho en la foto de Word o PowerPoint, use ajustar texto o simplemente manipule los puntos blancos de las esquinas con el mouse arrastrándolos hacia el centro de la pantalla para encuadrar la escala.'
+      'Vaya al cabezal superior y haga click en la pestaña "Insertar".',
+      'Pulse sobre el botón "Imágenes" -> "Este dispositivo..." (para buscar archivos en su computador real).',
+      'Escoja una foto cargada de resguardo en su PC que grafíque los avances y haga click en Insertar.',
+      'Al ver que asoma gigante tapando textos, tome la foto de una esquina redonda blanca inferior y arrástrela hacia adentro.',
+      'Ubíquela al costado derecho del lienzo para lograr un equilibrio visual agradable.'
     ],
     pasos_alternativos: [
-      'Pulse sobre Insertar en la Cinta de Opciones.',
-      'Para bosquejar un croquis rápido, presione en el botón "SmartArt" (dibujos explicativos con flechas) de PowerPoint.',
-      'Elija el diseño "Jerarquía" (Organigrama superior para la Directiva Vecinal) y rellene los cajoncitos con los nombres de la directiva.'
+      'Haga click en "Herramientas de imagen" -> "Recortar" arriba para recortar excedentes del pasto o fondos.',
+      'Si no tiene fotos, pulse en "Formas" para trazar flechas explicativas o rectángulos de colores institucionales.'
     ],
-    tips_de_accesibilidad: 'Del mismo modo que en Word, la accesibilidad exige que añada "Texto alternativo" si expone las diapositivas en actas digitales de la junta, asegurando que las personas ciegas cuenten con narraciones sintéticas por pantalla.',
+    tips_de_accesibilidad: 'Asigne un Texto Alternativo descriptivo a sus fotos: haga click derecho en la foto, elija "Editar texto alternativo" e ingrese "Foto de la vereda pavimentada de la sede social" para que los lectores parlantes cobren sentido.',
     checklist_validacion: [
-      'Activé el panel de importación interactiva a través de la pestaña Insertar.',
-      'Pegué de forma exitosa una imagen o diagrama organizativo dentro del lienzo.',
-      'Manipulé los puntos de borde blanco regulando el tamaño de la foto sin deformidades.',
-      'Aseguré que la composición de la foto deje el texto legible del título.'
+      'Accedí a la Cinta de Opciones mediante la pestaña Insertar.',
+      'Ejecuté el disparador de carga de Imágenes.',
+      'Inserté el archivo gráfico piloto en la diapositiva.',
+      'Adecué el tamaño redimensionando desde los rincones redondos.',
+      'Sincronicé la foto al margen derecho para evitar sobreposiciones.'
     ],
-    sugerencias_descubrimiento: [
-      "Pruebe un SmartArt de Ciclo: Diseñe un SmartArt de tipo 'Ciclo' para detallar los 3 pasos de postulación a un fondo municipal (1. Completar ficha, 2. Cotizar pintura, 3. Entregar recibo). Los vecinos lo memorizarán muy fácil.",
-      "Ajustar orden de imagen: Al insertar formas, haga click derecho sobre una de ellas y pulse 'Enviar al fondo'. Verá cómo los textos grandes que quedaban escondidos saltan al frente flotantes sobre su foto."
-    ],
-    concepto_clave: 'Importar archivos gráficos, diagramas organizativos y regular su colocación espacial para crear diapositivas dinámicas de uso corporativo y comunal.',
-    ejercicio_practico: 'Pegar un organigrama SmartArt con la directiva actual de su Centro Social y acomodarlo junto a una foto de la sede en su monitor de escritorio.',
+    concepto_clave: 'Enriquecer la explicación oral integrando soportes directos (fotos) ajustados proporcionalmente al lienzo.',
+    ejercicio_practico: 'Lanzar un afiche en PowerPoint real incorporando una foto de mejoras y recortándole sus márgenes excedentes.',
     elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Pestaña Insertar',
-        descripcion: 'Sección alta que reúne herramientas de fotos, formas, diagramas y tablas.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Organigrama SmartArt',
-        descripcion: 'Plantillas prediseñadas que interconectan cajoneras administrativas de directiva.'
-      }
-    ]
-  },
-  {
-    id: 'powerpoint_n1_l4',
-    modulo_id: 'powerpoint',
-    orden: 4,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'PowerPoint',
-    titulo: 'Transiciones de Alto Contraste legibles',
-    descripcion_teorica: 'Cuando transita de una lámina a la siguiente durante la presentación con proyector de la junta, el salto brusco de pantalla blanca puede molestar o desconcentrar a las personas mayores con visión delicada o foto-sensibilidad. PowerPoint incorpora las "Transiciones", que son efectos fluidos que suavizan los cambios de página (como un fundido gradual de tinta que desvanece la lámina anterior y hace nacer sutilmente la nueva). Esto dota a su presentación de una atmósfera solemne y profesional admirable.',
-    explicacion_alternativa: 'Es idéntico a pasar con suavidad la página en un álbum gigante de cuentos con fotos para niños. En lugar de dar un tirón fuerte arriesgándose a rasgar el papel, hace resbalar la hoja de manera fluida y suave ante la vista de los vecinos. En PowerPoint, seleccionamos la transición "Desvanecer" para que el paso de temas sea una caricia visual.',
-    pasos_a_seguir: [
-      'En el monitor de su PC, desplomado el listado de miniaturas de la izquierda, haga click izquierdo sobre la lámina número 1.',
-      'Desplace su puntero del mouse a la Cinta de Opciones alta y presione en la pestaña "Transiciones" (ubicada al lado de Animaciones).',
-      'Observe el mostrador de efectos y haga un click izquierdo firme en la opción con la etiqueta "Desvanecer" (en inglés Fade).',
-      'Haga un click en la miniatura de la lámina número 2 a la izquierda de la pantalla, y vuelva a presionar el botón "Desvanecer".',
-      'Haga click en "Vista previa" en la esquina de la barra para deleitarse con la suave fusión visual aplicada a sus diapositivas.'
-    ],
-    pasos_alternativos: [
-      'Pulse la pestaña "Transiciones" en PowerPoint real en su computadora.',
-      'Active el efecto suave de transición "Empujar" para que las láminas suban verticalmente como una asamblea dinámica.',
-      'Haga click en "Aplicar a todas" a la derecha de la barra para que todas las láminas adopten el mismo efecto de desplazamiento al instante.'
-    ],
-    tips_de_accesibilidad: 'Evite a toda costa usar transiciones extravagantes o ruidosas como "Remolino", "Origami" o "Bucle", ya que pueden causar desorientación visual inmediata en vecinos mayores o provocar migrañas de alto impacto óptico.',
-    checklist_validacion: [
-      'Me posicioné sobre la lámina inicial en la columna de secuencias de la izquierda.',
-      'Accedí a la barra alta dedicada al formato de "Transiciones".',
-      'Escogí el efecto "Desvanecer" mitigando saltos de alto impacto lumínico.',
-      'Seleccioné el disparador para reproducir o revisar la vista previa del fundido.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe ajustar la Duración: Al costado derecho del menú de Transiciones, busque un casillero que dice 'Duración' y muestra por ejemplo '01.00'. Súbalo a '02.00' pulsando las flechas. Verá que la lámina tarda dos segundos completos en desvanecerse, logrando un suspenso muy distinguido.",
-      "Explore el sonido: Al lado de la duración, verá el casillero 'Sonido: [Sin sonido]'. Pruebe aplicar 'Click' para simular un obturador de cámara real, ¡pero recuerde mantenerlo silenciado para correspondencia formal!"
-    ],
-    concepto_clave: 'Enlazar las diapositivas de PowerPoint mediante fundidos de desvanecimiento para mitigar el cansancio óptico provocado por destellos bruscos de brillo.',
-    ejercicio_practico: 'Aplicar la transición Desvanecer a todo el fardo secuencial de láminas de su proyecto en PowerPoint real.',
-    elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Pestaña Transiciones',
-        descripcion: 'Comisión de botones destinados a amortiguar e hilvanar los saltos de láminas.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Efecto Desvanecer',
-        descripcion: 'La transición más recomendada por los asesores de accesibilidad para mitigar la foto-sensibilidad.'
-      }
-    ]
-  },
-  {
-    id: 'powerpoint_n1_l5',
-    modulo_id: 'powerpoint',
-    orden: 5,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'PowerPoint',
-    titulo: 'Proyectar y Presentar con Éxito en la Junta',
-    descripcion_teorica: 'El momento culminante de nuestro esfuerzo administrativo en secretariado es la proyección real del proyecto de asfalto de calles ante la Junta de Vecinos. En vez de mostrar la presentación con las miniaturas de PowerPoint y todos los botones apretados alrededor, lo que luce informal, debemos prender la "Presentación a Pantalla Completa". Esta función borra todas las barras de control y despliega únicamente nuestro cartel en la superficie del proyector o televisor vecinal gigante.',
-    explicacion_alternativa: 'Es igual que apagar las ampolletas del salón comunitario y prender el telón blanco. Al presionar el botón de Presentación, la computadora se disfraza de cine real: oculta todas las herramientas de trabajo y deja brillar su cartel vecinal gigante enfrente sin ninguna barrita de por medio.',
-    pasos_a_seguir: [
-      'Fije su mirada en la Cinta de Opciones alta del programa PowerPoint real en su PC.',
-      'Haga un click izquierdo en la pestaña "Presentación con diapositivas" (al lado de Grabar).',
-      'Haga un click sobre el botón "Desde el principio" que luce un reproductor pequeño.',
-      '¡Asómbrese! Todo el monitor físico se cubrirá con su lámina comunal eliminando las barritas laterales de edición.',
-      'Use la barra espaciadora o las flechas de dirección de su teclado real para avanzar entre páginas cómodamente, u oprima la tecla "Escape" (Esc, arriba a la izquierda del teclado) para apagar la proyección.'
-    ],
-    pasos_alternativos: [
-      'Presione la tecla veloz tradicional en su teclado real: hunda el botón "F5" ubicado en la hilera superior física.',
-      'Compruebe la proyección a pantalla completa del balance vecinal.',
-      'Haga un simple click con el botón izquierdo de su mouse real sobre la pantalla para avanzar las láminas paso a paso.'
-    ],
-    tips_de_accesibilidad: 'Si expone en una asamblea ante vecinos con dificultades auditivas, puede activar los "Subtítulos en tiempo real" integrados en PowerPoint para que el programa escuche su voz por micrófono real y dibuje las palabras de forma automática en el contorno del telón.',
-    checklist_validacion: [
-      'Completé un conjunto mínimo de dos diapositivas accesibles con textos legibles.',
-      'Localicé la pestaña de Presentación con Diapositivas en la Cinta de Opciones.',
-      'Inicié la pantalla completa desde la lámina 1 con total solvencia.',
-      'Utilicé con soltura las teclas de dirección o espacio para transitar las láminas físicas.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe usar el puntero láser virtual: Durante la pantalla completa, haga click derecho sobre la diapositiva, seleccione 'Opciones de puntero' y elija 'Puntero láser'. Su mouse se convertirá en un deslumbrante punto rojo de alto contraste para guiar la mirada de sus vecinos.",
-      "Explore el rotulador virtual: En el mismo menú click derecho, escoja 'Pluma'. Podrá rayar e integrar anotaciones escritas a mano directamente encima del balance en el proyector real, ¡las que puede borrar al finalizar la presentación!"
-    ],
-    concepto_clave: 'Ejecutar la proyección a pantalla completa de la secuencia para conferir formalidad administrativa e interactuar con el público mediante teclados de dirección.',
-    ejercicio_practico: 'Proyectar a pantalla completa su balance semestral en la computadora usando la tecla F5 y avanzar la secuencia fluidamente.',
-    elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Icono Pantalla',
-        descripcion: 'Pequeño atril de proyección abajo a la derecha de la barra de estado que lanza la pantalla completa.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Pila Láser Comunitaria',
-        descripcion: 'Simulador láser del mouse para remarcar los presupuestos desde lejos.'
-      }
+      { icono: 'insertar', etiqueta: 'Pestaña Insertar', descripcion: 'Puerta hacia fotos, gráficos y formas.' },
+      { icono: 'esquinas', etiqueta: 'Nodos Redondos', descripcion: 'Puntos blancos de arrastre de redimensión.' }
     ]
   },
 
   // ==========================================
-  // OUTLOOK - NIVEL 1: FUNCIONAL
+  // POWERPOINT - NIVEL 2: ADMINISTRATIVO (INTERMEDIO)
+  // ==========================================
+  {
+    id: 'powerpoint_n2_l1',
+    modulo_id: 'powerpoint',
+    orden: 4,
+    nivel: 'Nivel 2: Administrativo',
+    programa: 'PowerPoint',
+    titulo: 'Logos Uniformes: El Patrón de Diapositivas',
+    descripcion_teorica: 'Al crear muchas diapositivas, pegar repetidamente el logotipo vecinal o escribir el nombre del Centro Social en cada una es lento y queda desalineado al pasar de página. PowerPoint soluciona esto con el "Patrón de Diapositivas" (Master Slide): una lámina arquitectónica oculta. Todo texto, fondo o logo que peguemos en ella quedará grabado en la plantilla original, replicándose simétricamente en todas las láminas nuevas automáticamente.',
+    explicacion_alternativa: 'Es idéntico a encargar un sello de goma de tinta reglamentada con los membretes de la oficina. En vez de tomar hoja por hoja de la cartulina vecinal y dibujar el sello con pincel exponiéndose a torcerlo, estampa el patrón central una única vez. En pantalla, toda lámina nacerá con la fisonomía oficial estampada.',
+    pasos_a_seguir: [
+      'Inicie PowerPoint con su documento en su PC real.',
+      'Vaya a la franja superior de pestañas y haga click en "Vista".',
+      'Localice el subgrupo de opciones "Vistas patrón" y pulse "Patrón de diapositivas". La pantalla cambiará al esqueleto técnico.',
+      'Suba en la tira de láminas de la izquierda hasta arriba y escoja la diapositiva grande rotulada "1" (La Madre).',
+      'Vaya a Insertar -> Formas, escoja una figura pequeña, píntela de amarillo y colóquela en un extremo superior. Oprima la cruz roja alta "Cerrar Vista Patrón". ¡Revise cómo todas sus láminas adoptan la firma!'
+    ],
+    pasos_alternativos: [
+      'Use el Patrón para obligar a que las letras de título sean siempre gruesas de calibre 40, bloqueando desajustes de otros expositores.',
+      'Si desea fondos permanentes de alto contraste, pulse click derecho en la lámina madre, elija Formato de Fondo y asigne un tono suave uniforme.'
+    ],
+    tips_de_accesibilidad: 'La consistencia en la fisonomía del lienzo evita que las pupilas del vecino tengan que reajustarse en cada salto de página, facilitando la comprensión.',
+    checklist_validacion: [
+      'Cargué el panel Vista en el cinturón de herramientas.',
+      'Ingresé exitosamente al esqueleto de Patrón de Diapositivas.',
+      'Identifiqué la lámina madre número 1 arriba en la tira izquierda.',
+      'Incrusté el elemento identificativo en un extremo libre del patrón.',
+      'Clausuré el editor confirmando que todas las láminas replican el escudo.'
+    ],
+    concepto_clave: 'Intervenir la matriz modelo de PowerPoint para unificar relieves de diseño y heráldica institucional de forma inalterable.',
+    ejercicio_practico: 'Sellar por Patrón el membrete uniformado del Centro Social en un archivo académico de PowerPoint real.',
+    elementos_visuales: [
+      { icono: 'patron', etiqueta: 'Vista Patrón', descripcion: 'Frontera de andamios de diapositivas en Vista.' },
+      { icono: 'madre', etiqueta: 'Lámina Madre 1', descripcion: 'El molde primario jerárquico de la tira izquierda.' }
+    ]
+  },
+  {
+    id: 'powerpoint_n2_l2',
+    modulo_id: 'powerpoint',
+    orden: 5,
+    nivel: 'Nivel 2: Administrativo',
+    programa: 'PowerPoint',
+    titulo: 'Animaciones Sutiles para evitar Distracciones',
+    descripcion_teorica: 'Pegar un listado completo con cinco acuerdos de un solo golpe distrae la atención: los vecinos leen el final del papel mientras usted recién explica el punto uno. Las "Animaciones" solucionan esto, reteniendo los puntos ocultos para hacerlos aparecer uno a uno en pantalla en vivo conforme usted pulsa un click con el dedo.',
+    explicacion_alternativa: 'Es idéntico a colgar una persiana de madera gruesa sobre el pizarrón vecinal. Al explicar las cuentas, desliza la persiana levemente hacia abajo dejando ver sólo lo que se debate hoy, evitando que el murmullo de la sala disperse la concentración.',
+    pasos_a_seguir: [
+      'En una diapositiva escriba una lista de tres puntos (ej. "1. Limpieza", "2. Pintura", "3. Cierre").',
+      'Haga un sombreado o click sobre el marco entero que retiene la lista.',
+      'Dirija su mirada arriba en las pestañas superiores y pulse "Animaciones".',
+      'Visualizará estrellas verdes. Haga click sobre la estrella de aparición sutil llamada "Desvanecer" (o "Aparecer").',
+      'Observe la aparición de números (1, 2, 3) al costado. Presione F5 para proyectar y apriete click: los puntos asomarán al ritmo de su voz.'
+    ],
+    pasos_alternativos: [
+      'Evite usar las estrellas amarillas (énfasis) o rojas (salidas) en exceso, ya que generan mareos en auditorios de personas mayores.',
+      'Vaya a "Panel de animación" a la derecha para alterar la velocidad de entrada si desea saltos más calmos.'
+    ],
+    tips_de_accesibilidad: 'La llegada por goteo o dosificada de ideas previene la fatiga informativa y asiste formidablemente a vecinos que asimilan datos con más pausa.',
+    checklist_validacion: [
+      'Redacté la lista de actas en un cuadro singular.',
+      'Tildé la caja de texto que engloba los puntos del balance.',
+      'Accedí a la Cinta de herramientas mediante Animaciones.',
+      'Asigné la estrella verde de Desvanecer al agrupamiento.',
+      'Proyecté a pantalla completa ensayando la llegada sincronizada de letras.'
+    ],
+    concepto_clave: 'Sincronizar el despliegue gráfico de elementos con el ritmo fonético de la ponencia de secretaría.',
+    ejercicio_practico: 'Sellar un listado corporativo autoadministrado de acuerdos dinámicos en su PowerPoint de PC real.',
+    elementos_visuales: [
+      { icono: 'estrella', etiqueta: 'Estrella Verde', descripcion: 'Herramientas de animación de entrada limpias.' },
+      { icono: 'panel', etiqueta: 'Panel de Animaciones', descripcion: 'Consola de velocidad lateral derecha.' }
+    ]
+  },
+
+  // ==========================================
+  // POWERPOINT - NIVEL 3: RESOLUCIÓN DE PROBLEMAS (AVANZADO)
+  // ==========================================
+  {
+    id: 'powerpoint_n3_l1',
+    modulo_id: 'powerpoint',
+    orden: 6,
+    nivel: 'Nivel 3: Resolución de Problemas',
+    programa: 'PowerPoint',
+    titulo: 'Auxilio: Adaptar Diapositivas al Proyector de la Sede',
+    descripcion_teorica: 'Un momento frustrante en reuniones es conectar el computador al proyector de la junta y ver que las diapositivas se ven deformadas, ensanchadas a los lados o con franjas negras muertas. Esto sucede porque el formato viene diseñado por defecto para pantallas modernas panorámicas (16:9), mientras que el proyector de la junta es antiguo y cuadrado (4:3). Ajustar este parámetro nos salvará la reunión.',
+    explicacion_alternativa: 'Es idéntico a imprimir un cartel caminero en papel de carta regular y, al querer calzarlo en el portarretratos cuadrado de la sede, tener que doblar y ocultar márgenes de forma descuidada. Cambiar la fisonomía a "Estándar" u "Oficio" en PowerPoint arregla el descalabro.',
+    pasos_a_seguir: [
+      'Con su PowerPoint abierto en su computador real, vaya a la pestaña superior llamada "Diseño".',
+      'Localice en el extremo derecho de la franja superior el botón "Tamaño de diapositiva".',
+      'Haga un click izquierdo en él y escoja la opción "Estándar (4:3)" si el proyector de su junta es cuadrado.',
+      'Se abrirá un cartel de resguardo flotante técnico en su PC; tilde la opción "Asegurar el ajuste".',
+      'Observe cómo todo el balance de letras y fotos se encasilla ordenado y sin recortes en la nueva proporción.'
+    ],
+    pasos_alternativos: [
+      'Si va a proyectar en una televisión plasma moderna en su sede, elija del mismo botón la alternativa "Panorámica (16:9)".',
+      'Personalice las proporciones dándole tamaño de hoja Carta si deseara imprimir la diapositiva en rústicos folletos vecinales.'
+    ],
+    tips_de_accesibilidad: 'Centrar los textos al medio y dejar márgenes libres de un grosor de dos dedos evita que imperfecciones del telón recorten palabras de los balances.',
+    checklist_validacion: [
+      'Ingresé al panel técnico a través de la pestaña Diseño.',
+      'Localicé en el extremo derecho superior el selector de Tamaño de diapositiva.',
+      'Definí la dimensión 4:3 en base a las proporciones del telón.',
+      'Activé el ajuste de textos consolidando proporciones.',
+      'Comprobé en la miniatura el encuadre exacto sin deformidades.'
+    ],
+    concepto_clave: 'Alinear la fisonomía bidimensional del software a los rangos dimensionales de los soportes ópticos físicos.',
+    ejercicio_practico: 'Convertir un archivo comicial vecinal de panorámico a formato estándar y validar la redistribución del balance.',
+    elementos_visuales: [
+      { icono: 'diseño', etiqueta: 'Pestaña Diseño', descripcion: 'Frontera de vestimenta y relieves de la hoja.' },
+      { icono: 'aspecto', etiqueta: 'Selector de Proporciones', descripcion: 'Calibrador de 4:3 o 16:9 en el extremo superior.' }
+    ]
+  },
+  {
+    id: 'powerpoint_n3_l2',
+    modulo_id: 'powerpoint',
+    orden: 7,
+    nivel: 'Nivel 3: Resolución de Problemas',
+    programa: 'PowerPoint',
+    titulo: 'Insertar Videos Educativos del Terreno',
+    descripcion_teorica: 'Para evidenciar el progreso de un proyecto de urbanización ante la asamblea, nada supera un registro audiovisual real. PowerPoint permite incrustar archivos de video directamente en sus láminas para proyectarlos con sonido ante toda la asamblea vecinal.',
+    explicacion_alternativa: 'En lugar de interrumpir la asamblea de vecinos para encender un televisor o sacar un teléfono y mostrárselo a los asistentes, incorpore el archivo de video de las obras viales dentro del afiche digital. Al llegar a la lámina, el video arranca con un solo clic.',
+    pasos_a_seguir: [
+      'Párese sobre su diapositiva vacía de PowerPoint de su PC física.',
+      'Vaya a la franja de herramientas de arriba y pulse "Insertar".',
+      'Localice en el extremo derecho del cabezal alto el grupo de botones "Multimedia" y haga click en "Video".',
+      'Escoja la opción "Este dispositivo", navegue a su archivo vecinal grabado y pulse Insertar.',
+      'Estire el video de un nodo redondo de la esquina del recuadro para que cubra todo el lienzo. Presione la barra Play flotante de abajo para testear la fluidez.'
+    ],
+    pasos_alternativos: [
+      'Si no tiene el video descargado, escoja "Videos en línea..." e incruste el enlace de YouTube de la municipalidad.',
+      'Configure en el menú superior de video que este reproduzca "Automáticamente" al cambiar a la hoja.'
+    ],
+    tips_de_accesibilidad: 'Verifique que los parlantes de su computador real estén conectados y calibrados al 100% de antemano para prever rezagos acústicos en vecinos mayores.',
+    checklist_validacion: [
+      'Accedí al menú Insertar en la Cinta superior.',
+      'Navegué al sector multimedia localizando el disparador de Video.',
+      'Importé el archivo multimedia de manera exitosa desde el disco.',
+      'Adecué el tamaño del video en equilibrio con el marco.',
+      'Testée la reproducción acústica y de corrido pulsando el Play.'
+    ],
+    concepto_clave: 'Enlazar flujos de reproducción audiovisual integrados en la secuencia de proyección comicial.',
+    ejercicio_practico: 'Pegar un video piloto de avances en PowerPoint y ensayar su reproducción automática en pantalla completa.',
+    elementos_visuales: [
+      { icono: 'video', etiqueta: 'Botón Multimedia Video', descripcion: 'Inyección de archivos visuales en Insertar.' },
+      { icono: 'play', etiqueta: 'Barra de Reproducción', descripcion: 'Ajustes de play y volumen al pie del visor.' }
+    ]
+  },
+
+  // ==========================================
+  // OUTLOOK - NIVEL 1: FUNCIONAL (BÁSICO)
   // ==========================================
   {
     id: 'outlook_n1_l1',
@@ -1076,45 +946,33 @@ export const LECCIONES: Leccion[] = [
     orden: 1,
     nivel: 'Nivel 1: Funcional',
     programa: 'Outlook',
-    titulo: 'Entrar y Navegar por el Correo del Centro Social',
-    descripcion_teorica: 'El correo electrónico (Email) es el cartero digital moderno que conecta a nuestra Junta de Vecinos con el resto del mundo. Microsoft Outlook es la oficina postal que organiza su correspondencia virtual. La pantalla o Entorno de Outlook se compone de tres franjas clave: a la izquierda, las "Carpetas" (recibidos, enviados); al medio, el listado de correos llegados clasificados por fecha; y a la derecha, el enorme "Panel de Lectura" donde podemos revisar de forma cómoda lo que reza cada carta sin tener que abrir ningún archivo adjunto.',
-    explicacion_alternativa: 'Imagínese un estante de madera con casilleros en la entrada de la sede comunal. A la izquierda está la bandeja donde el cartero deja las cartas nuevas ("Bandeja de Entrada"). Al medio, la correspondencia del día con nombres grandes de remitentes, y a la derecha, la carta ya abierta estirada sobre el escritorio para que la lea con su lupa cómoda.',
+    titulo: 'Bandeja de Entrada y Navegación (Perder el miedo a Outlook)',
+    descripcion_teorica: 'Outlook es la casilla postal cibernética. En el panel izquierdo de navegación se encuentran las carpetas (Bandeja de Entrada hospeda las cartas nuevas que llegan, y Enviados retiene las copias despachadas). El panel del medio expone la lista de correspondencia, y el derecho muestra el contenido de la carta seleccionada.',
+    explicacion_alternativa: 'Mire a Outlook como el buzón de correo comunal colgado en la puerta del centro social. Las cartas nuevas caen a la "Bandeja de Entrada" (recibidas). El listado del medio es el montón de sobres en la mesa, y abrirlos es hacer un clic izquierdo suave para leerlos en el tablón derecho.',
     pasos_a_seguir: [
-      'Ubíquese ante su computadora real de oficina de la junta con su navegador de internet encendido.',
-      'Escriba en la barra de direcciones o pulse el portal de Outlook real e inicie sesión con la clave secreta de la directiva comicial.',
-      'Haga un click izquierdo sobre la carpeta con la etiqueta "Bandeja de Entrada" (Inbox) al lado izquierdo de la ventana.',
-      'Siga deslizando sus ojos sobre el listado del medio y seleccione con un click el primer correo recibido que encuentre.',
-      'Mire el costado derecho del monitor de su PC: allí se desplegará el texto completo de la correspondencia lista para su cómoda lectura.'
+      'Abra su programa Outlook real o acceda al portal web oficial.',
+      'Localice en la parte de la izquierda la solapa llamada "Bandeja de Entrada" (Inbox).',
+      'Mire el catálogo central de cartas vecinales. Note que las cartas en letra gruesa o con un círculo azul son "No leídas".',
+      'Haga un click izquierdo sobre un correo nuevo y lea el contenido en el panel grande del costado derecho.',
+      'Descubra la carpeta "Elementos enviados" (Sent) para recordar actas que mandó ayer.'
     ],
     pasos_alternativos: [
-      'Abra su servicio Outlook real de prueba directamente en el computador o celular.',
-      'Haga click sobre el ícono de sobre cerrado que representa sus mensajes pendientes.',
-      'Examine qué vecinos le enviaron escritos y visualice las letras cómodamente ampliadas en el panel derecho sin tocar nada extraño.'
+      'Use el buscador superior de Outlook tipeando palabras como "Subvención" para encontrar cartas perdidas en un santiamén.',
+      'Si visualiza bandejas tituladas como "Prioritarios" y "Otros", note que Outlook separa lo vecinal urgente de los folletos municipales.'
     ],
-    tips_de_accesibilidad: 'Si tiene problemas para leer los correos en pantallas chicas, busque arriba en las herramientas de lectura de Outlook el botón "Lector Inmersivo". Al pulsarlo, el programa extraerá el texto, lo colocará en letra gigante de altísimo contraste negro sobre blanco, y ¡leerá la correspondencia vecinal en voz alta por los parlantes real de su PC!',
+    tips_de_accesibilidad: 'La visualización de carpetas de Outlook se puede agrandar usando la lupa de pantalla o los selectores tipográficos de su navegador web para agilizar su lectura.',
     checklist_validacion: [
-      'Inicié sesión de manera segura en la casilla oficial de Outlook.',
-      'Identifiqué la Bandeja de Entrada con los registros de correspondencia comunal.',
-      'Hice click sobre un correo específico en el panel central de forma fluida.',
-      'Revisé el contenido desplegado en el panel de lectura derecho sin forzar la vista.'
+      'Abrí mi programa de Outlook.',
+      'Identifiqué las carpetas principales del margen izquierdo.',
+      'Localicé la Bandeja de Entrada donde llegan las solicitudes vecinales.',
+      'Hice un click izquierdo en un correo para desplegado.',
+      'Distinguí visualmente correos leídos de no leídos.'
     ],
-    sugerencias_descubrimiento: [
-      "Pruebe marcar como 'No leído': Si leyó un correo de la municipalidad pero quiere dejarlo pendiente para procesarlo mañana con calma en la sede, haga click derecho sobre él en el listado y elija 'Marcar como no leído'. Volverá a ponerse en negrita gruesa.",
-      "Ajuste la densidad de la lista: Busque el ícono de engranaje arriba (Configuración) y en 'Densidad' elija 'Espaciosa'. Verá que los renglones se dilatan dándole más aire y comodidad visual para apuntar con el ratón."
-    ],
-    concepto_clave: 'Identificar las tres áreas cardinales de Microsoft Outlook (Carpetas, Correo y Lectura) para asimilar la navegación básica del flujo postal digital.',
-    ejercicio_practico: 'Navegar en su cuenta real de Outlook vecinal, localizando la Bandeja de Entrada de su Junta de Vecinos.',
+    concepto_clave: 'Comprender la geografía tripartita del correo electrónico para recepcionar correspondencias vecinales de manera ágil.',
+    ejercicio_practico: 'Entrar a su Outlook, abrir un correo del listado central y clasificar las zonas descritas.',
     elementos_visuales: [
-      {
-        icono: 'correo',
-        etiqueta: 'Bandeja de Entrada',
-        descripcion: 'Cofre virtual donde reposan las cartas electrónicas entrantes enviadas por vecinos.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Panel de Lectura',
-        descripcion: 'El gran lienzo derecho que exhibe de corrido las letras del correo en pantalla.'
-      }
+      { icono: 'bandeja', etiqueta: 'Bandeja de Entrada', descripcion: 'Contenedor de correspondencias nuevas.' },
+      { icono: 'vistas', etiqueta: 'Panel de Lectura', descripcion: 'Sección del margen derecho que expone la carta abierta.' }
     ]
   },
   {
@@ -1123,45 +981,33 @@ export const LECCIONES: Leccion[] = [
     orden: 2,
     nivel: 'Nivel 1: Funcional',
     programa: 'Outlook',
-    titulo: 'Enviar un Mensaje Formal a la Ilustre Municipalidad',
-    descripcion_teorica: 'El canal formal de comunicación entre un Centro Social u Organización Territorial y las dependencias públicas exige redactar correspondencias con una estructura impecable. En el correo electrónico, debemos completar tres casilleros indispensables: el destinatario ("Para", que representa la dirección electrónica precisa a la que va dirigida la carta), el tema o encabezado breve ("Asunto", que enuncia de forma compacta de qué trata el trámite para que la municipalidad lo catalogue rápido) y el "Cuerpo del Mensaje" (donde redactamos el saludo y los requerimientos vecinales).',
-    explicacion_alternativa: 'Es igual que enviar un sobre postal formal. Si no escribe la dirección exacta de la municipalidad en el remite, el cartero real la desechará. Y si no redacta un título afuera del sobre, los encargados del municipio la archivarán de fondo en el cajón de trastos viejos sin revisarla.',
+    titulo: 'Escribir y Despachar un Mensaje Formal',
+    descripcion_teorica: 'Para redactar correspondencia vecinal, usamos el botón "Correo Nuevo". Debemos declarar obligatoriamente tres campos para que llegue a destino: "Para" (dirección exacta del destinatario), "Asunto" (título conciso de la carta), y el gran "Cuerpo" o espacio de redacción abajo.',
+    explicacion_alternativa: 'Es igual que despachar un sobre de papel por correo general. "Para" representa escribir la dirección física de la casa del cartero de forma precisa, y "Asunto" es el rótulo rápido externo que lee el cartero para saber de qué trata el sobre vecinal.',
     pasos_a_seguir: [
-      'Abra su correo Outlook real de escritorio en su computadora de la junta.',
-      'Localice la esquina superior izquierda alta de la pantalla y haga un click izquierdo en el gran botón azul con un lápiz que reza "Correo nuevo".',
-      'En el casillero que reza "Para:", digite con absoluta precisión la dirección de correo real que corresponda al alcalde o municipalidad (ej. "consultas@municipalidad.cl").',
-      'Haga click en la casilla inferior que reza "Agregar asunto" y escriba de manera compacta: "SOLICITUD DE REPARACIÓN DE LUMINARIAS CALLE PRAT".',
-      'Haga click en el gran rectángulo de abajo (Cuerpo de redacción) y escriba su saludo protocolar y solicitud vecinal de forma respetuosa.'
+      'En Outlook real de su PC, haga click en el gran botón "Correo nuevo" (arriba a la izquierda, con un dibujo de un sobre o signo más).',
+      'Tipee en la casilla "Para" el correo exacto de destino: "alcaldia@municipalidad.cl" (cuidado con los puntos y el @).',
+      'Haga click en la hilera del medio "Agregar un asunto" y tipee: "SOLICITUD DE REPARACIÓN DE LUMINARIAS SEDE".',
+      'Haga un click en el cajón de abajo y redacte el saludo protocolar: "Estimado Alcalde, mediante la presente vecinal...".',
+      'Verifique las letras de corrido y presione el gran botón azul "Enviar" de la esquina inferior de redacción.'
     ],
     pasos_alternativos: [
-      'Presione en el botón de redactar correspondencia de Microsoft Outlook (el sobre con un signo más).',
-      'Rellene los tres campos vitales: destinatario exacto, título de asunto en mayúsculas y su carta comunal.',
-      'Localice abajo en el monitor de su PC el gran botón con un avión de papel que reza "Enviar" y dele un firme click izquierdo.'
+      'Use la casilla "CC" (Con Copia) para enviarle una copia idéntica del escrito al tesorero de su junta para resguardo administrativo.',
+      'Si desea cancelar el envío antes de despacharlo, pulse sobre "Descartar" y bórrelo de por vida.'
     ],
-    tips_de_accesibilidad: 'Use siempre un título en el casillero "Asunto" redactado de corrido y en mayúsculas de alto contraste. Esto ayuda a que los funcionarios con baja visión clasifiquen y respondan su solicitud de manera inmediata y preferencial.',
+    tips_de_accesibilidad: 'La barra de edición de Outlook le permite teñir el texto de la correspondencia en un color oscuro accesible para que sea agradable de leer ante fondos blancos.',
     checklist_validacion: [
-      'Inicié la pestaña de correspondencia nueva mediante el botón respectivo.',
-      'Ingresé la cuenta electrónica precisa del destinatario sin omitir ningún punto.',
-      'Definí un asunto sobrio y directo identificando la gestión vecinal.',
-      'Redacté el cuerpo de la carta manteniendo el saludo protocolar inicial.'
+      'Oprimí el comando Correo Nuevo abriendo el sobre digital.',
+      'Formulé correctamente la casilla Para de destino.',
+      'Añadí un Asunto conciso en mayúsculas de resguardo.',
+      'Escribí el saludo protocolar en las franjas del Cuerpo.',
+      'Hice el despacho formal oprimiendo el botón Enviar.'
     ],
-    sugerencias_descubrimiento: [
-      "Pruebe con CC (Con Copia): Debajo del casillero 'Para', busque el botón 'CC'. Púlselo y escriba el correo del concejal comicial de su confianza. Al enviarlo, a él le llegará una copa exacta de la nota oficial, protegiendo su gestión.",
-      "Proporcione una firma automática: Al final de su correspondencia, vaya a la herramienta que simula una 'Pluma' o busque 'Configuración -> Firma' para grabar sus datos de contacto y cargo para que se peguen mágicamente en cada carta nueva."
-    ],
-    concepto_clave: 'Acomodar y despachar un correo formal rellenando con rigurosidad los casilleros de Destinatario (Para), Encabezado (Asunto) y Redacción (Cuerpo).',
-    ejercicio_practico: 'Envia un correo oficial de prueba en su PC real usando Outlook a la dirección municipal simulando su primer requerimiento territorial.',
+    concepto_clave: 'Estructurar correos con propósitos claros (Asunto) orientados a direcciones unívocas (Para).',
+    ejercicio_practico: 'Establecer una carta piloto dirigida al presidente de la junta solicitando insumos y enviarla formalmente.',
     elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Lápiz de Correo Nuevo',
-        descripcion: 'Disparador superior que abre el sobre de correspondencia virtual.'
-      },
-      {
-        icono: 'enter',
-        etiqueta: 'Botón Enviar',
-        descripcion: 'El avión de papel que lanza la carta a viajar por la red informática.'
-      }
+      { icono: 'nuevo', etiqueta: 'Correo Nuevo', descripcion: 'Lanzador de correspondencias en la esquina alta.' },
+      { icono: 'enviar', etiqueta: 'Botón Enviar', descripcion: 'Opcionalidad azul inferior de despacho definitivo.' }
     ]
   },
   {
@@ -1170,548 +1016,181 @@ export const LECCIONES: Leccion[] = [
     orden: 3,
     nivel: 'Nivel 1: Funcional',
     programa: 'Outlook',
-    titulo: 'Adjuntar Archivos y Actas Oficiales',
-    descripcion_teorica: 'A veces el correo no basta para contener toda la documentación que exige un proyecto municipal; de la misma manera que en una nota tradicional física adjuntamos la nómina de asistencia en hojas impresas anexas. Outlook nos permite "Adjuntar" correspondencias, actas en PDF o planillas de Excel en su formato virtual. Al adjuntar, el archivo del disco duro viaja pegado de forma digital como un pasajero del correo directo al computador del funcionario municipal.',
-    explicacion_alternativa: 'Es idéntico a introducir dentro del sobre de la municipalidad las fotos reales de los baches de la calle o las cotizaciones firmadas por la junta de vecinos. En vez de pegarlas con cinta, le ordena a Outlook que arrastre la hoja guardada del Escritorio y la meta con cuidado al sobre.',
+    titulo: 'Adjuntar Actas y Documentos Formales',
+    descripcion_teorica: 'Para remitir un acta comunal digitalizada o la hoja financiera en Excel a la alcaldía, no la tipeamos dentro del texto del correo: la enviamos como "Archivo adjunto". El botón estrella para esto es el "Clip de oficina", que permite seleccionar y subir documentos resguardados de nuestra computadora.',
+    explicacion_alternativa: 'Es idéntico a tomar el sobre de la correspondencia municipal y meter adentro un plano de veredas o fotos sacadas con la cámara. El clip es el gancho metálico físico que sujeta esos documentos al papel principal para que no se caigan en el camino.',
     pasos_a_seguir: [
-      'Ingrese a su Microsoft Outlook real en su PC y pulse el botón de redactar correspondencia nueva.',
-      'Una vez redactado el cuerpo y destinatario de su carta, busque en la Cinta de Opciones alta del correo el ícono que simula un "Clip metálico de oficina" (icono universal para adjuntar).',
-      'Haga un click izquierdo sobre el botón que reza "Adjuntar archivo" (o "Examinar este equipo").',
-      'En la pantalla que se abre de Windows, vaya al "Escritorio", marque el archivo del acta que guardamos ("Clases_Word_Comunitario") y pulse el botón "Abrir".',
-      'Compruebe que abajo de su asunto aparece de inmediato un cuadro con el nombre exacto de su archivo con un tick verde o gris.'
+      'Inicie la redacción de un Correo Nuevo en su programa Outlook real.',
+      'Delinee el Para y el Asunto de forma habitual en la parte superior.',
+      'Mire la Cinta de comandos superior y pulse sobre el ícono que representa un "Clip de papel" (llamado Adjuntar archivo).',
+      'Haga click en "Examinar este equipo...", navegue a su carpeta de Documentos y tilde su archivo de Acta vecinal.',
+      'Pulse en Aceptar. Observe cómo se sube una pequeña barrita con el ícono y peso del archivo antes de despachar.'
     ],
     pasos_alternativos: [
-      'Redacte su correo vecinal formal en Outlook tradicional real.',
-      'Con la ventana del correo abierta, achíquela un poco de tamaño en su monitor físico, busque el acta guardada en su Escritorio, agárrela con el mouse y arrástrela manteniéndola presionada sobre el cuerpo del correo. ¡Se pegará mágicamente!'
+      'Para adjuntar fotos, puede simplemente arrastrar la imagen desde su escritorio y soltarla arriba del cajón de redacción del correo.',
+      'Si adjuntó un archivo erróneo, tilde la flechita chica al costado de la barra y presione "Quitar adjunto" de inmediato.'
     ],
-    tips_de_accesibilidad: 'Antes de subir cualquier archivo adjunto formal con firmas vecinales, conviértalo preferencialmente a formato PDF. Al ser un formato rígido, los lectores de pantalla del municipio leerán las actas mucho más ordenadamente y sin riesgos de descuadrar la escala.',
+    tips_de_accesibilidad: 'Evite enviar adjuntos excesivamente pesados (como videos directos de más de 20 Megabytes) que puedan atorar casillas municipales con conexiones inestables.',
     checklist_validacion: [
-      'Ubicase en el editor de correos activos de mi computadora.',
-      'Hice click en el botón "Adjuntas" del clip metálico tradicional.',
-      'Examiné la ruta destino de mis documentos cargando el acta específica.',
-      'Validé que el casillero anexo muestra el peso físico y el nombre del archivo con éxito.'
+      'Abrí la consola de redacción para un nuevo correo electrónico.',
+      'Activé la herramienta de carga representada por el Clip.',
+      'Busqué el archivo de Acta vecinal en mis carpetas del computador real.',
+      'Comprobé que asome el listado del adjunto cargado debajo de la casilla de Asunto.',
+      'Efectué el despacho pulcro de la carta con su adjunto vecinal.'
     ],
-    sugerencias_descubrimiento: [
-      "Pruebe adjuntar más de un archivo: Pulse el clip metálico nuevamente y cargue la foto de los baches de las pistas vecinales. El correo admite enviar varias actas juntas si no sobrepasan el peso global estándar de oficina.",
-      "Retire un adjunto fallido: Si subió el presupuesto vecinal equivocado, coloque el mouse sobre el cuadro adjunto, presione la pequeña flecha 'v' y elija 'Quitar archivo'. Se salvará de cometer un bochorno."
-    ],
-    concepto_clave: 'Enlazar y cargar archivos de datos del disco duro dentro del correo Outlook virtual utilizando el ícono universal del Clip para su despacho conjunto.',
-    ejercicio_practico: 'Adjuntar una cotización o el acta de su junta vecinal en un borrador de correo en su PC de escritorio.',
+    concepto_clave: 'Incrustar documentos o archivos externos de forma dependiente a la correspondencia por correo electrónico.',
+    ejercicio_practico: 'Adjuntar una hoja modificada de sumas vecinales en un correo piloto utilizando el botón Clip de Outlook real.',
     elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Clip de oficina',
-        descripcion: 'El ícono universal que permite acoplar actas electrónicas a sus cartas postales.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Banda de Adjuntos',
-        descripcion: 'Sección donde figura el estado de carga y nombre de sus planillas adjuntadas.'
-      }
-    ]
-  },
-  {
-    id: 'outlook_n1_l4',
-    modulo_id: 'outlook',
-    orden: 4,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Outlook',
-    titulo: 'Organizar Mensajes en Carpetas Temáticas',
-    descripcion_teorica: 'Si dejamos todos los correos acumulados amontonados en la Bandeja de Entrada, en pocas semanas nos costará una enormidad encontrar las respuestas previas de la municipalidad o las rendiciones viejas de los socios vecinales. Outlook nos permite fabricar "Carpetas Virtuales". Estas funcionan exactamente como los archivadores plásticos de palanca que tenemos en los estantes de la sede social: podemos crear una carpeta llamada "Municipalidad" de alto contraste y arrastrar allí las cartas clasificándolas formalmente.',
-    explicacion_alternativa: 'Es igual que rotular portafolios físicos en su archivador para que no se caigan las hojas por la mesa. En vez de amontonar los balances del bingo con las cartas de las juntas de vecinos sobre el piano, crea una gaveta digital llamada "Trámites Bingo" y las guarda de modo que la mesa quede reluciente.',
-    pasos_a_seguir: [
-      'Vaya a su casilla de correo de Microsoft Outlook real de la junta vecinal.',
-      'Mire el borde izquierdo vertical de la pantalla donde están las carpetas estándar ("Bandeja de Entrada", "Enviados").',
-      'Haga un click derecho firme sobre la carpeta "Bandeja de Entrada" u oprima el botón "Crear carpeta nueva" al final del listado.',
-      'Escriba con mayúsculas en el recuadro que se habilita: "COMUNICACIONES MUNICIPALES" y pulse Enter.',
-      'Sostenga con el ratón de su PC cualquier correo que le enviaron del municipio y arrástrelo con suavidad hacia su nueva carpeta hasta verla sombreada. ¡Mire cómo la mesa de entrada se despeja de inmediato!'
-    ],
-    pasos_alternativos: [
-      'Abra su servicio Outlook en su máquina física real.',
-      'Haga click derecho sobre cualquier mensaje comunal de la grilla del medio, elija la opción "Mover a" del desplegable, pulse sobre su carpeta vecinal y confirme el traslado.'
-    ],
-    tips_de_accesibilidad: 'La navegación estructurada por carpetas en Microsoft Outlook es extremadamente compatible con los atajos de teclado para lectores de pantalla, facilitando que vecinos con ceguera total salten de una carpeta a otra en segundos.',
-    checklist_validacion: [
-      'Ejecuté la orden de adición de un nuevo contenedor a través de los menús izquierdos.',
-      'Escribí un nombre lógico para clasificar la administración territorial vecinal.',
-      'Seleccioné correspondencias físicas de la bandeja de entrada comicial.',
-      'Trasladé con éxito los mensajes por arrastre o menús visuales despejando la entrada.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe crear subcarpetas: Haga click derecho sobre su nueva carpeta recién diseñada y pulse de nuevo 'Crear carpeta'. Escriba 'Año 2026'. Logrará un nivel de archivo de altísima alcurnia administrativa municipal.",
-      "Configure un correo como favorito: Presione la estrella que sale al lado del remitente. Al hacerlo, el mensaje saltará a un casillero prominente arriba del todo, visible para ojos cansados en un instante."
-    ],
-    concepto_clave: 'Estructurar y clasificar la correspondencia electrónica creando carpetas temáticas para evitar la dispersión de datos y el desborde postal.',
-    ejercicio_practico: 'Crear una carpeta de clasificación comicial en su Outlook real de oficina y mudar correspondencias para entrenar el archivo ordenado.',
-    elementos_visuales: [
-      {
-        icono: 'carpeta',
-        etiqueta: 'Carpeta Virtual Recién Creada',
-        descripcion: 'Cajoncito exclusivo de archivo rotulado con su denominación personalizada vecinal.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Estrella Favorito',
-        descripcion: 'Punto luminoso de alto contraste que ancla documentos claves del Centro Social arriba del todo.'
-      }
-    ]
-  },
-  {
-    id: 'outlook_n1_l5',
-    modulo_id: 'outlook',
-    orden: 5,
-    nivel: 'Nivel 1: Funcional',
-    programa: 'Outlook',
-    titulo: 'Agendar Reuniones en el Calendario de la Sede',
-    descripcion_teorica: 'Un secretario de una Junta de Vecinos moderna no puede fiarse meramente de recordar las fechas en asambleas cruciales; de la misma forma que no anotamos el horario del médico en servilletas expuestas a perderse. Outlook incorpora un "Calendario Virtual de Alta Precisión" integrado directamente en el correo. Aquí podemos agendar el día del próximo bingo o la visita formal de la alcaldesa con alarmas automáticas escritas que nos avisarán al celular o PC.',
-    explicacion_alternativa: 'Es idéntico a colgar los calendarios tradicionales de la repisa de fondo de la cocina con cuadritos de asados de la junta, donde marcamos con una gran cruz roja de marcador el día de elecciones de mesa. En la computadora la cruz se dibuja sola, emite sonidos alegres de recordatorio por el parlante y les envía invitaciones directas por redes a sus directivos.',
-    pasos_a_seguir: [
-      'Dirija su visual al extremo o barra izquierda de su Microsoft Outlook real.',
-      'Busque el pequeño ícono que representa un "Calendario" de oficina (el cuadrito mensual) y hágalo click izquierdo.',
-      'La pantalla mutará por completo para enseñarle el mes completo de la directiva comunal. Haga doble click sobre el recuadro del número correspondiente al viernes de la próxima semana.',
-      'En la ficha emergente que se abre, tipee el título jerárquico gigante: "ASAMBLEA ORDINARIA MESA DIRECTIVA".',
-      'Defina el bloque cronológico: delinee la hora exacta (ej. de "19:00" a "20:30" sutilmente en los selectores).',
-      'Haga un click en el botón azul de confirmación "Guardar" o "Enviar". ¡El evento comicial se encuentra agendado en la memoria segura!'
-    ],
-    pasos_alternativos: [
-      'Ingrese al área del calendario de Microsoft Outlook real de su PC.',
-      'Pulse en la esquina alta el casillero azul con letras prominentes "Nuevo evento".',
-      'Digite el motivo de la asamblea y la hora requerida, invitando con su correo electrónico a los vecinos para resguardar la asistencia.'
-    ],
-    tips_de_accesibilidad: 'Manejar el Calendario con contrastes altos y tipografía expandida le permite ver sus eventos del Centro Social de un vistazo gigante. El programa se encarga de enviarle un timbre sonoro o aviso en pantalla 15 minutos antes de la reunión, sirviéndole de apoyo inmediato para directivos con olvidos frecuentes.',
-    checklist_validacion: [
-      'Accedí a la zona de Calendario integrado en Microsoft Outlook.',
-      'Hice doble click sobre un casillero diario que corresponda a las gestiones.',
-      'Escribí el rótulo temático de asamblea del centro social en mayúsculas.',
-      'Seleccioné el horario de inicio y fin, sellando el guardado de manera impecable.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe invitar a un directivo directo por correo: En la misma ficha de creación de evento, ubique el casillero 'Invitar a personas' y tipee la dirección real de correo de la tesorera. Al oprimir guardar, Outlook le enviará a ella un aviso invitándola a sumarse automáticamente.",
-      "Cambie el color de la asamblea (Categoría): Pulse con el botón derecho encima del casillero agendado y en 'Categorizar' píntelo de rojo vibrante. ¡Se desmarcará increíble de los demás días ordinarios!"
-    ],
-    concepto_clave: 'Asentar y programar compromisos vecinales en la agenda integrada de Outlook, designando bloques de horas y configurando avisos sonoros de accesibilidad.',
-    ejercicio_practico: 'Programar la asamblea ordinaria de su Centro Social para el próximo viernes e integrar a la tesorera mediante invitaciones automáticas de Outlook.',
-    elementos_visuales: [
-      {
-        icono: 'calendario',
-        etiqueta: 'Cuadro Calendario',
-        descripcion: 'La puerta de entrada a la secuencia mensual comicial vecinal.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Pila de Eventos',
-        descripcion: 'Rótulo pintado coloridamente que ocupa el bloque horario asignado protegiendo su tiempo.'
-      }
+      { icono: 'clip', etiqueta: 'Ícono Clip', descripcion: 'Tratamiento de adjuntos en Outlook superior.' },
+      { icono: 'archivo', etiqueta: 'Archivo Cargado', descripcion: 'Barra que asocia el nombre y el peso del elemento.' }
     ]
   },
 
   // ==========================================
-  // WORD - NIVEL 2: ADMINISTRATIVO
-  // ==========================================
-  {
-    id: 'word_n2_l1',
-    modulo_id: 'word',
-    orden: 11,
-    nivel: 'Nivel 2: Administrativo',
-    programa: 'Word',
-    titulo: 'Estructura Profesional: Crear Índices Automáticos',
-    descripcion_teorica: 'Cuando redactamos un reglamento vecinal extenso o un informe de rendición de cuentas de muchas hojas, crear un índice de forma manual poniendo puntos y digitando los números a pulso es sumamente ineficiente y se descuadra al añadir texto. Word nos permite automatizar esto clasificando los títulos del documento con "Estilos de Título" (Título 1, Título 2, etc.). Al hacerlo, la computadora entiende la jerarquía de cada capítulo y puede confeccionar un "Índice Automático" impecable en un solo clic que se actualiza solo si los números de página cambian.',
-    explicacion_alternativa: 'Imagine que etiqueta cada habitación de la sede social con un letrero claro de madera ("Cocina", "Salón Principal"). Luego, en la entrada, cuelga una pizarra que enumera automáticamente todas las salas y su ubicación en el pasillo. Si traslada el comedor al fondo, la pizarra se redibuja sola sin que usted deba pintar cada letra de nuevo. En Word, esto se logra usando Estilos y presionando el botón "Tabla de contenido".',
-    pasos_a_seguir: [
-      'Abra su Word real en su PC y escriba en el primer renglón: "Reglamento de la Sede 2026".',
-      'Sombréelo de corrido, vaya a la pestaña "Inicio" arriba, y en la vitrina de "Estilos", haga un click izquierdo firme en "Título 1" (el texto se volverá azul y grande).',
-      'Avanza unas líneas abajo pulsando Enter, escribe "Capítulo 1: Cuotas Sociales", sombréelo y aplíquele también el estilo "Título 1".',
-      'Sitúe el cursor al principio de todo su documento (antes de la primera palabra) y vaya a la pestaña "Referencias" en la barra superior.',
-      'Haga click en el primer botón de la izquierda llamado "Tabla de contenido" y seleccione el primer diseño clásico que se le ofrezca. ¡Contemple de inmediato su índice estructurado con números de página perfectos!'
-    ],
-    pasos_alternativos: [
-      'Use su teléfono para consulta y trabaje en Word.',
-      'Aplique el formato permanente "Título 1" a todos los encabezados importantes de su reglamento.',
-      'Vaya a Referencias, pulse sobre Tabla de contenido y haga click en "Tabla automática 1" para ver aparecer el índice formal.'
-    ],
-    tips_de_accesibilidad: 'Utilizar estilos estructurados de Word no es solo por orden estético: es un requisito de accesibilidad indispensable para que los lectores de voz de personas con discapacidad visual puedan saltar rápidamente capítulos del acta sin leer todo de corrido.',
-    checklist_validacion: [
-      'Redacté capítulos claros en hojas diferentes de mi documento.',
-      'Asigné el estilo "Título 1" a cada uno de los encabezados de capítulo.',
-      'Me posicioné en la hoja inicial para ubicar el índice general.',
-      'Fui a Referencias e inserté la Tabla de contenido verificando la generación automática.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe a actualizar el índice: Agregue un párrafo largo antes del Capítulo 1 para que este se desplace a la página siguiente. Haga un click derecho en medio de su índice, elija 'Actualizar campos' -> 'Actualizar toda la tabla' y mire cómo el número de página cambia mágicamente al nuevo valor correcto.",
-      "Pruebe con Título 2: Úselo para subcapítulos (como '1.1 Cuota de Socios'). Al actualizar su índice, verá que los subcapítulos aparecen ligeramente metidos hacia adentro (sangrados) dándole un porte institucional asombroso."
-    ],
-    concepto_clave: 'Usar la galería de Estilos para rotular la jerarquía del escrito y habilitar el procesador de Referencias para generar índices dinámicos.',
-    ejercicio_practico: 'Elaborar un bosquejo de reglamento con dos Capítulos usando Estilos, y montar el índice dinámico al inicio del papel virtual.',
-    elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Vitrina de Estilos',
-        descripcion: 'Panel superior en Inicio que contiene las etiquetas de Título 1 y 2.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Tabla de Contenido',
-        descripcion: 'Comando en la sección Referencias que compila las cabeceras en un índice estructural.'
-      }
-    ]
-  },
-
-  // ==========================================
-  // WORD - NIVEL 3: RESOLUCIÓN DE PROBLEMAS
-  // ==========================================
-  {
-    id: 'word_n3_l1',
-    modulo_id: 'word',
-    orden: 12,
-    nivel: 'Nivel 3: Resolución de Problemas',
-    programa: 'Word',
-    titulo: 'Auxilio: Recuperar un Archivo no Guardado',
-    descripcion_teorica: 'El pánico más grande de todo secretario vecinal ocurre cuando, tras escribir tres horas de un acta de asamblea, se corta la luz de improviso, se descarga la batería de la computadora o cerramos Word por error pulsando la fatídica opción "No guardar". No todo está perdido. Word cuenta con un baúl secreto de seguridad llamado "Autorrecuperación" que graba copias sigilosas en el disco cada diez minutos de forma transparente. Aprendiendo a buscar en este armario virtual de resguardo, podemos rescatar y salvar nuestro esfuerzo en un instante.',
-    explicacion_alternativa: 'Es igual que si una ráfaga de viento fuerte entrara por la ventana de la sede y desparramara sus papeles volando al patio oscuro. En vez de dar por perdidas las actas y ponerse a llorar, enciende una linterna potente y va al patio a recoger impecablemente las hojas que quedaron atrapadas en las esquinas de protección. En Word virtual, la linterna es la opción "Recuperar documentos sin guardar".',
-    pasos_a_seguir: [
-      'Abra un documento en blanco en su programa Microsoft Word real en su computadora.',
-      'Haga un click izquierdo en el menú de la pestaña azul "Archivo" arriba en la esquina superior.',
-      'Busque y pulse sobre la opción "Información" en la lista de opciones que se despliega de lado.',
-      'Localice el botón grande que reza "Administrar documento" (suele tener un ícono con una hoja y un engranaje).',
-      'Haga un click izquierdo en él y seleccione "Recuperar documentos sin guardar". Se abrirá un baúl secreto con archivos antiguos; busque el que tenga la fecha de hoy, selecciónelo y pulse "Abrir". ¡Mire cómo su acta perdida vuelve a la vida!'
-    ],
-    pasos_alternativos: [
-      'Si al encender Word tras un apagón físico ve un panel izquierdo llamado "Recuperación de documentos", no lo cierre.',
-      'Examine la lista de archivos con hora y fecha de resguardo automático en ese panel.',
-      'Haga click sobre el archivo recuperado para cargarlo en pantalla y presione Control + G de inmediato para guardarlo a salvo en el Escritorio.'
-    ],
-    tips_de_accesibilidad: 'Para vecinos mayores o personas propensas a la fatiga, se recomienda ajustar el tiempo de autorrecuperación automática de Word a 5 minutos en lugar de 10. Se configura en "Archivo -> Opciones -> Guardar" reduciendo los números en el casillero de Auto-recuperación.',
-    checklist_validacion: [
-      'Inicié Word de forma regular tras el imprevisto o descuido.',
-      'Navegué al menú Archivo para examinar el estado de administración.',
-      'Hice clic en el disparador Administrar Documento.',
-      'Abrí el baúl secreto ubicando y guardando a salvo mi documento recuperado con éxito.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe revisar la carpeta Temporal: Word guarda estos archivos con extensión especial '.asd'. Al abrirlos desde ese panel municipal especial, presione el gran botón 'Guardar como' que aparece arriba en amarillo para asegurar que el archivo de la asamblea se consolide.",
-      "Compruebe el autoguardado en la nube: Si cuenta con servicio OneDrive (el ícono de la nube azul abajo), active el interruptor 'Autoguardado' arriba a la izquierda. ¡Cada letra que escriba se subirá a internet segundo a segundo haciéndola virtualmente indestructible!"
-    ],
-    concepto_clave: 'Localizar e importar los borradores transitorios respaldados por el motor de autorrecuperación integrado de Word para mitigar pérdidas asociadas a cortes de energía.',
-    ejercicio_practico: 'Simular la búsqueda de un acta comunal no guardada navegando al panel de Administración de Documentos en su Word real de su máquina.',
-    elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Pestaña Opciones',
-        descripcion: 'Sección Archivo que reúne la configuración de recuperación y resguardo.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Baúl Autorrecuperación',
-        descripcion: 'Ruta oculta de Windows donde se acopian los borradores olvidados en cada asamblea.'
-      }
-    ]
-  },
-
-  // ==========================================
-  // EXCEL - NIVEL 2: ADMINISTRATIVO
-  // ==========================================
-  {
-    id: 'excel_n2_l1',
-    modulo_id: 'excel',
-    orden: 8,
-    nivel: 'Nivel 2: Administrativo',
-    programa: 'Excel',
-    titulo: 'Buscar Vecinos Rápidamente: La Fórmula BUSCARV',
-    descripcion_teorica: 'Cuando la lista de socios del Centro Social supera las doscientas personas, buscar el teléfono de un vecino específico deslizando la vista hilera por hilera en pantalla es desesperante y cansa los ojos. En secretariado, delegamos esta labor en Excel usando la función "BUSCARV" (Buscar en Vertical). Al programar esta celda inteligente, solo digitamos el nombre del socio en una casilla y la computadora viaja de inmediato hacia abajo por toda la columna, localiza al vecino, toma su número de teléfono al costado y nos lo entrega de forma instantánea.',
-    explicacion_alternativa: 'Piense en la fórmula BUSCARV como un mensajero veloz y servicial de la junta. Usted se sienta cómodamente y le dice: "Busca a doña María Martínez en el archivador gigante, mira qué teléfono tiene escrito en su ficha y dímelo de viva voz". El mensajero tarda menos de un segundo en ir al fondo, abrir la gaveta y traerle el número exacto sin equivocarse jamás de línea.',
-    pasos_a_seguir: [
-      'En Excel, arme una tabla con Nombres en la columna A (celdas A2 a A4) y Teléfonos en la columna B (B2 a B4).',
-      'Haga click en una casilla limpia (por ejemplo, D2) donde escribirá el nombre del vecino que desea buscar.',
-      'Oprima la casilla de al lado (E2) donde quiere ver la respuesta numérica del teléfono de forma automática.',
-      'Digite en la barra de fórmulas alta: `=BUSCARV(D2; A2:B4; 2; FALSO)` (si su Excel usa comas, tipee comas en vez de puntos y comas).',
-      'Escriba en la celda D2 el nombre exacto de uno de sus vecinos y mire cómo en E2 ¡aparece su teléfono de forma mágica en un parpadeo!'
-    ],
-    pasos_alternativos: [
-      'Utilice la guía en su teléfono y manipule el Excel de su PC real escribiendo sus datos.',
-      'Aplique la fórmula de búsqueda vertical en el casillero de resultados para automatizar la consulta.',
-      'Escriba el nombre deseado del socio vecinal en la celda de consulta y presiones Enter comprobando la eficacia.'
-    ],
-    tips_de_accesibilidad: 'La fórmula requiere el parámetro "FALSO" al final de todo para ordenarle a Excel que realice una búsqueda exacta e inequívoca del nombre. Esto previene desvíos numéricos peligrosos para directores con visión parcial.',
-    checklist_validacion: [
-      'Catalogué una planilla ordenada con nombres a la izquierda y teléfonos a la derecha.',
-      'Definí una celda vacía para ingresar el valor que quiero consultar en mi PC.',
-      'Redacté la fórmula BUSCARV en el casillero de salida apuntando a los rangos correspondientes.',
-      'Escribí un nombre de la planilla en el casillero de entrada y validé que el teléfono se recupera automáticamente.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe con BUSCARX (XLOOKUP): Si su Excel es moderno de oficina, use `=BUSCARX(D2; A2:A4; B2:B4)`. Es una fórmula más dócil que no requiere indicarle el número de columna y busca hacia la izquierda y derecha con total soltura.",
-      "Sugerencia de error #: Si digita un nombre que no está en la base, verá salir el símbolo `#N/D` o `#N/A`. No se asuste. Significa que el mensajero no halló a nadie con ese nombre exacto. ¡Revise las letras y vuelva a tipear!"
-    ],
-    concepto_clave: 'Implementar el algoritmo de búsqueda BUSCARV para cruzar y consultar bases de datos de socios de forma relacional y estructurada.',
-    ejercicio_practico: 'Sellar un buscador en Excel real que devuelva la deuda de cuotas de un vecino con solo digitar su nombre propio.',
-    elementos_visuales: [
-      {
-        icono: 'computadora',
-        etiqueta: 'Celda de Entrada',
-        descripcion: 'Casillero en blanco diseñado para que el usuario escriba la clave a buscar.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Fórmula de Búsqueda',
-        descripcion: 'La barra de comandos de Excel que procesa el cruce de información en hileras.'
-      }
-    ]
-  },
-
-  // ==========================================
-  // EXCEL - NIVEL 3: RESOLUCIÓN DE PROBLEMAS
-  // ==========================================
-  {
-    id: 'excel_n3_l1',
-    modulo_id: 'excel',
-    orden: 9,
-    nivel: 'Nivel 3: Resolución de Problemas',
-    programa: 'Excel',
-    titulo: 'Auxilio: Reparar Errores de Fórmulas y Códigos Extraños',
-    descripcion_teorica: 'Es de ocurrencia usual que, al teclear fórmulas para asambleas de balances, nos asustemos al ver aparecer códigos incomprensibles en los casilleros de Excel como `#¡VALOR!`, `#¿NOMBRE?` o una hilera de signos `# # # # #`. Estos no representan virus informáticos ni indican que la computadora se haya dañado. Son gritos de auxilio sistemáticos que Excel exhibe para informarnos que algo está mal en la celda: mezcla de letras en una suma, un nombre de fórmula mal escrito, o simplemente que la celda es muy angosta para mostrar un número gigante.',
-    explicacion_alternativa: 'Se asemeja a que al despachar un sobre con actas vecinales, el cartero se lo devuelva con un timbre rojo de "Dirección Incompleta". No significa que el sobre esté maldito; solo le avisa que revise el número de calle real para corregirlo y volverlo a despachar cómodamente. En Excel, resolvemos estos códigos raros de inmediato arreglando los datos.',
-    pasos_a_seguir: [
-      'Al ver que una celda se llena de signos de peso o gato "###", no se desespere. Coloque el cursor arriba en la línea gris divisoria entre las letras de columna (ej. entre B y C), haga doble click izquierdo de mouse y observe cómo el casillero se ensancha exponiendo las cifras sanas de inmediato.',
-      'Si en pantalla aparece un error `#¡VALOR!`, haga doble click en la celda para revisar sus sumas. Busque si entre medio de los números sumados se metió una celda con texto (como escribir "10 + Sillas" adrede en lugar del número) y bórrelo.',
-      'Si lee un error `#¿NOMBRE?`, revise arriba en la barra de redacción de fórmulas si digitó mal la orden (por ejemplo, escribir `=SUME` o `=SOMA` en lugar de la palabra oficial en español `=SUMA`).',
-      'Haga la corrección correspondiente tipeando las letras bien cuidadas, pulse Enter en su teclado físico y vea aparecer sus cuentas claras de golpe.'
-    ],
-    pasos_alternativos: [
-      'Examine cualquier celda con bordes punteados rojos o un triángulo verde en su computadora física.',
-      'Haga click en el pequeño rombo amarillo de advertencia que flota al lado del error.',
-      'El menú desplegado le dirá qué causó la falla administrativa ("Fórmula dividida por cero" o "Formato incorrecto") para solucionarla velozmente.'
-    ],
-    tips_de_accesibilidad: 'Pauta de Contraste: Para resguardar las normas de accesibilidad de nuestro curso, recuerde que las cuadrículas internas del área de trabajo virtual de Excel mantendrán fondo blanco y letras oscuras simulando hojas físicas impresas. El cambio de contraste oscuro exterior afecta a las márgenes de navegación del programa.',
-    checklist_validacion: [
-      'Identifiqué la presencia de un código de error de Excel en mi pantalla real.',
-      'Solucioné el bloqueo de visual numérica "###" ensanchando el ancho útil de la columna.',
-      'Depuré el error de valor eliminando textos de las operaciones matemáticas.',
-      'Subsané faltas ortográficas en el nombre de la fórmula logrando calcular la suma.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe un error por división: Escriba en una celda `=10/0` y pulse Enter ante su vista. Verá nacer el error `#¡DIV/0!`. Excel le recuerda que matemáticamente es imposible trocear algo en cero partes. ¡Cambie el cero por un dos y vea cómo muta a cinco!",
-      "Haga doble click rápido: En los bordes de cabecera de las columnas de Excel real, el doble click amolda el ancho automáticamente a lo más largo que tenga escrito. Es el truco de oro de los asistentes de oficina."
-    ],
-    concepto_clave: 'Decodificar y rectificar la sintaxis de errores aritméticos y lógicos comunes de Excel para recobrar balances financieros saludables.',
-    ejercicio_practico: 'Provocar de forma deliberada el error NAME en su Excel real renombrando una función y rectificarlo aplicando la nomenclatura SUMA.',
-    elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Triángulo Verde Flotante',
-        descripcion: 'Esquina superior de la celda de Excel que indica un dilema lógico.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Rombo de Advertencia',
-        descripcion: 'Botón desplegable con la pauta de solución recomendada por la inteligencia oficial.'
-      }
-    ]
-  },
-
-  // ==========================================
-  // POWERPOINT - NIVEL 2: ADMINISTRATIVO
-  // ==========================================
-  {
-    id: 'powerpoint_n2_l1',
-    modulo_id: 'powerpoint',
-    orden: 6,
-    nivel: 'Nivel 2: Administrativo',
-    programa: 'PowerPoint',
-    titulo: 'Diseño Unificado: Dominar el Patrón de Diapositivas',
-    descripcion_teorica: 'Cuando creamos una presentación de muchas láminas sobre el proyecto vecinal, pegar el logotipo del Centro Social y escribir el nombre de nuestra organización de forma reiterada resulta monótono y queda descuadrado al pasar de página dando una apariencia informal. PowerPoint dispone de una herramienta secreta: el "Patrón de Diapositivas" (Master Slide). Es una lámina arquitectónica oculta: todo el texto, logo o fondo que peguemos dentro de ella se grabará en el molde original del documento, apareciendo de forma mágica y simétrica en todas las diapositivas nuevas de inmediato.',
-    explicacion_alternativa: 'Es igual a encargar un timbre de goma redondo personalizado con los datos oficiales de la directiva comunal. En vez de tomar cada cartón de la presentación de la junta y dibujar el timbre a lápiz uno a uno con riesgo de que queden torcidos, estampa el timbre de molde sobre la plantilla principal. En la computadora la estampación es eterna y completamente alineada.',
-    pasos_a_seguir: [
-      'En PowerPoint real en su monitor, vaya a la barra superior y pulse la pestaña "Vista" (al lado de Ayuda).',
-      'Localice el grupo "Vistas patrón" y haga un click izquierdo en el botón "Patrón de diapositivas". La pantalla mutará enseñándole el esqueleto de las láminas.',
-      'Vaya a la columna izquierda, suba hasta arriba del todo de la tira y haga click en la diapositiva número 1 de molde gigante (la madre de todas).',
-      'Vaya a Insertar superior -> Formas, dibuje un pequeño círculo amarillo fuerte en una esquina de esa lámina y escriba "Junta de Vecinos".',
-      'Haga click en el gran botón de fondo oscuro con una cruz que reza "Cerrar Vista Patrón" en la barra superior. ¡Asómbrese! Todas sus diapositivas presentarán ahora el logotipo vecinal en la esquina exacta.'
-    ],
-    pasos_alternativos: [
-      'Pulse sobre Vista y arranque el configurador del Patrón en PowerPoint de escritorio.',
-      'Pegue en la diapositiva madre el escudo digital oficial de su comunidad vecinal en la cabecera alta.',
-      'Cierre el editor de molde y compruebe que toda lámina nueva adopta el marco heráldico de forma idéntica.'
-    ],
-    tips_de_accesibilidad: 'Use el Patrón para obligar a que las letras de título sean siempre de calibre 40 sin depender de que cada expositor configure las letras por separado en su PC.',
-    checklist_validacion: [
-      'Navegué a la pestaña Vista cargando la fisonomía estructural de la Cinta.',
-      'Accedí al Patrón de Diapositivas seleccionando la lámina principal de la tira.',
-      'Incrusté un elemento o texto identificativo de la sede en la página molde.',
-      'Regresé al lienzo normal validando que la plantilla fue distribuida a todas las hojas físicas virtuales.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe un fondo de contraste: En el modo Patrón, haga click derecho sobre el lienzo, elija 'Formato de fondo...' y aplique un color Gris Suave o Azul Pálido. Al cerrar el patrón verá cómo todas las diapositivas adoptan el color cómodo para lectores cansados.",
-      "Proteja la firma: Al quedar los logos grabados en el Patrón de fondo, ningún directivo entrometido podrá moverlos o borrarlos sin querer por error mientras escribe las actas principales."
-    ],
-    concepto_clave: 'Intervenir la maqueta maestra o Patrón de Diapositivas de PowerPoint para unificar tipografías, fondos de contraste y heráldica de forma inalterable.',
-    ejercicio_practico: 'Entrar al Patrón de Diapositivas en PowerPoint e implantar un membrete superior uniforme de su Sede Social.',
-    elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Pestaña Vista',
-        descripcion: 'Ubicación superior de las alternativas de visualización del software.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Botón Vista Patrón',
-        descripcion: 'La palanca de acceso a los bastidores constructivos de la diapositiva.'
-      }
-    ]
-  },
-
-  // ==========================================
-  // POWERPOINT - NIVEL 3: RESOLUCIÓN DE PROBLEMAS
-  // ==========================================
-  {
-    id: 'powerpoint_n3_l1',
-    modulo_id: 'powerpoint',
-    orden: 7,
-    nivel: 'Nivel 3: Resolución de Problemas',
-    programa: 'PowerPoint',
-    titulo: 'Auxilio: Adaptar Diapositivas al Proyector de la Sede',
-    descripcion_teorica: 'Es una escena recurrente en asambleas vecinales: encendemos el proyector de la junta de vecinos, conectamos nuestra computadora y constatamos de inmediato que nuestras diapositivas se ven deformadas, estiradas hacia los costados o con franjas negras muertas en los bordes. Esto sucede porque el "Formato de Pantalla" de PowerPoint está diseñado para un tamaño panorámico moderno (16:9), mientras que el proyector clásico o televisor de la sede usa un tubo cuadrado (4:3). Aprender a regular este parámetro de diseño en PowerPoint nos salvará la reunión.',
-    explicacion_alternativa: 'Es igual que si mandara a imprimir un plano largo comicial y, al intentar encuadrarlo en la cartulina cuadrada oficial de la sede, tuviese que doblarle los extremos perdiendo valiosas letras. En PowerPoint, le ordenamos al programa re-acomodar el tamaño virtual del papel a "Estándar" o "Panorámico" para calzar de forma perfecta con el aparato proyector físico.',
-    pasos_a_seguir: [
-      'Con su PowerPoint abierto en la pantalla de su PC real, dirija su mouse a las pestañas superiores.',
-      'Haga un click izquierdo en la pestaña "Diseño" (al lado de la pestaña Insertar).',
-      'Localice en el extremo derecho del cabezal alto el botón etiquetado como "Tamaño de diapositiva".',
-      'Pulse sobre él y elija el formato "Estándar (4:3)" si el proyector de la junta es antiguo y cuadrado, o "Panorámica (16:9)" si expondrá en una pantalla plana moderna.',
-      'Elija el botón "Asegurar el ajuste" en el recuadro que emerge para ordenar a PowerPoint que acomode los textos de forma balanceada sin salirse del marco.'
-    ],
-    pasos_alternativos: [
-      'Pulse la pestaña Diseño en PowerPoint de su computadora real.',
-      'Oprima el Tamaño de diapositiva y configure la opción proporcional Estándar (4:3).',
-      'Verifique que las letras de balance vecinal se ajusten sin recortes en la miniatura.'
-    ],
-    tips_de_accesibilidad: 'Manejar el tamaño 4:3 con textos consolidados al centro previene que el proyector de la junta mutile los extremos de su balance de cuentas, protegiendo la lectura de los vecinos.',
-    checklist_validacion: [
-      'Ingresé al panel interactivo de Diseño en la barra alta de PowerPoint.',
-      'Hice click en el botón del extremo derecho del Tamaño de diapositiva.',
-      'Seleccioné el formato correcto en base a las proporciones reales del proyector.',
-      'Activé el ajuste dimensional de letras consolidando el balance.'
-    ],
-    sugerencias_descubrimiento: [
-      "Pruebe un Tamaño Personalizado: Al final del mismo listado, pulse en 'Personalizar tamaño de diapositiva'. Podrá configurar las láminas simulando hojas de papel Carta u Oficio vertical para imprimir afiches de asambleas de vecinos.",
-      "Márgenes de seguridad: Al diseñar diapositivas para proyecciones reales en la sede social, nunca coloque textos al filo de los bordes. Deje siempre un margen libre de dos dedos de ancho por seguridad."
-    ],
-    concepto_clave: 'Ajustar la relación de aspecto (aspect ratio) de PowerPoint para adecuar la proyección digital a soportes físicos cuadrados (4:3) o panorámicos (16:9) sin deformaciones.',
-    ejercicio_practico: 'Cambiar en PowerPoint real la lámina comunal de panorámico a formato estándar de 4:3 aplicando la escala de ajuste automático.',
-    elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Pestaña Diseño',
-        descripcion: 'Menú alto donde se encarga la fisonomía y relieve estético de la lámina.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Selector de Tamaño',
-        descripcion: 'El regulador proporcional que ensambla panorámicas o cuadros de visual.'
-      }
-    ]
-  },
-
-  // ==========================================
-  // OUTLOOK - NIVEL 2: ADMINISTRATIVO
+  // OUTLOOK - NIVEL 2: ADMINISTRATIVO (INTERMEDIO)
   // ==========================================
   {
     id: 'outlook_n2_l1',
     modulo_id: 'outlook',
-    orden: 6,
+    orden: 4,
     nivel: 'Nivel 2: Administrativo',
     programa: 'Outlook',
-    titulo: 'Secretaría Automática: Mensaje de Fuera de la Oficina',
-    descripcion_teorica: 'Durante el periodo de vacaciones o cuando la sede comunal permanece cerrada, los vecinos o la municipalidad nos envían solicitudes de urgencia por correo y quedan con la amarga incertidumbre de si la correspondencia fue leída o ignorada. Outlook nos ofrece la herramienta "Mensajes Fuera de la Oficina" (Auto-Reply). Al activarla, el servidor se convierte en nuestra secretaria automática: responde de inmediato a todo correo que nos llegue con una nota de resguardo y aviso previamente configurada.',
-    explicacion_alternativa: 'Es igual que colgar un cartel solemne de madera en la reja delantera de la sede vecinal que diga: "Por receso dirigirse a calle Pratt o llamar al teléfono del presidente". En la computadora, Outlook se encarga de colgar el cartel digital y leérselo a cada cartero que pase por la bandeja de forma automática.',
+    titulo: 'Secretaría Automática: Fuera de la Oficina',
+    descripcion_teorica: 'Durante vacaciones o cierres de la sede social por receso, los vecinos envían cartas y quedan con la amarga incertidumbre de si fueron leídos o ignorados. Outlook posee la función "Respuestas Automáticas" (Auto-Reply). Al activarla, el servidor se convierte en nuestra contestadora: responde de inmediato a todo correo con una nota previamente escrita.',
+    explicacion_alternativa: 'Es idéntico a colgar un cartel solemne de madera en la reja delantera de la sede que avise: "Por receso la junta estará cerrada hasta el 10 de marzo. Emergencias llamar al presidente". En la computadora, Outlook se encarga de leerle el cartel a cada correo que toque la bandeja.',
     pasos_a_seguir: [
-      'Inicie sesión en su portal de Microsoft Outlook de la junta en su monitor físico.',
-      'Busque en la esquina superior derecha de la pantalla de Outlook el ícono del "Engranaje" de Configuración y púlselo.',
-      'En el panel de búsqueda de ajustes, tipee "Respuestas automáticas" (o vaya a Correo -> Respuestas automáticas).',
-      'Active el interruptor que reza "Activar respuestas automáticas" (el botón se teñirá de azul).',
-      'Escriba en el gran casillero de redacción: "ESTIMADO REMITENTE: LA SEDE SOCIAL ESTARÁ EN RECESO HASTA EL 10-MARZO. ANTE EMERGENCIAS LLAMAR AL PRESIDENTE".',
-      'Haga click en "Guardar". ¡Su contestadora virtual se encuentra activa!'
+      'Abra su correo Outlook real de la junta en su monitor.',
+      'Pulse el ícono de la rueda o "Engranaje" de Configuración en la esquina superior derecha.',
+      'Tipee en la búsqueda técnica de ajustes "Respuestas automáticas" (o vaya a Correo -> Respuestas automáticas).',
+      'Active el interruptor que reza "Activar respuestas automáticas" (el interruptor se prenderá de azul).',
+      'Redacte en el cajón de texto: "ESTIMADO VECINO: LA SEDE COMUNAL ESTÁ EN RECESO HASTA MARZO. LLAME AL 9XXXXXX SINO". Presione Guardar.'
     ],
     pasos_alternativos: [
-      'Vaya a los Ajustes de engranaje en Outlook real de prueba en su PC.',
-      'Escriba la pauta de receso en el cajón de respuestas automáticas fijando las fechas.',
-      'Presione Guardar y compruebe que al llegar una consulta, la secretaria robótica responderá tranquilizando al socio.'
+      'Compruebe fijando un rango de plazos: marque "Enviar respuestas solo durante este período" para que la contestadora se apague sola al iniciar el retorno.',
+      'Active la casilla "Enviar respuestas solo a mis contactos" si prefiere que correos con folletería de empresas no reciban el escrito.'
     ],
-    tips_de_accesibilidad: 'Redactar una respuesta automática clara y con un tamaño de letra cómodo beneficia a los coordinadores, evitando que tengan que revisar la casilla de la junta vecinal durante su descanso.',
+    tips_de_accesibilidad: 'Redactar notas breves, sencillas de digerir y con números telefónicos ampliados beneficia la asimilación acústica de coordinadores del barrio.',
     checklist_validacion: [
-      'Accedí al engranaje y busqué Respuestas Automáticas en Outlook.',
-      'Activé el interruptor dándole el mando a la contestadora robótica de la junta.',
-      'Definí un texto protocolar detallando contactos de reemplazo y fechas de regreso.',
-      'Presioné Guardar para consolidar el servicio automático en el servidor.'
+      'Ingresé al panel interactivo de Configuración de Outlook.',
+      'Navegué al módulo de respuestas automáticas de la cuenta.',
+      'Arranqué la contestadora electrónica activando el gatillo azul.',
+      'Redacté las indicaciones con números telefónicos directos.',
+      'Oprimí Guardar asegurando el servicio de correo automático.'
     ],
-    sugerencias_descubrimiento: [
-      "Fijar Periodo con Calendario: En la misma sección, marque el casillero 'Enviar respuestas solo durante este período'. Podrá ajustar día y hora para que la secretaria comicial se apague solita al abrir de nuevo la sede.",
-      "Responder solo a vecinos: Oprima 'Enviar respuestas únicamente a personas de los contactos'. Su contestadora ignorará correos extraños y responderá exclusivamente a sus vecinos registrados."
-    ],
-    concepto_clave: 'Configurar el disparador de respuestas automáticas de Outlook para notificar recesos administrativos y garantizar la correcta comunicación.',
-    ejercicio_practico: 'Sellar un cartel de auto-respuesta automático por receso administrativo en su Outlook real de la sede social.',
+    concepto_clave: 'Asignar un desencadenador para responder correspondencias imprevistas durante periodos de descanso.',
+    ejercicio_practico: 'Establecer una contestadora de auto-respuesta por receso navideño vecinal en su Outlook real.',
     elementos_visuales: [
-      {
-        icono: 'cinta',
-        etiqueta: 'Engranaje de Ajustes',
-        descripcion: 'Garante superior de la configuración de la correspondencia.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Casillero Contestadora',
-        descripcion: 'Panel donde se encarga la pauta literal de su receso oficial vecinal.'
-      }
+      { icono: 'grana', etiqueta: 'Ajustes Engranaje', descripcion: 'Lanzador superior de configuraciones en la cuenta.' },
+      { icono: 'contestador', etiqueta: 'Pauta de Aviso', descripcion: 'Panel donde se redacta el cartel de receso.' }
+    ]
+  },
+  {
+    id: 'outlook_n2_l2',
+    modulo_id: 'outlook',
+    orden: 5,
+    nivel: 'Nivel 2: Administrativo',
+    programa: 'Outlook',
+    titulo: 'Organizar la Agenda: Calendario de la Sede',
+    descripcion_teorica: 'Llevar los compromisos vecinales en la memoria o en papeles sueltos es riesgoso: se exponen a perderse. Outlook incorpora un "Calendario Virtual de Alta Precisión" integrado al correo electrónico. Aquí podemos agendar el día del próximo bingo comunal o la visita formal del alcalde, configurando un timbre o alerta acústica en la PC.',
+    explicacion_alternativa: 'Es idéntico a colgar los grandes almanaques de pared en la repisa de la sede, marcando con una gran cruz de marcador las elecciones de mesa directiva. El almanaque es virtual, emite avisos sonoros por el parlante y les envía notificaciones a los directivos registrados.',
+    pasos_a_seguir: [
+      'Fije su mirada en la columna o extremo izquierdo de su Outlook real.',
+      'Pulse sobre el ícono que representa un "Calendario" de escritorio (el pequeño casillero mensual).',
+      'Observe la cuadratura del mes del Centro Social. Haga doble click en el cuadro del viernes de la semana entrante.',
+      'Tipee el motivo oficial: "ASAMBLEA GENERAL EXTRAORDINARIA DE DIRECTORES".',
+      'Ajuste el bloque horario (ej. de 18:00 a 19:30 horas) y pulse sobre el botón "Guardar" o "Enviar".'
+    ],
+    pasos_alternativos: [
+      'Pulse en "Nuevo evento" arriba para invocar la ficha comicial rápidamente.',
+      'Invite a la tesorera escribiendo su correo en la casilla "Invitar a personas" para que Outlook le despache el evento con campana a ella.'
+    ],
+    tips_de_accesibilidad: 'La campana acústica emitirá un pitido en su monitor real 15 minutos antes de la reunión, sirviéndole de recordatorio a coordinadores con olvidos recurrentes.',
+    checklist_validacion: [
+      'Accedí a la vista técnica de Calendario de mi cuenta.',
+      'Efectué el doble click cargando un casillero diario de la agenda.',
+      'Escribí el título de la asamblea en mayúsculas de resguardo.',
+      'Alineé las horas de partida y cierre de la vecinal.',
+      'Oprimí Guardar asegurando el hito en la bitácora electrónica.'
+    ],
+    concepto_clave: 'Registrar hitos y compromisos vecinales sobre una cuadrícula cronológica con sistemas de recordatorios de audio.',
+    ejercicio_practico: 'Agendar el bingo del Centro Social para el próximo fin de semana integrando recordatorios acústicos en el Outlook real.',
+    elementos_visuales: [
+      { icono: 'calendario', etiqueta: 'Casillero Mensual', descripcion: 'Tratamiento de visualización de bitácora.' },
+      { icono: 'alarma', etiqueta: 'Almendra Horaria', descripcion: 'Franja de color que ocupa el bloque de la asamblea.' }
     ]
   },
 
   // ==========================================
-  // OUTLOOK - NIVEL 3: RESOLUCIÓN DE PROBLEMAS
+  // OUTLOOK - NIVEL 3: RESOLUCIÓN DE PROBLEMAS (AVANZADO)
   // ==========================================
   {
     id: 'outlook_n3_l1',
     modulo_id: 'outlook',
+    orden: 6,
+    nivel: 'Nivel 3: Resolución de Problemas',
+    programa: 'Outlook',
+    titulo: 'Auxilio: Correo Atorado en Bandeja de Salida',
+    descripcion_teorica: 'Un dolor de cabeza recurrente al enviar correspondencias pesadas (con videos largos de aniversario o muchas fotos juntas) del Centro Social es ver que el correo se queda cargando eternamente y se "atora" en la "Bandeja de Salida" (Outbox). Al quedar atrapado allí, bloquea toda la tubería digital del correo impidiendo el despacho de siguientes cartas. Debemos irrumpir, borrar o reubicar el archivo obstructor para destrabar la cuenta de corrido.',
+    explicacion_alternativa: 'Se asemeja a que un vecino intente introducir una caja de cartón gigante llena de ladrillos por el buzón metálico empotrado de la sede. Como la caja se atasca en la boca, las cartas livianas de los demás vecinos no pueden caer. La solución es destrabar la boca del buzón vecinal retirando el paquete pesado.',
+    pasos_a_seguir: [
+      'Vaya al panel izquierdo de carpetas en su Outlook real de su PC.',
+      'Identifique la carpeta llamada "Bandeja de Salida" (Outbox) (suele asomar con un número entre paréntesis que indica atorados).',
+      'Haga click izquierdo suave en ella: verá expuesto el correo gigante que está obstruyendo el paso.',
+      'Haga un click derecho firme sobre el correo obstructor y seleccione "Eliminar" (o presione Suprimir en su teclado físico).',
+      'Verifique que la Bandeja de Salida quede vacía y envíe una carta de saludo sencilla para constatar que el canal de salida está destrabado.'
+    ],
+    pasos_alternativos: [
+      'Si no quiere borrar el mensaje, haga doble click sobre él en la Bandeja de Salida para suspender el envío y abrir el editor.',
+      'Haga clic en la flechita del clip de video pesado, elija "Quitar adjunto", y vuelva a despachar el texto livianamente.'
+    ],
+    tips_de_accesibilidad: 'Utilizar enlaces a la nube como OneDrive para enviar álbumes de fotos previene atoros sistemáticos y asegura el tránsito ante conexiones rurales de internet.',
+    checklist_validacion: [
+      'Detecté la anomalía de bloqueo de despachos en la cuenta.',
+      'Abrí el contenedor especial Bandeja de Salida en el panel lateral.',
+      'Identifiqué el escrito obstructor pesado por su peso.',
+      'Efectué la demolición o borrado del mensaje atorado.',
+      'Testée la tubería depurada realizando un envío de prueba.'
+    ],
+    concepto_clave: 'Localizar e intervenir los depósitos transitorios de despacho de Outlook ante congestiones por archivos excesivamente robustos.',
+    ejercicio_practico: 'Explorar la carpeta Bandeja de Salida de Outlook real en su PC reconociendo los pasos de saneamiento financiero.',
+    elementos_visuales: [
+      { icono: 'outbox', etiqueta: 'Bandeja de Salida', descripcion: 'Casillero transitorio de atoramiento técnico.' },
+      { icono: 'roto', etiqueta: 'Fichero Pesado', descripcion: 'Adjunto de video sobredimensionado de la junta.' }
+    ]
+  },
+  {
+    id: 'outlook_n3_l2',
+    modulo_id: 'outlook',
     orden: 7,
     nivel: 'Nivel 3: Resolución de Problemas',
     programa: 'Outlook',
-    titulo: 'Auxilio: Correo Atorado en la Bandeja de Salida',
-    descripcion_teorica: 'Un dolor de cabeza recurrente al despachar notas vecinales es cuando, al adjuntar un video pesado del aniversario o muchas fotos de las pistas rotas, el correo se queda cargando eternamente y se "atora" en un casillero llamado "Bandeja de Salida". Al quedar atorado allí, bloquea la tubería digital entera impidiendo que nuestros siguientes correos salgan de la casilla. Para superarlo, debemos abrir la bandeja de salida, y eliminar el correo obstructor para recobrar la normalidad.',
-    explicacion_alternativa: 'Se asemeja a que un vecino intente meter una caja de cartón gigante llena de ladrillos dentro del buzón de lata redondo de la sede. La caja se queda atascada impidiendo que las cartas de los demás vecinos resbalen. La solución es retirar la caja obstrusa con maña y liberar el buzón vecinal para que el flujo de correspondencia continúe.',
+    titulo: 'Auxilio: Almacenamiento Saturado al 100%',
+    descripcion_teorica: 'El correo electrónico municipal o corporativo de la junta de vecinos no es infinito. Al recibir cotizaciones con adjuntos de años pasados de corrido, la barra de almacenamiento se llena al 100% de su capacidad. Cuando esto ocurre, Outlook se bloquea por completo: rebota todo correo entrante y arroja un cartel de alerta de "Buzón Saturado". Resolverlo consiste en filtrar correos pesados antiguos para borrarlos.',
+    explicacion_alternativa: 'Es idéntico a que el gabinete de metal de la secretaría de la junta se llene totalmente de cartas y carpetas de actas de hace diez años. Como las gavetas están reventadas, el cartero no puede meter cartas nuevas y estas rebotan al correo principal. La solución es archivar lo antiguo pesado o sacarlo al basurero.',
     pasos_a_seguir: [
-      'Ubíquese al lado izquierdo de la ventana de Outlook real de su PC.',
-      'Busque entre las carpetas de su correspondencia la carpeta titulada "Bandeja de Salida" (Outbox) (suele aparecer únicamente cuando hay problemas de atascos).',
-      'Haga un click izquierdo sobre ella. Al medio de la pantalla aparecerá expuesto el correo gigante que está atascado.',
-      'Haga un click derecho sobre el correo obstructor y seleccione en el menú "Eliminar" (o bórrelo presionando la tecla Suprimir en su teclado real).',
-      'Vea cómo la Bandeja de Salida se desocupa. Pruebe enviar una carta pequeña sin archivo adjunto para verificar que la cañería quedó libre.'
+      'Inicie su Outlook real en su computadora física.',
+      'Dirija su mirada a la barra de búsqueda alta de corrido.',
+      'Digite en el buscador técnico: `tieneadjunto:sí` o use los filtros dinámicos de "Filtrar por" -> "Tiene archivos adjuntos".',
+      'Haga clic en el botón "Ordenar por" arriba de su lista y escoja la alternativa de ordenar por "Tamaño" (de mayor a menor).',
+      'Sombréé con su mouse las cartas de folletos o fotos pesadas de años viejos que ya rindió, haga click derecho y pulse "Eliminar" de por vida.'
     ],
     pasos_alternativos: [
-      'Entre en la carpeta Bandeja de Salida en Outlook de su oficina real.',
-      'Para recuperar el escrito sin perderlo, haga doble click sobre el correo atorado, lo que detendrá el envío y abrirá el editor.',
-      'Borre los videos pesados del clip adjunto tocando la flechita "Quitar" y vuelva a despachar la correspondencia de forma fluida.'
+      'Diríjase a la solapa "Elementos eliminados" en el lateral de carpetas y pulse Vaciar Carpeta para de verdad recobrar el espacio.',
+      'Vaya a Configuración -> General -> Almacenamiento, y mire la barra de color para verificar cuánto espacio libre recuperó.'
     ],
-    tips_de_accesibilidad: 'Antes de enviar correos, procure que el conjunto de fotos no sume más de "15 Megabytes". Esto asegura un tránsito ágil ante conexiones de internet precarias.',
+    tips_de_accesibilidad: 'La limpieza periódica de folletines publicitarios remueve el "spam" molesto facilitando un recorrido nítido por la bandeja de entrada para vecinas con poca práctica.',
     checklist_validacion: [
-      'Identifiqué la Bandeja de Salida de Outlook ante un bloqueo de despacho.',
-      'Abrí el contenedor de atasco reconociendo el escrito pesado comicial.',
-      'Depuré la obstrucción eliminando el mensaje atorado.',
-      'Despaché una correspondencia en blanco para testear que la tubería de Outlook funciona correctamente.'
+      'Reconocí el aviso técnico o bloqueo de Almacenamiento Saturado.',
+      'Utilicé filtros dinámicos para aislar correos con adjuntos.',
+      'Clasifiqué el listado central ordenándolo de mayor a menor tamaño.',
+      'Despaché al basurero correos pesados que ya caducaron históricamente.',
+      'Vacié la Bandeja de Elementos Eliminados de manera rotunda.'
     ],
-    sugerencias_descubrimiento: [
-      "Pruebe comprimir carpetas: Si tiene muchas fotos, no las suba sueltas. Use un programa como ZIP o cargue las fotos a OneDrive enviando solo un enlace por correo.",
-      "Mire el panel de envío: Abajo en Outlook real, hay una leyenda que reza 'Conectado al servidor' o 'Enviando mensaje'. Vigílelo para asegurarse de que su despacho viaja sano y salvo."
-    ],
-    concepto_clave: 'Identificar e intervenir la Bandeja de Salida de Outlook ante bloqueos de despacho para recobrar la correspondencia de la junta.',
-    ejercicio_practico: 'Explorar la carpeta Bandeja de Salida en su Outlook real reconociendo los pasos para destrabar correspondencias en su computadora.',
+    concepto_clave: 'Monitorear la capacidad de persistencia del servidor limpiando y filtrando adjuntos de gran peso para renovar el buzón de correo.',
+    ejercicio_practico: 'Rastrear correos antiguos con adjuntos pesados en su Outlook de PC real y ensayar el archivado masivo seguro.',
     elementos_visuales: [
-      {
-        icono: 'correo',
-        etiqueta: 'Bandeja de Salida',
-        descripcion: 'El casillero provisorio donde se atoran los despachos pesados.'
-      },
-      {
-        icono: 'zoom',
-        etiqueta: 'Clip de Atasco',
-        descripcion: 'El archivo adjunto excesivo que obstruye el libre tránsito cibernético.'
-      }
+      { icono: 'almacenar', etiqueta: 'Barra de Gigabytes', descripcion: 'Medidor de capacidad en los ajustes de cuenta.' },
+      { icono: 'filtro', etiqueta: 'Ordenar por Tamaño', descripcion: 'Tratamiento de descarte de correos pesados.' }
     ]
   }
 ];
-
-
